@@ -6020,7 +6020,7 @@ td.visible-print {
 }
 @font-face {
   font-family: 'AvenirNextLTPro-Regular';
-  src: url('../fonts/AvenirNextLTPro-Regular.woff') format('woff'), url('../fonts/AvenirNextLTPro-Regular.svg') format('svg');
+  src: url('../fonts/AvenirNextLTPro-Regular.woff') format('woff'), url('../fonts/AvenirNextLTPro-Regular#AvenirNextLTPro-Regular.svg') format('svg');
 }
 @font-face {
   font-family: 'AvenirNextLTPro-UltLt';
@@ -6028,7 +6028,7 @@ td.visible-print {
 }
 @font-face {
   font-family: 'AvenirNextLTPro-UltLt';
-  src: url('../fonts/AvenirNextLTPro-UltLt.woff') format('woff'), url('../fonts/AvenirNextLTPro-UltLt.svg') format('svg');
+  src: url('../fonts/AvenirNextLTPro-UltLt.woff') format('woff'), url('../fonts/AvenirNextLTPro-UltLt#AvenirNextLTPro-UltLt.svg') format('svg');
 }
 @font-face {
   font-family: 'AvenirNextLTPro-Medium';
@@ -6036,7 +6036,7 @@ td.visible-print {
 }
 @font-face {
   font-family: 'AvenirNextLTPro-Medium';
-  src: url('../fonts/AvenirNextLTPro-Medium.woff') format('woff'), url('../fonts/AvenirNextLTPro-Medium.svg') format('svg');
+  src: url('../fonts/AvenirNextLTPro-Medium.woff') format('woff'), url('../fonts/AvenirNextLTPro-Medium.svg#/AvenirNextLTPro-Medium') format('svg');
 }
 /*////////////////////////////////
 	      H E L P E R S 
@@ -6062,7 +6062,7 @@ td.visible-print {
 header {
   height: 45px;
   line-height: 44px;
-  background: #f6f2ef;
+  background-color: transparent;
   position: fixed;
   top: 0;
   width: 100vw;
@@ -6097,7 +6097,7 @@ header ul li {
 header ul li a {
   font-family: 'DIN-Light', helvetica, sans-serif;
   font-size: 1.6em;
-  color: #000000;
+  color: white;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -6161,6 +6161,11 @@ body #trigger {
 .landing .background {
   width: 100%;
   height: auto;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 .landing h1 {
   text-align: right;
@@ -6174,12 +6179,12 @@ body #trigger {
 }
 .landing a.arrow-down {
   position: absolute;
-  bottom: 66px;
-  right: 63px;
-  background: url(../images/arrow-down.png) center center;
-  width: 63px;
-  height: 26px;
+  bottom: 65px;
+  right: 65px;
+  background: url(../images/arrow-down.png) no-repeat center center;
+  padding: 35px;
   z-index: 9;
+  display: block;
 }
 .landing a.arrow-down:hover {
   opacity: .8;
@@ -6193,12 +6198,8 @@ body #trigger {
   left: 0;
   width: 100vw;
   height: 100vh;
+  margin-top: 45px;
   padding-left: 50px;
-}
-@-moz-document url-prefix() {
-  height: calc(100vh);
-  box-sizing: unset;
-  padding-bottom: 40px;
 }
 .main-content h2 {
   font-family: 'DIN-Light', helvetica, sans-serif;

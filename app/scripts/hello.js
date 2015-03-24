@@ -10,7 +10,7 @@ $(document).ready(function(){
 	new ScrollMagic.Scene({
         triggerElement: '#trigger',
         triggerHook: 'onEnter',
-        duration: 350
+        duration: 750
     })
 	.addTo(controller)
 	.setTween(tmax_tl);

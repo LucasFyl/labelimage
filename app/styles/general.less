@@ -33,6 +33,13 @@ body {
 		width: 100%;
 		height: auto;
 	
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+
+
 		// @media screen and (max-width: 1370px) {
 		// 	height: 100%;
 		// 	width: auto;
@@ -51,10 +58,10 @@ body {
 	}
 	a.arrow-down {
 		position: absolute;
-		bottom: 66px;right: 63px;
-		background: url(../images/arrow-down.png) center center;
-		width: 63px;height: 26px;
-		z-index: 9;
+		bottom: 65px;right: 65px;
+		background: url(../images/arrow-down.png) no-repeat center center;
+		padding: 35px;
+		z-index: 9; display: block;
 		&:hover {
 			opacity: .8;
 			text-decoration: none;
@@ -70,17 +77,15 @@ body {
 	width: 100vw;
 	// height: ~"calc(100vh - 45px)";
 	height: 100vh;
-	// padding-top: 45px;
+	margin-top: 45px;
+	padding-left: 50px;
 
 	// Firefox fix:
-	@-moz-document url-prefix() { 
-		height: calc(100vh);
-		box-sizing: unset;
-		padding-bottom: 40px;
-	}
-	
-	// /firefox
-	padding-left: 50px;
+	// @-moz-document url-prefix() { 
+	// 	height: calc(100vh);
+	// 	box-sizing: unset;
+	// 	padding-bottom: 40px;
+	// }
 
 	h2 {
 		font-family: @DLight;
