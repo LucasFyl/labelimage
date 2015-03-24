@@ -1,0 +1,63 @@
+/*////////////////////////////////
+	       H E A D E R  
+////////////////////////////////*/
+header {
+	height: 45px;line-height: 44px;
+	background: @bg;
+	position: fixed; top: 0;
+	width: 100vw;
+	overflow: hidden;
+	z-index: 99;
+	a.logo {
+		width: 108px;
+		height: 45px;
+		display: inline-block;
+		background: url(../images/logo.png) no-repeat center left;
+		float: left;
+	}
+	nav {
+		width: auto;
+		height: 45px;
+		left: 50%;
+	    margin-left: -330px;
+	    position: absolute;
+	    width: auto;
+	}
+	ul {
+		list-style-type: none;
+		padding: 0;margin: 0;
+
+		li {
+			a {
+				font-family: @DLight;
+				font-size: 1.6em;
+				color: @blk;
+				letter-spacing: 2px;
+				text-transform: uppercase;
+				&:hover {text-decoration: none;color: @blk;}
+			}
+			display: inline-block;
+			line-height: 45px;
+			padding: 0 20px;
+			position: relative;
+			&:first-child {
+				padding-left: 0;
+			}
+			&:last-child {
+				padding-right: 0;
+				&:after {
+					content: none;
+				}
+			}
+			&:after {
+				content: " ";
+				height: 12px;
+				width: 1px;
+				background: @orange;
+				
+				position: absolute;
+				left: 100%;top: 15px;
+			}
+		}
+	}
+}
