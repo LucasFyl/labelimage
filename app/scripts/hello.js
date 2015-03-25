@@ -14,7 +14,14 @@ $(document).ready(function(){
         triggerHook: 0,
         duration: '100%'
     })
-	.setTween(TweenMax.to('.landing .background', 0.5, {marginTop:'-60%',ease:Linear.easeNone}))
+	.setTween(TweenMax.to('.landing .background', 0.5, {top:'-75%',ease:Linear.easeNone}))
 	// .addIndicators({name: 'background'})
 	.addTo(controller);
+
+	$('.container-fluid').on("click", "a.arrow-down",function(){
+		// $("html, body").animate({ scrollTop: $(document).height() }, 1000);
+		var wH = $(window).height();
+		TweenLite.to(window, 1, {scrollTo:{y:wH}, ease:Power2.easeInOut});
+	});
+
 });

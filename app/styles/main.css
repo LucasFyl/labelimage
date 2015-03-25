@@ -6178,18 +6178,18 @@ body #trigger {
   font-family: 'AvenirNextLTPro-UltLt', helvetica, sans-serif;
   letter-spacing: 17px;
 }
-.landing a.arrow-down {
+a.arrow-down {
   position: fixed;
   bottom: 65px;
   right: 65px;
   background: url(../images/arrow-down.png) no-repeat center center;
-  padding: 35px;
-  z-index: 9;
+  z-index: 999;
   display: block;
   width: 63px;
   height: 26px;
+  cursor: pointer;
 }
-.landing a.arrow-down:hover {
+a.arrow-down:hover {
   opacity: .8;
   text-decoration: none;
 }

@@ -42,9 +42,7 @@ body {
 		// 	height: 100%;
 		// 	width: auto;
 		// }
-	}
-	// background: url(../images/landing.jpg) no-repeat center center;
-	// background-size: 100%;	
+	}	
 	h1 {
 		text-align: right;
 		color: white;
@@ -54,18 +52,19 @@ body {
 		font-family: @UltLt;
 		letter-spacing: 17px;
 	}
-	a.arrow-down {
-		position: fixed;
-		bottom: 65px;right: 65px;
-		background: url(../images/arrow-down.png) no-repeat center center;
-		padding: 35px;
-		z-index: 9; 
-		display: block;
-		width: 63px;height: 26px;
-		&:hover {
-			opacity: .8;
-			text-decoration: none;
-		}
+
+}
+a.arrow-down {
+	position: fixed;
+	bottom: 65px;right: 65px;
+	background: url(../images/arrow-down.png) no-repeat center center;
+	z-index: 999; 
+	display: block;
+	width: 63px;height: 26px;
+	cursor: pointer;
+	&:hover {
+		opacity: .8;
+		text-decoration: none;
 	}
 }
 .main-content {
