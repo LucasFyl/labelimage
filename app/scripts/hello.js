@@ -13,5 +13,5 @@ $(document).ready(function(){
         duration: 750
     })
 	.addTo(controller)
-	.setTween(tmax_tl);
+	.setTween(scrollAnim);
 });
