@@ -13,8 +13,12 @@ body {
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
     #trigger {
 		position: absolute;
-		bottom: -110px;right: 0;
+		bottom: -200px;right: 0;
 		z-index: 9999;
+    }
+    #trigger3 {
+		position: absolute;
+		bottom: 200px; right: 0;
     }
 }
 .container-fluid.outer {
@@ -71,7 +75,7 @@ a.arrow-down {
 .main-content {
 	background-color:@bg; 
 	position: absolute;
-	z-index: 1;
+	z-index: 1000;
 	top: 100%; left: 0;
 
 	width: 100vw;
@@ -139,4 +143,11 @@ a.arrow-down {
 		text-align: right;
 		margin-top: 40px;
 	}
+}
+.fadeIn {
+	opacity: 0;
+}
+.anim-from-bottom {
+	opacity: 0;
+	margin-top: 10px;
 }
