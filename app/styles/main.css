@@ -6160,11 +6160,13 @@ body #trigger {
 .landing .background {
   width: 100%;
   height: auto;
-  position: absolute;
+  position: fixed;
   z-index: -1;
   top: 0;
   left: 0;
   right: 0;
+  bottom: 0;
+  margin: auto;
 }
 .landing h1 {
   text-align: right;
@@ -6199,7 +6201,6 @@ body #trigger {
   left: 0;
   width: 100vw;
   height: 100vh;
-  margin-top: 45px;
   padding-left: 50px;
 }
 .main-content h2 {
@@ -6242,9 +6243,11 @@ body #trigger {
 }
 .main-content p.bold {
   font-family: 'AvenirNextLTPro-Medium', helvetica, sans-serif;
-  font-size: 1.8em;
+  font-size: 1.4em;
+  text-transform: uppercase;
   line-height: 35px;
   text-align: right;
+  letter-spacing: .5px;
 }
 .main-content p:not(.bold) {
   font-family: 'AvenirNextLTPro-Regular', helvetica, sans-serif;

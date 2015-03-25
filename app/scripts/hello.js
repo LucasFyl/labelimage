@@ -1,18 +1,20 @@
 $(document).ready(function(){
 
-	// TweenMax.to('.landing h1',0,{opacity:1});
-	$('.landing h1').css('opacity', '1');
-
-	$('.landing a').on('click',function(){
-		landingAnim();
-	});
-	
 	new ScrollMagic.Scene({
         triggerElement: '#trigger',
-        triggerHook: 0.85,
+        triggerHook: 1,
         duration: '25%'
     })
-	.setTween(tween)
-	.addIndicators()
+	.setTween(TweenMax.to('.landing h1', 0.5, {opacity:0}))
+	// .addIndicators({name: 'headline'})
+	.addTo(controller);
+
+	new ScrollMagic.Scene({
+        triggerElement: '#trigger2',
+        triggerHook: 0,
+        duration: '100%'
+    })
+	.setTween(TweenMax.to('.landing .background', 0.5, {marginTop:'-60%',ease:Linear.easeNone}))
+	// .addIndicators({name: 'background'})
 	.addTo(controller);
 });
