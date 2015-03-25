@@ -9,9 +9,10 @@ $(document).ready(function(){
 	
 	new ScrollMagic.Scene({
         triggerElement: '#trigger',
-        triggerHook: 'onEnter',
-        duration: 750
+        triggerHook: 0.85,
+        duration: '25%'
     })
-	.addTo(controller)
-	.setTween(scrollAnim);
+	.setTween(tween)
+	.addIndicators()
+	.addTo(controller);
 });

@@ -6062,7 +6062,7 @@ td.visible-print {
 header {
   height: 45px;
   line-height: 44px;
-  background-color: transparent;
+  background: #f6f2ef;
   position: fixed;
   top: 0;
   width: 100vw;
@@ -6072,12 +6072,8 @@ header {
 header a.logo {
   width: 108px;
   height: 45px;
-  display: inline-block;
-  background: url(../images/logo-blanc.png) no-repeat center left;
   float: left;
-  background-size: 100%;
-}
-header a.logo.blk {
+  display: inline-block;
   background: url(../images/logo.png) no-repeat center left;
   background-size: 100%;
 }
@@ -6102,7 +6098,7 @@ header ul li {
 header ul li a {
   font-family: 'DIN-Light', helvetica, sans-serif;
   font-size: 1.6em;
-  color: white;
+  color: #000000;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -6147,8 +6143,6 @@ body #trigger {
   position: absolute;
   bottom: -110px;
   right: 0;
-  width: 100px;
-  height: 1px;
   z-index: 9999;
 }
 .container-fluid.outer {
