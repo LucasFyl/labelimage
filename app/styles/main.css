@@ -6060,8 +6060,8 @@ td.visible-print {
 	       H E A D E R  
 ////////////////////////////////*/
 header {
-  height: 45px;
-  line-height: 44px;
+  height: 50px;
+  line-height: 50px;
   background: #f6f2ef;
   position: fixed;
   top: 0;
@@ -6071,14 +6071,18 @@ header {
 }
 header a.logo {
   width: 115px;
-  height: 45px;
+  height: 50px;
   float: left;
   display: inline-block;
-  background: url(../images/logo.png) no-repeat center left;
+  background: url(../images/sprite-logo.png) no-repeat center left;
   background-size: 100%;
+  background-position: 0 100%;
+}
+header a.logo.white {
+  background-position: 0 0;
 }
 header nav {
-  height: 45px;
+  height: 50px;
   left: 50%;
   margin-left: -330px;
   position: absolute;
@@ -6091,7 +6095,7 @@ header ul {
 }
 header ul li {
   display: inline-block;
-  line-height: 45px;
+  line-height: 50px;
   padding: 0 20px;
   position: relative;
 }
@@ -6122,7 +6126,7 @@ header ul li:after {
   background: #eb5c08;
   position: absolute;
   left: 100%;
-  top: 15px;
+  top: 20px;
 }
 /*////////////////////////////////
 	    G E N E R A L

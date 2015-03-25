@@ -2,7 +2,8 @@
 	       H E A D E R  
 ////////////////////////////////*/
 header {
-	height: 45px;line-height: 44px;
+	@headerHeight: 50px;
+	height: @headerHeight;line-height: @headerHeight;
 	background: @bg;
 	// background-color: transparent;
 	position: fixed; top: 0;
@@ -11,15 +12,19 @@ header {
 	z-index: 99;
 	a.logo {
 		width: 115px;
-		height: 45px; // Orig 50
+		height: @headerHeight; // Orig 50
 		float: left;	
 		display: inline-block;
-		background: url(../images/logo.png) no-repeat center left;
+		background: url(../images/sprite-logo.png) no-repeat center left;
 		background-size: 100%;
+		background-position: 0 100%;
+		&.white {
+			background-position: 0 0;
+		}
 	}
 	nav {
 		width: auto;
-		height: 45px;
+		height: @headerHeight;
 		left: 50%;
 	    margin-left: -330px;
 	    position: absolute;
@@ -41,7 +46,7 @@ header {
 				&:hover {text-decoration: none;color: @blk;}
 			}
 			display: inline-block;
-			line-height: 45px;
+			line-height: @headerHeight;
 			padding: 0 20px;
 			position: relative;
 			&:first-child {
@@ -60,7 +65,7 @@ header {
 				background: @orange;
 				
 				position: absolute;
-				left: 100%;top: 15px;
+				left: 100%;top: 20px;
 			}
 		}
 	}
