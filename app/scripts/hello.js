@@ -5,7 +5,7 @@ $(document).ready(function(){
         triggerHook: 1,
         duration: '25%'
     })
-	.setTween(TweenMax.to('.landing h1', 0.5, {opacity:0}))
+	.setTween(TweenMax.to('.landing h1', 0.5, {opacity:0,ease:Power2.easeOut}))
 	// .addIndicators({name: 'headline'})
 	.addTo(controller);
 
