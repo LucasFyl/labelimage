@@ -13,8 +13,12 @@ body {
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
     #trigger {
 		position: absolute;
-		bottom: -110px;right: 0;
+		bottom: -200px;right: 0;
 		z-index: 9999;
+    }
+    #trigger3 {
+		position: absolute;
+		bottom: 100px; right: 0;
     }
 }
 .container-fluid.outer {
@@ -71,13 +75,13 @@ a.arrow-down {
 .main-content {
 	background-color:@bg; 
 	position: absolute;
-	z-index: 1;
+	z-index: 1000;
 	top: 100%; left: 0;
 
 	width: 100vw;
 	// height: ~"calc(100vh - 45px)";
 	height: 100vh;
-	padding-left: 50px;
+	padding-left: 55px;
 
 	// Firefox fix:
 	// @-moz-document url-prefix() { 
@@ -85,7 +89,18 @@ a.arrow-down {
 	// 	box-sizing: unset;
 	// 	padding-bottom: 40px;
 	// }
-
+	.h2-bloc {
+		margin-bottom: 19.01em;
+		position: relative;
+		div {
+			position: absolute;
+			right: 90px;
+		}
+	}
+	.asset-bg {
+		position: absolute;
+		right: 60px;bottom: 35px;
+	}
 	h2 {
 		font-family: @DLight;
 		color: @greyD;
@@ -97,7 +112,7 @@ a.arrow-down {
 			margin-top: 50px;
 		}
 		&:nth-child(2) {
-			padding-left: 3em;
+			padding-left: 3.65em;
 		}
 	}
 	h3 {
@@ -139,4 +154,11 @@ a.arrow-down {
 		text-align: right;
 		margin-top: 40px;
 	}
+}
+.fadeIn {
+	opacity: 0;
+}
+.anim-from-bottom {
+	opacity: 0;
+	margin-top: 10px;
 }

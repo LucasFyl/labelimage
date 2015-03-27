@@ -18,34 +18,38 @@
   <body>
 
     <header>
-      <div class="container">
-        <a href="index.html" class="logo"></a>
-        <nav>
-          <ul>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Nos prestations</a></li>
-            <li><a href="#">Tarifs</a></li>
-            <li><a href="#">Actualites</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+      <a href="index.html" class="logo fadeIn"></a>
+      <nav>
+        <ul>
+          <li class="anim-from-bottom"><span></span><a href="#">Accueil</a></li>
+          <li class="anim-from-bottom"><span></span><a href="#">Nos prestations</a></li>
+          <li class="anim-from-bottom"><span></span><a href="#">Tarifs</a></li>
+          <li class="anim-from-bottom"><span></span><a href="#">Actualites</a></li>
+          <li class="anim-from-bottom"><span></span><a href="#">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <div class="container-fluid outer">
-      <a href="#" class="arrow-down"></a>
+      <a href="#" class="arrow-down fadeIn"></a>
       <div class="landing">
-        <h1 style='opacity:1;'>traitement</h1>
+        <h1 class="fadeIn">traitement</h1>
         <img src="images/landing-format.jpg" alt="" class="background"/> 
       </div>
       <div id="trigger"></div>
       <div id="trigger2"></div>
+      <div id="trigger3"></div>
       <div class="main-content">
         <div class="container-fluid">
+          <div class="asset-bg">
+            <img src="images/asset-stylet.png" alt="Traitement num&eacute;rique">
+          </div>
           <div class="row">
-            <div class="col-xs-12 col-sm-6 pull-right">
-              <h2>Optimiser</h2>
-              <h2>vos fichiers</h2>
+            <div class="col-xs-12 col-sm-6 pull-right h2-bloc">
+              <div>
+                <h2>Optimiser</h2>
+                <h2>vos fichiers</h2>
+              </div>
             </div>          
           </div>
           <div class="row">
@@ -57,7 +61,7 @@
               Mise au point de la chromie et de la densité, nettoyage, et recadrage<br/>
               Nous adaptons le fichier à l'espace couleur de votre choix, RVB ou CMJN<br/>
               Pour l'espace CMJN, nous proposons une épreuve numérique de contrôle certifiée Fogra, réalisée sur un Epson Stylus Pro 3880.</p>
-              <p>La simulation Fogra 39 est la plus utilisée dans l'échange d'épreuve contratuelle Elle est le reflet d'une impression sur un papier couché mat/brillant sur une presse Offset calibrée suivant la norme ISO 12647-2</p>
+              <p>La simulation Fogra 39 est la plus utilisée dans l'échange d'épreuve contratuelle<br>Elle est le reflet d'une impression sur un papier couché mat/brillant sur une presse Offset calibrée suivant la norme ISO 12647-2</p>
             </div>
           </div>
         </div>
@@ -84,10 +88,12 @@
         <script src="bower_components/gsap/src/minified/jquery.gsap.min.js"></script>
         <script src="bower_components/gsap/src/minified/TweenMax.min.js"></script>
         <script src="bower_components/gsap/src/minified/plugins/ScrollToPlugin.min.js"></script>
+        <script src="bower_components/gsap/src/minified/plugins/CSSRulePlugin.min.js"></script>
         <script src="bower_components/ScrollMagic/scrollmagic/uncompressed/ScrollMagic.js"></script>
         <script src="bower_components/ScrollMagic/scrollmagic/uncompressed/plugins/jquery.ScrollMagic.js"></script>
         <script src="bower_components/ScrollMagic/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
         <script src="bower_components/ScrollMagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+        <!-- <script src="scripts/chromeSmoothScroll.js"></script>-->
         <script src="scripts/main.js"></script>
         <script src="scripts/hello.js"></script>
         <!-- endbuild -->
