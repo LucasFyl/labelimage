@@ -25,11 +25,11 @@ $(document).ready(function(){
 
 	new ScrollMagic.Scene({
         triggerElement: '#trigger3',
-        triggerHook: 0.2,
+        triggerHook: 0,
         duration: '20%'
     })
 	.setTween(TweenMax.to('header', 0.5, {opacity:0,ease:Power2.easeOut}))
-	// .addIndicators({name: 'header'})
+	.addIndicators({name: 'header'})
 	.addTo(controller);
 
 
