@@ -29,7 +29,7 @@ $(document).ready(function(){
         duration: '20%'
     })
 	.setTween(TweenMax.to('header', 0.5, {opacity:0,ease:Power2.easeOut}))
-	.addIndicators({name: 'header'})
+	// .addIndicators({name: 'header'})
 	.addTo(controller);
 
 
