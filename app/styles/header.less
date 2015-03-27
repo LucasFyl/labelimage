@@ -2,10 +2,10 @@
 	       H E A D E R  
 ////////////////////////////////*/
 header {
-	@headerHeight: 50px;
+	@headerHeight: 45px;
 	height: @headerHeight;line-height: @headerHeight;
-	// background: @bg;
-	background-color: transparent;
+	background: @bg;
+	// background-color: transparent;
 	position: fixed; top: 0;
 	width: 100vw;
 	overflow: hidden;
@@ -17,7 +17,7 @@ header {
 		display: inline-block;
 		background: url(../images/sprite-logo.png) no-repeat center left;
 		background-size: 100%;
-		background-position: 0 0;
+		background-position: 0 100%;
 		margin-left: 55px;
 	}
 	nav {
@@ -36,14 +36,13 @@ header {
 			a {
 				font-family: @DLight;
 				font-size: 1.6em;
-				// color: @blk;
-				color: white;
+				color: @blk;
+				// color: white;
 				letter-spacing: 2px;
 				text-transform: uppercase;
-				// text-shadow: 0px 1px 1px #fff;
 				display: block;
 
-				&:hover, &:active {text-decoration: none;color: white;}
+				&:hover, &:active {text-decoration: none;color: @blk;}
 			}
 			display: inline-block;
 			line-height: @headerHeight;
