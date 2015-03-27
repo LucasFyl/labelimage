@@ -4,8 +4,8 @@ var controller = new ScrollMagic.Controller();
 $(function(){   
 
     var $window = $(window);
-    var scrollTime = 1.2;
-    var scrollDistance = 100;
+    var scrollTime = 1.5;
+    var scrollDistance = 200;
 
     $window.on("mousewheel DOMMouseScroll", function(event){
 
