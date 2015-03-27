@@ -6077,11 +6077,12 @@ header a.logo {
   background: url(../images/sprite-logo.png) no-repeat center left;
   background-size: 100%;
   background-position: 0 0;
+  margin-left: 55px;
 }
 header nav {
   height: 50px;
   left: 50%;
-  margin-left: -330px;
+  margin-left: -337px;
   position: absolute;
   width: auto;
 }
@@ -6210,7 +6211,10 @@ a.arrow-down:hover {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding-left: 50px;
+  padding-left: 55px;
+}
+.main-content .h2-bloc {
+  margin-right: 65px;
 }
 .main-content h2 {
   font-family: 'DIN-Light', helvetica, sans-serif;
@@ -6224,7 +6228,7 @@ a.arrow-down:hover {
   margin-top: 50px;
 }
 .main-content h2:nth-child(2) {
-  padding-left: 3em;
+  padding-left: 3.65em;
 }
 .main-content h3 {
   font-family: 'DIN-Medium', helvetica, sans-serif;
