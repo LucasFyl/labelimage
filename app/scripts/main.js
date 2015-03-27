@@ -4,7 +4,7 @@ var controller = new ScrollMagic.Controller();
 $(function(){   
 
     var $window = $(window);
-    var scrollTime = 1.5;
+    var scrollTime = 1.2;
     var scrollDistance = 200;
 
     $window.on("mousewheel DOMMouseScroll", function(event){
@@ -17,7 +17,7 @@ $(function(){
 
         TweenMax.to($window, scrollTime, {
             scrollTo : { y: finalScroll, autoKill:true },
-                ease: Power1.easeOut,
+                ease: Power4.easeOut,
                 overwrite: 5                            
             });
 
