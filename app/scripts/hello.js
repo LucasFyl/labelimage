@@ -6,15 +6,6 @@ $(document).ready(function(){
 	TweenMax.staggerTo('nav ul li span', 0.5, {opacity:1,top:16,ease:Power2.easeOut,delay:0.6});
 
 	new ScrollMagic.Scene({
-        triggerElement: '#trigger',
-        triggerHook: 1,
-        duration: '25%'
-    })
-	.setTween(TweenMax.to('.landing h1', 0.5, {opacity:0,ease:Power2.easeOut}))
-	// .addIndicators({name: 'headline'})
-	.addTo(controller);
-
-	new ScrollMagic.Scene({
         triggerElement: '#trigger2',
         triggerHook: 0,
         duration: '100%'

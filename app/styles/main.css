@@ -6144,30 +6144,26 @@ body {
   -webkit-font-smoothing: antialiased;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }
-body #trigger {
-  position: absolute;
-  bottom: -200px;
-  right: 0;
-  z-index: 9999;
+.fadeIn {
+  opacity: 0;
 }
-body #trigger3 {
-  position: absolute;
-  bottom: 45px;
-  right: 0;
+.anim-from-bottom {
+  opacity: 0;
+  margin-top: 10px;
 }
-.container-fluid.outer {
+#prestation .container-fluid.outer {
   width: 100vw;
   height: 100vh;
   position: relative;
 }
-.landing {
+#prestation .landing {
   width: 100%;
   height: 100vh;
   position: absolute;
   top: 0;
   z-index: -1;
 }
-.landing .background {
+#prestation .landing .background {
   width: 100%;
   height: auto;
   position: fixed;
@@ -6178,7 +6174,7 @@ body #trigger3 {
   bottom: 0;
   margin: auto;
 }
-.landing h1 {
+#prestation .landing h1 {
   text-align: right;
   color: white;
   position: fixed;
@@ -6188,7 +6184,7 @@ body #trigger3 {
   font-family: 'AvenirNextLTPro-UltLt', helvetica, sans-serif;
   letter-spacing: 17px;
 }
-a.arrow-down {
+#prestation a.arrow-down {
   position: fixed;
   bottom: 65px;
   right: 65px;
@@ -6199,11 +6195,11 @@ a.arrow-down {
   height: 26px;
   cursor: pointer;
 }
-a.arrow-down:hover {
+#prestation a.arrow-down:hover {
   opacity: .8;
   text-decoration: none;
 }
-.main-content {
+#prestation .main-content {
   background-color: #f6f2ef;
   position: absolute;
   z-index: 1000;
@@ -6211,22 +6207,28 @@ a.arrow-down:hover {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding-left: 55px;
 }
-.main-content .h2-bloc {
+#prestation .main-content .container-fluid {
+  background: #f6f2ef;
+}
+#prestation .main-content .h2-bloc {
   margin-bottom: 19.01em;
   position: relative;
+  padding-left: 0;
 }
-.main-content .h2-bloc div {
-  position: absolute;
-  right: 90px;
+#prestation .main-content .h2-bloc div {
+  padding-right: 50px;
 }
-.main-content .asset-bg {
+#prestation .main-content .row > div:nth-child(2) {
+  padding-left: 50px;
+  margin-top: 227px;
+}
+#prestation .main-content .asset-bg {
   position: absolute;
   right: 60px;
   bottom: 35px;
 }
-.main-content h2 {
+#prestation .main-content h2 {
   font-family: 'DIN-Light', helvetica, sans-serif;
   color: #999899;
   font-size: 5.83em;
@@ -6234,13 +6236,13 @@ a.arrow-down:hover {
   text-transform: uppercase;
   white-space: nowrap;
 }
-.main-content h2:first-child {
+#prestation .main-content h2:first-child {
   margin-top: 50px;
 }
-.main-content h2:nth-child(2) {
+#prestation .main-content h2:nth-child(2) {
   padding-left: 3.65em;
 }
-.main-content h3 {
+#prestation .main-content h3 {
   font-family: 'DIN-Medium', helvetica, sans-serif;
   font-size: 2em;
   color: #eb5c08;
@@ -6248,23 +6250,23 @@ a.arrow-down:hover {
   letter-spacing: 1px;
   margin-top: 40px;
 }
-.main-content h4 {
+#prestation .main-content h4 {
   font-family: 'DIN-Light', helvetica, sans-serif;
   font-size: 2.8em;
   color: #8b8b8b;
   letter-spacing: 1px;
 }
-.main-content h4:nth-child(2) {
+#prestation .main-content h4:nth-child(2) {
   margin-top: 40px;
   margin-bottom: 0;
 }
-.main-content h4:nth-child(3) {
+#prestation .main-content h4:nth-child(3) {
   padding-left: 2.5em;
   white-space: nowrap;
   margin-top: 0;
   margin-bottom: 40px;
 }
-.main-content p.bold {
+#prestation .main-content p.bold {
   font-family: 'AvenirNextLTPro-Medium', helvetica, sans-serif;
   font-size: 1.4em;
   text-transform: uppercase;
@@ -6272,18 +6274,77 @@ a.arrow-down:hover {
   text-align: right;
   letter-spacing: .5px;
 }
-.main-content p:not(.bold) {
+#prestation .main-content p:not(.bold) {
   font-family: 'AvenirNextLTPro-Regular', helvetica, sans-serif;
   font-size: 1.7em;
   line-height: 26px;
   text-align: right;
   margin-top: 40px;
 }
-.fadeIn {
-  opacity: 0;
+#prestation #trigger {
+  position: absolute;
+  bottom: -200px;
+  right: 0;
+  z-index: 9999;
 }
-.anim-from-bottom {
-  opacity: 0;
-  margin-top: 10px;
+#prestation #trigger3 {
+  position: absolute;
+  bottom: 45px;
+  right: 0;
+}
+#prestation.scan .landing h1 {
+  right: 355px;
+  bottom: 110px;
+}
+#prestation.scan #trigger {
+  bottom: 0;
+}
+#prestation.scan .main-content .asset-bg {
+  right: 0;
+  bottom: 0;
+}
+#prestation.scan .main-content .row > div:nth-child(2) {
+  margin-top: 215px;
+}
+#prestation.scan .main-content .row > div:nth-child(2) p {
+  text-align: left;
+  margin-top: 0;
+}
+#prestation.scan .main-content .row > div:nth-child(2) p.bold {
+  text-transform: none;
+  line-height: 1.3;
+  margin-bottom: 10px;
+  font-size: 1.7em;
+}
+#prestation.scan .main-content .row > div:nth-child(2) p:not(.bold) {
+  margin-bottom: 60px !important;
+}
+#prestation.scan .main-content .row > div:nth-child(2) p.bold + p span {
+  text-transform: uppercase;
+  color: black;
+  font-family: 'AvenirNextLTPro-Medium', helvetica, sans-serif;
+  font-size: 0.824em;
+}
+#prestation.scan .main-content .row > div:nth-child(2) p:last-child {
+  margin-bottom: 0 !important;
+}
+#prestation.scan .main-content h2 {
+  letter-spacing: 5px;
+}
+#prestation.scan .main-content h2:nth-child(2) {
+  padding-left: 0;
+  margin-top: 0;
+  text-align: center;
+}
+#prestation.scan .main-content h2:last-child {
+  margin-top: 0;
+  text-align: right;
+}
+#prestation.scan .main-content h3 {
+  margin-bottom: 35px;
+}
+#prestation.scan .main-content h4 {
+  font-size: 2.4em;
+  margin-bottom: 50px;
 }
 /*# sourceMappingURL=/styles/main.css.map */
