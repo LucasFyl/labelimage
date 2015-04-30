@@ -80,6 +80,10 @@
 		.asset-bg {
 			position: absolute;
 			right: 60px;bottom: 35px;
+			max-width: ~"calc(50% - 60px)";
+			img {
+				width: 100%;
+			}
 		}
 		h2 {
 			font-family: @DLight;
@@ -159,6 +163,7 @@
 		.asset-bg {
 			right: 0;
 			bottom: 0;
+			max-width: 50%;
 		}
 		.row > div {
 			&:nth-child(2) {
