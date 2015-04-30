@@ -6264,7 +6264,7 @@ h1 {
   z-index: 999;
 }
 #prestations .container-fluid.outer .toPresta a:hover + h1 {
-  color: #eb5c08;
+  color: white;
 }
 #prestations .container-fluid.outer .toPresta h1 {
   position: absolute;
@@ -6272,6 +6272,7 @@ h1 {
   z-index: 998;
   bottom: 70px;
   left: 50%;
+  color: #eb5c08;
   font-size: 5.8em;
   letter-spacing: 5px;
   transition: all 0.3s ease-in-out;
@@ -6311,6 +6312,18 @@ h1 {
 }
 #prestations .container-fluid.outer .toPresta img.nb {
   z-index: 99;
+}
+#prestations .container-fluid.outer .toPresta:last-child h1:after {
+  content: "contre collage et encadrement";
+  font-size: 11px;
+  color: white;
+  font-family: 'DIN-Medium', helvetica, sans-serif;
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: -10px;
+  left: 28%;
+  white-space: nowrap;
+  text-transform: uppercase;
 }
 /*******************************
 	S I N G L E  P R E S T A
