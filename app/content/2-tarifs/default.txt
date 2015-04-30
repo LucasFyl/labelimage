@@ -1,0 +1,5 @@
+Title: Tarifs
+
+----
+
+Text: Voilà nos tarifs
