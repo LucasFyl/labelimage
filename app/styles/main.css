@@ -6062,12 +6062,12 @@ td.visible-print {
 header {
   height: 45px;
   line-height: 45px;
-  background: #f6f2ef;
+  background: #000;
   position: fixed;
   top: 0;
   width: 100vw;
   overflow: hidden;
-  z-index: 99;
+  z-index: 9999;
 }
 header a.logo {
   width: 115px;
@@ -6153,6 +6153,76 @@ h1 {
   height: 100vh;
   position: relative;
 }
+.loader {
+  width: 100%;
+  height: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 9998;
+  background: black;
+  margin-top: 22.5px;
+}
+.loader .spin {
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 1000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 1000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 1000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  animation-name: spin;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.loader:before {
+  content: ' ';
+  background: black;
+  width: 100vw;
+  height: 45px;
+  position: fixed;
+  top: 0;
+}
+@-ms-keyframes spin {
+  from {
+    -ms-transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .fadeIn {
   opacity: 0;
 }
@@ -6160,15 +6230,7 @@ h1 {
   opacity: 0;
   margin-top: 10px;
 }
-/*******************************
-	 P R E S T A T I O N S 
-*******************************/
-#prestations .container-fluid.outer {
-  margin-top: 45px;
-  height: calc(100vh - 45px);
-  overflow: hidden;
-}
-#prestations .container-fluid.outer .croix {
+.croix {
   background: url(../images/croix.png) no-repeat center center;
   position: absolute;
   width: 44px;
@@ -6178,7 +6240,15 @@ h1 {
   right: 0;
   bottom: 0;
   margin: auto;
-  z-index: 9997;
+  z-index: 997;
+}
+/*******************************
+	 P R E S T A T I O N S 
+*******************************/
+#prestations .container-fluid.outer {
+  margin-top: 45px;
+  height: calc(100vh - 45px);
+  overflow: hidden;
 }
 #prestations .container-fluid.outer .toPresta {
   width: 50%;
@@ -6191,7 +6261,7 @@ h1 {
   position: absolute;
   width: 100%;
   height: 100%;
-  z-index: 9999;
+  z-index: 999;
 }
 #prestations .container-fluid.outer .toPresta a:hover + h1 {
   color: #eb5c08;
@@ -6199,7 +6269,7 @@ h1 {
 #prestations .container-fluid.outer .toPresta h1 {
   position: absolute;
   text-transform: lowercase;
-  z-index: 9998;
+  z-index: 998;
   bottom: 70px;
   left: 50%;
   font-size: 5.8em;
