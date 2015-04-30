@@ -30,8 +30,32 @@
       </nav>
     </header>
 
-    <div class="container-fluid">
-
+    <div class="container-fluid outer">
+      <span class="croix"></span>
+      <section class="toPresta">
+        <a href="scan"></a>
+        <h1>Scan</h1>
+        <img src="images/bg-scan-nb.jpg" class='nb' alt="Scan">
+        <img src="images/bg-scan.jpg" alt="Scan">
+      </section>
+      <section class="toPresta">
+        <a href="traitement"></a>
+        <h1>Traitement</h1>
+        <img src="images/bg-traitement-nb.jpg" class='nb' alt="traitement">
+        <img src="images/bg-traitement.jpg" alt="traitement">
+      </section>
+      <section class="toPresta">
+        <a href="tirages"></a>
+        <h1>Tirages</h1>
+        <img src="images/bg-tirages-nb.jpg" class='nb' alt="tirages">
+        <img src="images/bg-tirages.jpg" alt="tirages">
+      </section>
+      <section class="toPresta">
+        <a href="finitions"></a>
+        <h1>Finitions</h1>
+        <img src="images/bg-finitions-nb.jpg" class='nb' alt="finitions">
+        <img src="images/bg-finitions.jpg" alt="finitions">
+      </section>
     </div>
 
 
@@ -65,7 +89,33 @@
         <!-- endbuild -->
         <script>
           $(document).ready(function() {
-            // 
+            ratioImage();
+            $(window).on('resize', ratioImage);
+
+            function ratioImage() {
+              $('.toPresta').each(function(){
+                var box = $(this),
+                    image = $(this).find('img');
+                if ( box.height() > image.height() ) {
+                  TweenMax.set(image, {minHeight:'100%'});
+                } 
+                if ( box.width() > image.width() ) {
+                  TweenMax.set(image, {minWidth:'100%'});
+                }
+              });
+            }
+            $(document).on({
+              mouseenter: function () {
+                var bgNb = $(this).find('.nb');
+                TweenMax.to(bgNb, 1, {opacity:0,ease:Power3.easeInOut});
+              },
+
+              mouseleave: function () {
+                var bgNb = $(this).find('.nb');
+                TweenMax.to(bgNb, 1, {opacity:1,ease:Power3.easeInOut});
+              }
+            }, '.toPresta');
+
           })
         </script>
         <!-- build:js scripts/vendor/bootstrap.js 

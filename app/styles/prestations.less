@@ -1,8 +1,76 @@
-#prestation {
+/*******************************
+	 P R E S T A T I O N S 
+*******************************/
+#prestations {
 	.container-fluid.outer {
-		width: 100vw; height: 100vh;
-		position: relative;
+		margin-top: @headerHeight;
+		height: ~"calc(100vh - 45px)";
+		overflow: hidden;
+
+		.croix {
+			background: url(../images/croix.png) no-repeat center center;
+			position: absolute;
+			width: 44px;height: 44px;
+			top: 0;left: 0;right: 0;bottom: 0;
+			margin: auto;
+			z-index: 9997;
+		}
+
+		.toPresta {
+			width: 50%; height: 50%;
+			float: left; overflow: hidden;
+			position: relative;
+			
+			a {
+				position: absolute;
+				width: 100%;height: 100%;
+				z-index: 9999;
+				&:hover + h1 {
+					color: @orange;
+				}
+			}
+
+			h1 {
+				position: absolute;
+				text-transform: lowercase;
+				z-index: 9998;
+				bottom: 70px; left: 50%;
+
+				font-size: 5.8em; 
+				letter-spacing: 5px;
+
+				.transition(all 0.3s ease-in-out);
+
+				@media screen and (max-width: @screen-md-max) {
+					left: 40%;
+					.scale(0.7);
+				}
+				@media screen and (max-width: @screen-sm-max) {
+					left: 40%;
+					.scale(0.5);
+				}
+			}
+
+			img {
+				position: absolute;
+				top: 0;left: 0;bottom: 0;right: 0;
+				margin: auto;
+				z-index: 98;
+				&.nb {
+					z-index: 99;
+				}
+			}
+		}
 	}
+}
+
+/*******************************
+	S I N G L E  P R E S T A
+*******************************/
+#prestation {
+	height: 200vh;
+	height: ~"calc(200vh - 45px)";
+
 	.landing {
 		width:100%;
 		height: 100vh;
@@ -21,18 +89,12 @@
 			right: 0;
 			bottom: 0;
 			margin: auto;
-			// @media screen and (max-width: 1370px) {
-			// 	height: 100%;
-			// 	width: auto;
-			// }
 		}	
 		h1 {
 			text-align: right;
-			color: white;
 			position: fixed;
 			right: 50px;bottom: 245px;
 			font-size: 11.3em;
-			font-family: @UltLt;
 			letter-spacing: 17px;
 		}
 

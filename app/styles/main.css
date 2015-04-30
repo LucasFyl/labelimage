@@ -6082,7 +6082,6 @@ header a.logo {
 header nav {
   height: 45px;
   left: 50%;
-  margin-left: -337px;
   position: absolute;
   width: auto;
 }
@@ -6119,6 +6118,9 @@ header ul li:last-child {
 header ul li:last-child span {
   display: none;
 }
+header ul li.active a {
+  color: #eb5c08;
+}
 header ul li span {
   content: " ";
   height: 12px;
@@ -6134,8 +6136,6 @@ header ul li span {
 ////////////////////////////////*/
 body {
   width: 100%;
-  height: 200vh;
-  height: calc(200vh - 45px);
   font-family: 'AvenirNextLTPro-Regular', helvetica, sans-serif;
   font-size: 1em;
   font-size: 10px;
@@ -6144,6 +6144,15 @@ body {
   -webkit-font-smoothing: antialiased;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }
+h1 {
+  color: white;
+  font-family: 'AvenirNextLTPro-UltLt', helvetica, sans-serif;
+}
+.container-fluid.outer {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
 .fadeIn {
   opacity: 0;
 }
@@ -6151,10 +6160,94 @@ body {
   opacity: 0;
   margin-top: 10px;
 }
-#prestation .container-fluid.outer {
-  width: 100vw;
-  height: 100vh;
+/*******************************
+	 P R E S T A T I O N S 
+*******************************/
+#prestations .container-fluid.outer {
+  margin-top: 45px;
+  height: calc(100vh - 45px);
+  overflow: hidden;
+}
+#prestations .container-fluid.outer .croix {
+  background: url(../images/croix.png) no-repeat center center;
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 9997;
+}
+#prestations .container-fluid.outer .toPresta {
+  width: 50%;
+  height: 50%;
+  float: left;
+  overflow: hidden;
   position: relative;
+}
+#prestations .container-fluid.outer .toPresta a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+#prestations .container-fluid.outer .toPresta a:hover + h1 {
+  color: #eb5c08;
+}
+#prestations .container-fluid.outer .toPresta h1 {
+  position: absolute;
+  text-transform: lowercase;
+  z-index: 9998;
+  bottom: 70px;
+  left: 50%;
+  font-size: 5.8em;
+  letter-spacing: 5px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width: 1199px) {
+  #prestations .container-fluid.outer .toPresta h1 {
+    left: 40%;
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+  }
+}
+@media screen and (max-width: 991px) {
+  #prestations .container-fluid.outer .toPresta h1 {
+    left: 40%;
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+  }
+}
+#prestations .container-fluid.outer .toPresta img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  z-index: 98;
+}
+#prestations .container-fluid.outer .toPresta img.nb {
+  z-index: 99;
+}
+/*******************************
+	S I N G L E  P R E S T A
+*******************************/
+#prestation {
+  height: 200vh;
+  height: calc(200vh - 45px);
 }
 #prestation .landing {
   width: 100%;
@@ -6176,12 +6269,10 @@ body {
 }
 #prestation .landing h1 {
   text-align: right;
-  color: white;
   position: fixed;
   right: 50px;
   bottom: 245px;
   font-size: 11.3em;
-  font-family: 'AvenirNextLTPro-UltLt', helvetica, sans-serif;
   letter-spacing: 17px;
 }
 #prestation a.arrow-down {

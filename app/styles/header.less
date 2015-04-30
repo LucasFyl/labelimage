@@ -2,7 +2,6 @@
 	       H E A D E R  
 ////////////////////////////////*/
 header {
-	@headerHeight: 45px;
 	height: @headerHeight;line-height: @headerHeight;
 	background: @bg;
 	// background-color: transparent;
@@ -24,7 +23,6 @@ header {
 		width: auto;
 		height: @headerHeight;
 		left: 50%;
-	    margin-left: -337px;
 	    position: absolute;
 	    width: auto;
 	}
@@ -55,6 +53,11 @@ header {
 				padding-right: 0;
 				span {
 					display: none;
+				}
+			}
+			&.active {
+				a {
+					color: @orange;
 				}
 			}
 			span {
