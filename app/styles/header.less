@@ -11,14 +11,13 @@ header {
 	overflow: hidden;
 	z-index: 9999;
 	a.logo {
-		width: 115px;
+		width: 129px;
 		height: @headerHeight;
 		float: left;	
 		display: inline-block;
-		background: url(../images/sprite-logo.png) no-repeat center left;
+		background: url(../images/logo.png) no-repeat center left;
 		background-size: 100%;
-		background-position: 0 100%;
-		margin-left: 55px;
+		margin-left: 90px;
 	}
 	nav {
 		width: auto;
@@ -33,11 +32,10 @@ header {
 
 		li {
 			a {
-				font-family: @DLight;
-				font-size: 1.6em;
+				font-family: @DReg;
+				font-size: 1.4em;
 				color: @blk;
-				// color: white;
-				letter-spacing: 2px;
+				letter-spacing: 1px;
 				text-transform: uppercase;
 				display: block;
 
@@ -45,7 +43,7 @@ header {
 			}
 			display: inline-block;
 			line-height: @headerHeight;
-			padding: 0 20px;
+			padding: 0 15px;
 			position: relative;
 			&:first-child {
 				padding-left: 0;
@@ -63,7 +61,7 @@ header {
 			}
 			span {
 				content: " ";
-				height: 12px;
+				height: 10px;
 				width: 1px;
 				background: @orange;
 				

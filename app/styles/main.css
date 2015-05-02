@@ -6015,6 +6015,14 @@ td.visible-print {
   src: url('../fonts/DINMed.woff') format('woff'), url('../fonts/DINMed.svg') format('svg');
 }
 @font-face {
+  font-family: 'DIN-Regular';
+  src: url('../fonts/DINReg.eot') format('eot');
+}
+@font-face {
+  font-family: 'DIN-Regular';
+  src: url('../fonts/DINReg.woff') format('woff'), url('../fonts/DINReg.svg') format('svg');
+}
+@font-face {
   font-family: 'AvenirNextLTPro-Regular';
   src: url('../fonts/AvenirNextLTPro-Regular.eot') format('eot');
 }
@@ -6070,14 +6078,13 @@ header {
   z-index: 9999;
 }
 header a.logo {
-  width: 115px;
+  width: 129px;
   height: 45px;
   float: left;
   display: inline-block;
-  background: url(../images/sprite-logo.png) no-repeat center left;
+  background: url(../images/logo.png) no-repeat center left;
   background-size: 100%;
-  background-position: 0 100%;
-  margin-left: 55px;
+  margin-left: 90px;
 }
 header nav {
   height: 45px;
@@ -6093,14 +6100,14 @@ header ul {
 header ul li {
   display: inline-block;
   line-height: 45px;
-  padding: 0 20px;
+  padding: 0 15px;
   position: relative;
 }
 header ul li a {
-  font-family: 'DIN-Light', helvetica, sans-serif;
-  font-size: 1.6em;
+  font-family: 'DIN-Regular', helvetica, sans-serif;
+  font-size: 1.4em;
   color: #000000;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   display: block;
 }
@@ -6123,7 +6130,7 @@ header ul li.active a {
 }
 header ul li span {
   content: " ";
-  height: 12px;
+  height: 10px;
   width: 1px;
   background: #eb5c08;
   position: absolute;
