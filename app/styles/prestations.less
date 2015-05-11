@@ -76,8 +76,8 @@
 	S I N G L E  P R E S T A
 *******************************/
 #prestation {
-	height: 200vh;
-	height: ~"calc(200vh - 45px)";
+	height: 100%;
+	position: absolute;
 
 	.landing {
 		width:100%;
@@ -127,7 +127,7 @@
 		top: 100%; left: 0;
 		
 		.left {
-			
+
 			h3:first-child {
 				margin-top: 0;
 			}
@@ -201,13 +201,13 @@
 			font-size: 2.8em;
 			color: @greyL;
 			letter-spacing: 1px;
+			white-space: nowrap;
 			&:nth-child(2) {
 				margin-top: 40px;
 				margin-bottom: 0;
 			}
 			&:nth-child(3) {
 				padding-left: 2.5em;
-				white-space: nowrap;
 				margin-top: 0;
 				margin-bottom: 40px;
 			}

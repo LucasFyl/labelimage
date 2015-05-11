@@ -6143,6 +6143,8 @@ header ul li span {
 ////////////////////////////////*/
 body {
   width: 100%;
+  height: 100%;
+  position: relative;
   font-family: 'AvenirNextLTPro-Regular', helvetica, sans-serif;
   font-size: 1em;
   font-size: 10px;
@@ -6411,8 +6413,8 @@ h1 {
 	S I N G L E  P R E S T A
 *******************************/
 #prestation {
-  height: 200vh;
-  height: calc(200vh - 45px);
+  height: 100%;
+  position: absolute;
 }
 #prestation .landing {
   width: 100%;
@@ -6533,6 +6535,7 @@ h1 {
   font-size: 2.8em;
   color: #8b8b8b;
   letter-spacing: 1px;
+  white-space: nowrap;
 }
 #prestation .main-content h4:nth-child(2) {
   margin-top: 40px;
@@ -6540,7 +6543,6 @@ h1 {
 }
 #prestation .main-content h4:nth-child(3) {
   padding-left: 2.5em;
-  white-space: nowrap;
   margin-top: 0;
   margin-bottom: 40px;
 }

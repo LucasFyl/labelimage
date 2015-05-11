@@ -1,4 +1,8 @@
 $(document).ready(function(){
+
+	'use strict';
+
+
 	TweenMax.set('header', {y:'-45px'});
 	TweenMax.to('.fadeIn', 0.25, {opacity:1,ease:Power1.easeOut,delay:0.1});
 	
