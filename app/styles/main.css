@@ -6166,6 +6166,7 @@ h1 {
 #custom-grid-container .windowRow {
   width: 100vw;
   height: 100vh;
+  position: relative;
 }
 #custom-grid-container .windowRow:before:before,
 #custom-grid-container .windowRow:after:before,
@@ -6189,9 +6190,15 @@ h1 {
 #custom-grid-container .windowRow:after:after {
   clear: both;
 }
-#custom-grid-container .windowRow img {
-  width: 100%;
-  height: auto;
+#custom-grid-container .windowRow > img.rowBg {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 9;
 }
 #custom-grid-container .custom-grid-part {
   width: 50%;
@@ -6202,6 +6209,8 @@ h1 {
   float: left;
   display: inline-block;
   padding-left: 90px;
+}
+#custom-grid-container .custom-grid-part.left.first {
   padding-top: 230px;
 }
 @media screen and (max-width: 991px) {
@@ -6480,12 +6489,14 @@ h1 {
   margin-top: 227px;
 }
 #prestation .main-content .asset-bg {
+  position: relative;
+  width: auto;
+  height: 50%;
+}
+#prestation .main-content .asset-bg img {
   position: absolute;
   right: 60px;
   bottom: 35px;
-  width: auto;
-}
-#prestation .main-content .asset-bg img {
   float: right;
 }
 #prestation .main-content .asset-bg img.stylet {
@@ -6494,19 +6505,21 @@ h1 {
 #prestation .main-content .asset-bg img.scan {
   max-width: 90%;
 }
-#prestation .main-content .asset-bg.scan {
+#prestation .main-content .asset-bg.scan img {
   right: 0;
   bottom: 0;
 }
-#prestation .main-content .asset-bg.tirages1 {
-  right: 115px;
+#prestation .main-content .asset-bg.tirages1 img {
+  right: 0;
   bottom: 80px;
 }
 #prestation .main-content .asset-bg .caption {
   position: absolute;
   color: #999899;
-  top: 80%;
+  top: 70%;
   font-size: 1.6em;
+  margin-top: 0;
+  left: 200px;
 }
 #prestation .main-content h2 {
   font-family: 'DIN-Light', helvetica, sans-serif;
@@ -6546,12 +6559,11 @@ h1 {
   margin-top: 0;
   margin-bottom: 40px;
 }
-#prestation .main-content p.bold {
+#prestation .main-content .bold {
   font-family: 'AvenirNextLTPro-Medium', helvetica, sans-serif;
   font-size: 1.4em;
   text-transform: uppercase;
   line-height: 35px;
-  text-align: right;
   letter-spacing: .5px;
 }
 #prestation .main-content p:not(.bold) {
@@ -6576,10 +6588,51 @@ h1 {
   text-align: right;
 }
 #prestation.tirages .left {
+  padding-top: 60px;
   margin-bottom: 50px;
+}
+#prestation.tirages .left.first .stand-out {
+  font-size: 0.765em;
+  line-height: 1em;
 }
 #prestation.tirages .left p {
   margin-top: 30px;
+}
+#prestation.tirages .left .bold {
+  font-size: 0.765em;
+}
+#prestation.tirages .left .stand-out-wrap {
+  padding-left: 50px;
+}
+#prestation.tirages .left .stand-out-wrap p {
+  margin-top: 0;
+  padding-left: 12px;
+  border-left: 1px solid #eb5c08;
+  font-family: 'AvenirNextLTPro-Medium', helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  line-height: 1.4em;
+  height: 1.4em;
+  vertical-align: middle;
+}
+#prestation.tirages .left .stand-out {
+  padding-left: 12px;
+  border-left: 1px solid #eb5c08;
+  font-family: 'AvenirNextLTPro-Medium', helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  line-height: 1.4em;
+  height: 1.4em;
+  vertical-align: middle;
+}
+#prestation.tirages .copyright {
+  color: #f6f2ef;
+  font-size: 1.4em;
+  position: absolute;
+}
+#prestation.tirages .copyright.right {
+  right: 60px;
+  bottom: -20px;
 }
 #prestation.scan .landing h1 {
   right: 355px;

@@ -148,11 +148,13 @@
 			}
 		}
 		.asset-bg {
-			position: absolute;
-			right: 60px;bottom: 35px;
+			position: relative;
 			width: auto;
+			height: 50%;
 
 			img {
+				position: absolute;
+				right: 60px;bottom: 35px;
 				// max-width: 50%;
 				// max-width: ~"calc(50% - 60px)";
 				float: right;
@@ -161,16 +163,22 @@
 			}
 
 			&.scan {
-				right: 0; bottom: 0;
+				img {
+					right: 0; bottom: 0;
+				}
 			}
 			&.tirages1 {
-				right: 115px;bottom: 80px;
+				img {
+					right: 0;bottom: 80px;
+				}
 			}
 			.caption {
 				position: absolute;
 				color: #999899;
-				top: 80%;
+				top: 70%;
 				font-size: 1.6em;
+				margin-top: 0;
+				left: 200px;
 			}
 
 		}
@@ -212,12 +220,11 @@
 				margin-bottom: 40px;
 			}
 		}
-		p.bold {
+		.bold {
 			font-family: @Med;
 			font-size: 1.4em;
 			text-transform: uppercase;
 			line-height: 35px;
-			text-align: right;
 			letter-spacing: .5px;
 		}
 		p:not(.bold) {
@@ -245,9 +252,46 @@
 }
 #prestation.tirages {
 	.left {
+		padding-top: 60px;
 		margin-bottom: 50px;
+		&.first {
+			.stand-out {
+				font-size: 0.765em;
+				line-height: 1em;
+			}
+		}
 		p {
 			margin-top: 30px;
+		}
+		.bold {
+			font-size: 0.765em; // 13px base 17
+		}
+		.stand-out-wrap {
+			padding-left: 50px;
+			p {
+				margin-top: 0;
+				.stand-out();
+			}
+		}
+		.stand-out {
+			padding-left: 12px;
+			border-left: 1px solid @orange;
+			font-family: @Med;
+			text-transform: uppercase;
+			font-size: 1.4em;
+			line-height: 1.4em;
+			height: 1.4em;
+			vertical-align: middle;
+		}
+	}
+	.copyright {
+		color: #f6f2ef;
+		font-size: 1.4em;
+		position: absolute;
+
+		&.right {
+			right: 60px;
+			bottom: -20px;
 		}
 	}
 }

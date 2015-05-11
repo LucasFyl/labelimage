@@ -24,11 +24,18 @@ h1 {
 	.windowRow {
 		width: 100vw;
 		height: 100vh;
+		position: relative;
+		
 		&:before, &:after {
 			.clearfix();
 		}
-		img {
-			width: 100%;height: auto;
+		> img.rowBg {
+			height: 100%;
+			position: absolute;
+			left: 0;right: 0;
+			top: 0;bottom: 0;
+			margin: auto;
+			z-index: 9;
 		}
 	}
 	.custom-grid-part {
@@ -40,7 +47,9 @@ h1 {
 			float: left;
 			display: inline-block;
 			padding-left: 90px;
-			padding-top: 230px;
+			&.first {
+				padding-top: 230px;	
+			}
 
 			@media screen and (max-width: @screen-sm-max) {
 				padding-left: 50px;
