@@ -19,7 +19,8 @@ $(document).ready(function(){
 	.addTo(controller);
 
 
-	$('.container-fluid').on("click", "a.arrow-down",function(){
+	$('body').on("click", "a.arrow-down",function(e){
+		e.preventDefault();
 		var wH = $(window).height();
 		TweenLite.to(window, 1, {scrollTo:{y:wH}, ease:Power2.easeInOut});
 	});
