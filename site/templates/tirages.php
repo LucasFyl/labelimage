@@ -35,13 +35,13 @@
                 <h2>Vos images</h2>
             </div>  
             <div class="asset-bg tirages1">
-              <img src="images/asset-tirages.png" class='' alt="Epson 9890 et 11880 jusqu’à160cm de large avec 11 encres pigmentaires Ultrachrome HD" />
+              <img src="<?php echo url('assets/images/asset-tirages.png'); ?>" class='' alt="Epson 9890 et 11880 jusqu’à160cm de large avec 11 encres pigmentaires Ultrachrome HD" />
               <p class="caption">Epson 9890 et 11880 jusqu’à160cm de large <br/> avec 11 encres pigmentaires Ultrachrome HD</p>
             </div>
           </div>
         </div>
         <div class="windowRow">
-          <img src="images/asset-tirages-bg2.jpg" class="rowBg" alt="Philippe Marinig">
+          <img src="<?php echo url('assets/images/asset-tirages-bg2.jpg'); ?>" class="rowBg" alt="Philippe Marinig">
           <span class="copyright right">© Philippe Marinig</span>
         </div>
         <div class="windowRow">
@@ -62,7 +62,7 @@
           </div>
           <div class="custom-grid-part right">
             <div class="asset-bg">
-              <img src="images/asset-tirages-2.png" class='' alt="Edition d'Art / Serie Limité" />
+              <img src="<?php echo url('assets/images/asset-tirages-2.png'); ?>" class='' alt="Edition d'Art / Serie Limité" />
             </div>
           </div>
         </div>
@@ -71,7 +71,7 @@
             <h3>DIGIGRAPHIE</h3>
             <p>Pour ses productions et reproductions d’oeuvres d’art l’atelier a adopté la Digigraphie, label très utilisé par les artistes, les musées, les galeries et les professionnels de l’édition.</p>
             <p class="stand-out">Nous sommes agréÉS Digigraphie depuis 2007</p>
-            <img src="images/asset-tirages-digi1.png" class='' alt="Digigraphie" />
+            <img src="<?php echo url('assets/images/asset-tirages-digi1.png'); ?>" class='' alt="Digigraphie" />
 
           </div>
           <div class="custom-grid-part right">
@@ -80,12 +80,12 @@
             Utilisation de papiers certifés par Epson<br/>
             Encres pigmentaires Ultrachrome<br/>
             Contrôle régulier des paramètres d'impression par Epson</p>
-            <img src="images/asset-tirages-digi2.png" class='' alt="Digigraphie" />
+            <img src="<?php echo url('assets/images/asset-tirages-digi2.png'); ?>" class='' alt="Digigraphie" />
           </div>
           <p>Les tirages certifiés Digigraphie sont authentifiés par un poinçon à sec ou par un tampon au dos du tirage si celui-ci est contrecollé. Les papiers certifiés ont tous subi des tests de tenue dans le temps pour vous garantir une très longue durée de conservation.</p>
         </div>
         <div class="windowRow">
-          <img src="images/asset-tirages-bg2.jpg" alt="Philippe Marinig">
+          <img src="<?php echo url('assets/images/asset-tirages-bg2.jpg'); ?>" alt="Philippe Marinig">
           <span class="copyright left">© Eric Fayolle</span>
           <span class="copyright right">© Marie Hudelot</span>
         </div>
@@ -99,7 +99,7 @@
           </div>
           <div class="custom-grid-part right">
             <div class="asset-bg">
-              <img src="images/asset-tirages-3" alt="Tirages">
+              <img src="<?php echo url('assets/images/asset-tirages-3.jpg'); ?>" alt="Tirages">
               <span class="copyright left">© Sabine Delcour</span>
             </div>
           </div>
