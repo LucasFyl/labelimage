@@ -115,6 +115,7 @@
 
     <!-- build:js scripts/main.js -->
     <script src="<?php echo url ('assets/scripts/vendor/jquery/jquery.js'); ?>"></script>
+    <script src="<?php echo url ('assets/scripts/vendor/nicescroll/nicescroll.min.js'); ?>"></script>
     <script src="<?php echo url('assets/scripts/vendor/gsap/src/minified/jquery.gsap.min.js'); ?>"></script>
     <script src="<?php echo url('assets/scripts/vendor/gsap/src/minified/TweenMax.min.js'); ?>"></script>
     <script src="<?php echo url('assets/scripts/vendor/gsap/src/minified/plugins/ScrollToPlugin.min.js'); ?>"></script>
@@ -130,6 +131,9 @@
         <!-- endbuild -->
         <script>
           $(document).ready(function() {
+
+            
+
             new ScrollMagic.Scene({
                   triggerElement: '#trigger',
                   triggerHook: 1,

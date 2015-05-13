@@ -2,6 +2,16 @@ $(document).ready(function(){
 
 	'use strict';
 
+	$('html').niceScroll({
+		cursorcolor: "#000000", // change cursor color in hex
+        cursoropacitymin: 0, // change opacity when cursor is inactive (scrollabar "hidden" state), range from 1 to 0
+        cursoropacitymax: 0.6, // change opacity when cursor is active (scrollabar "visible" state), range from 1 to 0
+        cursorwidth: "5px", // cursor width in pixel (you can also write "5px")
+        cursorborder: "1px solid #000", // css definition for cursor border
+        zindex: 99999,
+        railpadding: { top: 0, right: 5, left: 0, bottom: 0 }
+	});
+
 
 	TweenMax.set('header', {y:'-45px'});
 	TweenMax.to('.fadeIn', 0.25, {opacity:1,ease:Power1.easeOut,delay:0.1});
