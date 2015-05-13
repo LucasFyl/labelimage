@@ -99,7 +99,7 @@
           <div class="custom-grid-part right">
             <div class="asset-bg tirages3">
               <img src="<?php echo url('assets/images/asset-tirages3.png'); ?>" alt="Tirages">
-              <span class="copyright left">© Sabine Delcour</span>
+              <span class="copyright bottom-left">© Sabine Delcour</span>
             </div>
           </div>
         </div>
