@@ -35,12 +35,12 @@
                 <h2>Vos images</h2>
             </div>  
             <div class="asset-bg tirages1">
-              <img src="<?php echo url('assets/images/asset-tirages.png'); ?>" class='' alt="Epson 9890 et 11880 jusqu’à160cm de large avec 11 encres pigmentaires Ultrachrome HD" />
+              <img src="<?php echo url('assets/images/asset-tirages.png'); ?>"  alt="Epson 9890 et 11880 jusqu’à160cm de large avec 11 encres pigmentaires Ultrachrome HD" />
               <p class="caption">Epson 9890 et 11880 jusqu’à160cm de large <br/> avec 11 encres pigmentaires Ultrachrome HD</p>
             </div>
           </div>
         </div>
-        <div class="windowRow">
+        <div class="windowRow ratioImg">
           <img src="<?php echo url('assets/images/asset-tirages-bg2.jpg'); ?>" class="rowBg" alt="Philippe Marinig">
           <span class="copyright right">© Philippe Marinig</span>
         </div>
@@ -61,18 +61,17 @@
             <p>En matière de photo numérique, les épreuves des tirages ne dépassant pas 30 exemplaires sont considérées comme des "originaux" et se voient appliquer par le fisc un taux de TVA réduit.</p>
           </div>
           <div class="custom-grid-part right">
-            <div class="asset-bg">
-              <img src="<?php echo url('assets/images/asset-tirages-2.png'); ?>" class='' alt="Edition d'Art / Serie Limité" />
+            <div class="asset-bg tirages2">
+              <img src="<?php echo url('assets/images/asset-tirages2.png'); ?>" class='' alt="Edition d'Art / Serie Limité" />
             </div>
           </div>
         </div>
-        <div class="digigraphie">
+        <div class="windowRow digigraphie">
           <div class="custom-grid-part left">
             <h3>DIGIGRAPHIE</h3>
-            <p>Pour ses productions et reproductions d’oeuvres d’art l’atelier a adopté la Digigraphie, label très utilisé par les artistes, les musées, les galeries et les professionnels de l’édition.</p>
-            <p class="stand-out">Nous sommes agréÉS Digigraphie depuis 2007</p>
+            <p>Pour ses productions et reproductions d’oeuvres d’art<br/> l’atelier a adopté la Digigraphie, label très utilisé<br/> par les artistes, les musées, les galeries et les<br/> professionnels de l’édition.</p>
+            <p class="bold white">Nous sommes agréÉS Digigraphie depuis 2007</p>
             <img src="<?php echo url('assets/images/asset-tirages-digi1.png'); ?>" class='' alt="Digigraphie" />
-
           </div>
           <div class="custom-grid-part right">
             <p class="bold">Le label Digigraphie certifie la qualité et la pérennité des oeuvres par l'utilisation des meilleures technologies d'impression jet d'encre disponibles aujourd'hui</p>
@@ -82,10 +81,10 @@
             Contrôle régulier des paramètres d'impression par Epson</p>
             <img src="<?php echo url('assets/images/asset-tirages-digi2.png'); ?>" class='' alt="Digigraphie" />
           </div>
-          <p>Les tirages certifiés Digigraphie sont authentifiés par un poinçon à sec ou par un tampon au dos du tirage si celui-ci est contrecollé. Les papiers certifiés ont tous subi des tests de tenue dans le temps pour vous garantir une très longue durée de conservation.</p>
+          <p class='full'>Les tirages certifiés Digigraphie sont authentifiés par un poinçon à sec ou par un tampon au dos du tirage si celui-ci est contrecollé. Les papiers certifiés ont tous subi des tests de tenue dans le temps pour vous garantir une très longue durée de conservation.</p>
         </div>
-        <div class="windowRow">
-          <img src="<?php echo url('assets/images/asset-tirages-bg2.jpg'); ?>" alt="Philippe Marinig">
+        <div class="windowRow ratioImg">
+          <img src="<?php echo url('assets/images/asset-tirages-bg3.jpg'); ?>" alt="Philippe Marinig">
           <span class="copyright left">© Eric Fayolle</span>
           <span class="copyright right">© Marie Hudelot</span>
         </div>
@@ -98,8 +97,8 @@
             Ces impressions sont réalisées à base d'encres UV. Le format maximum en un lé est de 120x250 cm</p>
           </div>
           <div class="custom-grid-part right">
-            <div class="asset-bg">
-              <img src="<?php echo url('assets/images/asset-tirages-3.jpg'); ?>" alt="Tirages">
+            <div class="asset-bg tirages3">
+              <img src="<?php echo url('assets/images/asset-tirages3.png'); ?>" alt="Tirages">
               <span class="copyright left">© Sabine Delcour</span>
             </div>
           </div>

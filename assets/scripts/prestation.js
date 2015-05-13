@@ -35,7 +35,7 @@ $( window ).load(function(){
 
 	'use strict';
 
-    initScroll();
+    // initScroll();
 	
 
     function initScroll() {
