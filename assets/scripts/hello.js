@@ -9,7 +9,8 @@ $(document).ready(function(){
         cursorwidth: "5px", // cursor width in pixel (you can also write "5px")
         cursorborder: "1px solid #000", // css definition for cursor border
         zindex: 99999,
-        railpadding: { top: 0, right: 5, left: 0, bottom: 0 }
+        railpadding: { top: 0, right: 5, left: 0, bottom: 0 },
+        mousescrollstep: 60
 	});
 
 

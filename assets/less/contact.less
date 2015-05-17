@@ -1,0 +1,66 @@
+#contact {
+	width: 100%;
+	height: auto;
+	min-height: 100%;
+	position: static;
+	
+	#trigger {bottom: 0}
+	#trigger3 {top: 552px}
+
+	.landing {
+		position: static;
+		height: auto;
+		
+		img {
+			position: static;
+			margin-top: 45px;
+
+			opacity: 0;
+			display: block;
+
+			&.fixed {
+				position: fixed;
+				opacity: 1;
+				top: 0px;
+				left: 0;right: 0;
+			}
+		}
+		h1 {
+			right: 255px;bottom: 245px;
+		}
+		.arrow-down {
+  			right: 92px;
+			bottom: 255px;
+		}
+	}
+
+	.main-content {
+		position: static;
+		background-color:@bg; 
+
+		section:first-child {
+			> div {
+				min-height: 135px;
+				margin-top: 75px;
+				margin-bottom: 75px;
+				height: auto;
+			}
+			.right img {
+				float: right;
+			}			
+			h2 {
+				font-size: 1.4em;
+				margin-bottom: 10px;
+			}
+			p {margin: 0;}
+			p:nth-child(2) {
+				font-size: 1.6em;
+				margin-bottom: 20px;
+			}
+			p:nth-child(3), a {
+				font-size: 1.7em;
+				font-family: @Med;
+			}
+		}
+	}
+}

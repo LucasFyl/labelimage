@@ -7,12 +7,17 @@ body {
 #prestations {
 	// width: 100%; height: 100%;
 	display: block;
+
 	.container-fluid.outer {
 		// margin-top: @headerHeight;
 		margin-top: 45px;
 		height: ~"calc(100vh - 45px)";
 		overflow: hidden;
 		
+		.croix {
+			top: 45px;
+		}
+
 		.toPresta {
 			width: 50%; height: 50%;
 			float: left; overflow: hidden;
@@ -80,6 +85,49 @@ body {
 /*******************************
 	S I N G L E  P R E S T A
 *******************************/
+.landing {
+	width:100%;
+	height: 100vh;
+	position: absolute; 
+	top:0; 
+	z-index:-1;
+
+	.background {
+		width: 100%;
+		height: auto;
+	
+		position: fixed;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+	}	
+	h1 {
+		text-align: right;
+		position: fixed;
+		right: 50px;bottom: 245px;
+		font-size: 11.3em;
+		letter-spacing: 17px;
+	}
+
+}
+a.arrow-down {
+	position: fixed;
+	bottom: 65px;right: 65px;
+	background: url(../images/arrow-down.png) no-repeat center center;
+	z-index: 999; 
+	display: block;
+	width: 63px;height: 26px;
+	cursor: pointer;
+	&:hover {
+		opacity: .8;
+		text-decoration: none;
+	}
+}
+
+
 #prestation {
 	width: 100%;
 	height: auto;
@@ -87,52 +135,12 @@ body {
 	// display: block;
 	// position: relative;
 
-	.landing {
-		width:100%;
-		height: 100vh;
-		position: absolute; 
-		top:0; 
-		z-index:-1;
-
-		.background {
-			width: 100%;
-			height: auto;
-		
-			position: fixed;
-			z-index: -1;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			margin: auto;
-		}	
-		h1 {
-			text-align: right;
-			position: fixed;
-			right: 50px;bottom: 245px;
-			font-size: 11.3em;
-			letter-spacing: 17px;
-		}
-
-	}
-	a.arrow-down {
-		position: fixed;
-		bottom: 65px;right: 65px;
-		background: url(../images/arrow-down.png) no-repeat center center;
-		z-index: 999; 
-		display: block;
-		width: 63px;height: 26px;
-		cursor: pointer;
-		&:hover {
-			opacity: .8;
-			text-decoration: none;
-		}
-	}
+	
 	.main-content {
 		background-color:@bg; 
 		position: absolute;
 		z-index: 1000;
-		top: 100%; left: 0;
+		top: 100%; left: 0; right: 0;
 		
 		.left {
 
@@ -253,15 +261,7 @@ body {
 			margin-top: 40px;
 		}
 	}
-	#trigger {
-		position: absolute;
-		bottom: -200px;right: 0;
-		z-index: 9999;
-    }
-    #trigger3 {
-		position: absolute;
-		bottom: 45px; right: 0;
-    }
+
 }
 #prestation.traitement {
 
