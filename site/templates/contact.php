@@ -45,32 +45,32 @@
             </section>
             <section class="footer container">
 
-                <p class="heading">&nbsp;atelier <span>label image</span>&nbsp;</p>
+                <span class="heading"><p>&nbsp;atelier <span>label image</span>&nbsp;</p></span>
                 <div class="row">
                     <p class="thanks col-xs-12">MERCI AUX PHOTOGRAPHES&nbsp;&nbsp;&nbsp;OLIVIA GAY&nbsp;&nbsp;&nbsp;PHILIPPE MARINIG&nbsp;&nbsp;&nbsp;ERIC FAYOLLE&nbsp;&nbsp;&nbsp;MARIE HUDELOT&nbsp;&nbsp;&nbsp;SABINE DELCOUR&nbsp;&nbsp;&nbsp;ELENE USDIN&nbsp;&nbsp;&nbsp;TODD ANTONY&nbsp;&nbsp;&nbsp;DE NOUS AVOIR PERMIS D’ILLUSTRER LE SITE</p>
                     <div class="col-sm-3 col-xs-6">
                         <ul>
                             <li>Partenaires</li>
-                            <li>Association Luca Dolega</li>
-                            <li>Images singulières</li>
-                            <li>JRM</li>
-                            <li>Atelier Martial</li>
-                            <li>Plasticollage</li>
-                            <li>Image Collée</li>
-                            <li>Flamant encadrement</li>
-                            <li>Zanzibar</li>
+                            <li><a href="#">Association Luca Dolega</a></li>
+                            <li><a href="#">Images singulières</a></li>
+                            <li><a href="#">JRM</a></li>
+                            <li><a href="#">Atelier Martial</a></li>
+                            <li><a href="#">Plasticollage</a></li>
+                            <li><a href="#">Image Collée</a></li>
+                            <li><a href="#">Flamant encadrement</a></li>
+                            <li><a href="#">Zanzibar</a></li>
                         </ul>
                     </div>                    
                     <div class="col-sm-3 col-xs-6">
                         <ul>
                             <li>Écoles</li>
-                            <li>CE3P</li>
-                            <li>ENSAD</li>
-                            <li>Les Gobelins</li>
-                            <li>Efet</li>
-                            <li>Louis Lumière</li>
-                            <li>Lycée Brassai</li>
-                            <li>ETPA</li>
+                            <li><a href="#">CE3P</a></li>
+                            <li><a href="#">ENSAD</a></li>
+                            <li><a href="#">Les Gobelins</a></li>
+                            <li><a href="#">Efet</a></li>
+                            <li><a href="#">Louis Lumière</a></li>
+                            <li><a href="#">Lycée Brassai</a></li>
+                            <li><a href="#">ETPA</a></li>
                         </ul>
                         <div class="cta-btn">
                             <a href="mailto:delphine@atelierlabelimage.com"></a>
@@ -84,7 +84,7 @@
                         <p class="hide">Certified Studio for Digital fine art printing</p>
                     </div>
                 </div>
-                <p class="heading">&nbsp;© copyright 2015 atelier label image <span class="o-b"></span> design et developpement fayolle <span class="o-b"></span> <a href="#">Mentions Légales</a> <span class="o-b"></span>&nbsp;</p>
+                <span class="heading"><p>&nbsp;© copyright 2015 atelier label image <span class="o-b"></span> design et developpement fayolle <span class="o-b"></span> <a href="#">Mentions Légales</a> <span class="o-b"></span>&nbsp;</p></span>
             </section>
         </div>
 	</div>
