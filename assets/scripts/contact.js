@@ -22,7 +22,7 @@ $( document ).ready(function(){
 
 	new ScrollMagic.Scene({
         triggerElement: '#trigger3',
-        triggerHook: .056,
+        triggerHook: 0,
         duration: 45
     })
 	.setTween(TweenMax.to('header', 0.25, {top:'-=45',ease:Linear.easeNone}))

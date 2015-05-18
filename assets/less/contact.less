@@ -1,5 +1,7 @@
 #contact {
 	width: 100%;
+	max-width: 100vw;
+	overflow-x: hidden;
 	height: auto;
 	min-height: 100%;
 	position: static;
@@ -39,11 +41,15 @@
 		background-color:@bg; 
 
 		section:first-child {
+			height: auto;
+
 			> div {
 				min-height: 135px;
 				margin-top: 75px;
-				margin-bottom: 75px;
+				// margin-bottom: 75px;
 				height: auto;
+				position: relative;
+				
 			}
 			.right img {
 				float: right;
@@ -60,6 +66,114 @@
 			p:nth-child(3), a {
 				font-size: 1.7em;
 				font-family: @Med;
+			}
+			.cta-btn {
+				margin-top: 50px;
+				a {
+					display: block;
+					float: left;
+					text-decoration: none;
+					margin-bottom: 75px;
+				}
+				a:first-child {
+					width: 33px;height: 24px;
+					background: url('../images/icon-mail.png')  no-repeat center center;
+					margin-right: 40px;
+				}
+				a:nth-child(2) {
+					width: 25px;height: 26px;
+					background: url('../images/icon-facebook.png')  no-repeat center center;
+				}
+			}
+		}
+		section.map {
+			position: relative;
+			.after-gradient();	
+			.before-gradient();		
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+		section.footer {
+			padding-top:100px;
+			> div {
+				p.thanks {
+					font-size: 1.188em;
+					// text-align: center;
+					margin-bottom: 45px;
+				}
+				ul {
+					list-style-type: none;
+					padding: 0;
+					li {
+						font-family: @Bold;
+						text-transform: uppercase;
+						letter-spacing: .5px;
+						line-height: 24px;
+						&:first-child {
+							font-size: 1.2em;
+							color: @orange;
+							font-family: @Reg; 
+						}
+					}
+				}
+				> div:last-child {
+					min-height: 226px;
+					background: url('../images/asset-footer-sponsors.png') no-repeat center center;
+					background-size: 77%;
+				}
+			}
+			p.heading {
+				font-family: @UltLt;
+				font-size: 1.4em;
+				text-transform: uppercase;
+				margin-bottom: 60px;
+				display: block;
+				text-align: center;
+				position: relative;
+				letter-spacing: .5px;
+				line-height: 24px;
+
+				span {
+					font-family: @Med;
+				}
+
+				&:before,&:after {
+					content: " ";
+					width: 100%;
+					height: 1px;
+					display: block;
+					background: black;
+					position: absolute;
+					top: 12px;
+				}
+				&:after {
+					right: -58%;
+				}
+				&:before {
+					left: -58%;
+				}
+				&:last-child {
+					margin-top: 60px;
+					font-family: @Med;
+					font-size: 1em;
+					span.o-b {
+						display: inline-block;
+						height: 9px;
+						width: 2px;
+						margin: 0 10px;
+						background: @orange;
+						vertical-align: middle;
+					}
+
+					&:after {
+						right: -81%;
+					}
+					&:before {
+						left: -82%;
+					}	
+				}
 			}
 		}
 	}

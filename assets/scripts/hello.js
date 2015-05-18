@@ -1,8 +1,7 @@
 $(document).ready(function(){
 
 	'use strict';
-
-	$('html').niceScroll({
+	$("body").niceScroll({
 		cursorcolor: "#000000", // change cursor color in hex
         cursoropacitymin: 0, // change opacity when cursor is inactive (scrollabar "hidden" state), range from 1 to 0
         cursoropacitymax: 0.6, // change opacity when cursor is active (scrollabar "visible" state), range from 1 to 0
@@ -11,6 +10,10 @@ $(document).ready(function(){
         zindex: 99999,
         railpadding: { top: 0, right: 5, left: 0, bottom: 0 },
         mousescrollstep: 60
+	});
+	var customScroll = $("body").getNiceScroll();
+	$( window ).resize(function() {
+		customScroll.resize();
 	});
 
 
