@@ -1,7 +1,7 @@
 
 
 	<?php snippet('header') ?>
- 	<div id="prestation" class="tirages">
+ 	<div id="prestation" class="finitions">
 
     <div class="loader">
       <span class="croix spin"></span>
@@ -9,9 +9,9 @@
 
     <a href="#" class="arrow-down fadeIn"></a>
 
-    <div class="landing">
-      <h1 class="fadeIn">tirages</h1>
-      <img src="<?php echo url('assets/images/landing-tirages.jpg'); ?>" alt="" class="background"/> 
+    <div class="landing ratioImg">
+      <h1 class="fadeIn">finitions</h1>
+      <img src="<?php echo url('assets/images/landing-finition.jpg'); ?>" alt="" class="background"/> 
     </div>
     
     <div id="trigger"></div>
@@ -21,7 +21,8 @@
     <div class="main-content" id="custom-grid-container">
       <div class="windowRow">
         <div class="custom-grid-part left first">
-          <h3>Tirage pigmentaire</h3>
+          <h3>contre collage</h3>
+          <h4>Différents supports sont proposés pour présenter vos tirages photographiques</h4>
           <p>Que vous souhaitiez des tirages pour une exposition, une édition limitée, ou un projet personnel, nos impressions pigmentaires garantissent une qualité d'image optimale et une excellente stabilité dans le temps. <br/>
           Nos tirages sont réalisés sur des imprimantes Epson et des papiers jet d'encre de première qualité, sélectionnés de manière à couvrir une large gamme de teintes, d’épaisseurs, de textures et de brillances.</p>
           <p><span class="stand-out">Le tirage Direct</span> pour les fichiers prêts à imprimer.</p>
@@ -30,8 +31,8 @@
         </div>
         <div class="custom-grid-part right">
           <div class="h2-bloc">
-              <h2>Imprimer</h2>
-              <h2>Vos images</h2>
+              <h2>Personnalisez</h2>
+              <h2>Vos tirages</h2>
           </div>  
           <div class="asset-bg tirages1">
             <img src="<?php echo url('assets/images/asset-tirages.png'); ?>"  alt="Epson 9890 et 11880 jusqu’à160cm de large avec 11 encres pigmentaires Ultrachrome HD" />
@@ -104,19 +105,14 @@
       </div>
     </div>
   </div>
-  
+
   <?php snippet('scripts') ?>  
   <script src="<?php echo url('assets/scripts/prestation.js'); ?>"></script>
   <script src="<?php echo url('assets/scripts/hello.js'); ?>"></script>
   <script>
     $(document).ready(function() {
-      new ScrollMagic.Scene({
-            triggerElement: '#trigger',
-            triggerHook: 1,
-            duration: '25%'
-        })
-      .setTween(TweenMax.to('.landing h1', 0.5, {opacity:0,ease:Power2.easeOut}))
-      // .addIndicators({name: 'headline'})
-      .addTo(controller);
+        
+
+      
     });
   </script>

@@ -5,17 +5,15 @@ body {
 	 P R E S T A T I O N S 
 *******************************/
 #prestations {
-	// width: 100%; height: 100%;
 	display: block;
 
 	.container-fluid.outer {
-		// margin-top: @headerHeight;
 		margin-top: 45px;
 		height: ~"calc(100vh - 45px)";
 		overflow: hidden;
 		
 		.croix {
-			top: 45px;
+			top: 0;
 		}
 
 		.toPresta {
@@ -107,7 +105,9 @@ body {
 	h1 {
 		text-align: right;
 		position: fixed;
-		right: 50px;bottom: 245px;
+		left: 50%;
+		text-align: left;
+		bottom: 245px;
 		font-size: 11.3em;
 		letter-spacing: 17px;
 	}
@@ -132,9 +132,6 @@ a.arrow-down {
 	width: 100%;
 	height: auto;
 	min-height: 100%;
-	// display: block;
-	// position: relative;
-
 	
 	.main-content {
 		background-color:@bg; 
@@ -171,8 +168,6 @@ a.arrow-down {
 			img {
 				position: absolute;
 				right: 60px;bottom: 35px;
-				// max-width: 50%;
-				// max-width: ~"calc(50% - 60px)";
 				float: right;
 				&.stylet {max-width: 60%;}
 				&.scan {max-width: 90%;}
@@ -261,11 +256,32 @@ a.arrow-down {
 			margin-top: 40px;
 		}
 	}
+}
+#prestation.finitions {
+	.landing {
+		img {margin-top: 45px;}
+		h1 {
+			bottom: 135px;
+			left: 50%;
 
+			&:after {
+				content: "contre collage et encadrement";
+				font-size: 18px; color: white;
+				font-family: @DMedium;
+				letter-spacing: 1px;
+				position: absolute;
+				bottom: -10px;
+				left: 38%;
+				white-space: nowrap;
+				text-transform: uppercase;
+			}
+		}
+	}
+	#trigger {
+		bottom: -50px;
+	}
 }
 #prestation.traitement {
-
-	// min-height: 200vh;
 	.left p {
 		text-align: right;
 	}
@@ -399,7 +415,6 @@ a.arrow-down {
 	}
 	.main-content {
 		.left {
-			// margin-top: 215px;
 			p {
 				text-align: left;
 				margin-top: 0;

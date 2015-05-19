@@ -26,6 +26,10 @@ $(document).ready(function(){
 
 $(window).load(function(){
 
+	setTimeout(ratioImage, 200);
+
+ 	$(window).on('resize', ratioImage);
+
 
 	var animHeader = new TimelineMax({paused:true});
 	animHeader.set('header', {backgroundColor:'#f6f2ef'})
