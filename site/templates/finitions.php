@@ -23,85 +23,83 @@
         <div class="custom-grid-part left first">
           <h3>contre collage</h3>
           <h4>Différents supports sont proposés pour présenter vos tirages photographiques</h4>
-          <p>Que vous souhaitiez des tirages pour une exposition, une édition limitée, ou un projet personnel, nos impressions pigmentaires garantissent une qualité d'image optimale et une excellente stabilité dans le temps. <br/>
           Nos tirages sont réalisés sur des imprimantes Epson et des papiers jet d'encre de première qualité, sélectionnés de manière à couvrir une large gamme de teintes, d’épaisseurs, de textures et de brillances.</p>
-          <p><span class="stand-out">Le tirage Direct</span> pour les fichiers prêts à imprimer.</p>
-          <p><span class="stand-out">LE TIRAGE D’EXPOSITION</span> pour les fichiers qui nécessitent d’être optimisés avant impression. Ils peuvent également être réalisés en collaboration avec notre tireur, sur rendez vous. Nous vous aidons à choisir un support adapté en fonction de votre image parmi une gamme étendue de papiers mats, satiné, brillant, barytés ou encore sur toile canvas à monter sur châssis.</p> 
-          <p>Pour vos projets événementiels, expositions, signalétique, nous pouvons imprimer sur différents types de supports communiquants : bâche, toile, vinyle adhésif, papier peint... largeur maximum d'impression 150 cm.</p>
+          <h5>collage sur aluminium ou dibond</h5>
+          <p>Le tirage est contrecollé sur une plaque d’aluminium d'1mm ou sur un  Dibond 2mm. selon les qualités de rigidité et de conservation désirées.
+          Un châssis aluminium peut être posé au dos du support pour l'accrocher tout en le décollant du mur.</p>
+          <img src="<?php echo url('assets/images/asset-finition-1.png'); ?>" alt="Collage sur dibond" /> 
+          <h5>Le plexicollage</h5>
+          <p>Votre tirage photo, argentique ou pigmentaire est contrecollé à la colle liquide neutre sous un plexiglass de  3 ou 4mm d 'épaisseur. Au dos de ce collage, nous positionnons un plexiglas, un aluminium ou un dibond</p>
+          <p><span>Le traitement de la plaque acrylique évite aux ultraviolets de détériorer le visuel.</span>
+          La plaque de plexi assure une protection optimale de l’œuvre et une mise en valeur des couleurs et des contrastes qui donne une profondeur unique à vos images. </p>
+          <p>Le plexiglass existe également en anti reflet.</p>
         </div>
         <div class="custom-grid-part right">
-          <div class="h2-bloc">
-              <h2>Personnalisez</h2>
-              <h2>Vos tirages</h2>
-          </div>  
-          <div class="asset-bg tirages1">
-            <img src="<?php echo url('assets/images/asset-tirages.png'); ?>"  alt="Epson 9890 et 11880 jusqu’à160cm de large avec 11 encres pigmentaires Ultrachrome HD" />
-            <p class="caption">Epson 9890 et 11880 jusqu’à160cm de large <br/> avec 11 encres pigmentaires Ultrachrome HD</p>
+          <div class="asset-bg finitions1">
+            <img src="<?php echo url('assets/images/asset-finition-2.png'); ?>"  alt="Collage sur aluminium " />
           </div>
         </div>
       </div>
-      <div class="windowRow ratioImg">
-        <img src="<?php echo url('assets/images/asset-tirages-bg2.jpg'); ?>" class="rowBg" alt="Philippe Marinig">
-        <span class="copyright right">© Philippe Marinig</span>
-      </div>
+
       <div class="windowRow">
         <div class="custom-grid-part left">
-          <h3>EDITION D’ART / SERIE LIMITEE</h3>
-          <h4>Une impression numerique prend tout son caractere d'estampe</h4>
-          <h4>lorsqu'elle se differencie d'une reproduction mecanique en grande quantite</h4>
-          <p>L’estampe numérique est avant tout une impression <br/>
-          <span style='text-align:left;' class="bold">Caractéristiques d'une estampe numérique originale selon l'atelier label image</span></p>
-          <div class="stand-out-wrap">
-            <p>Elle est créée et imprimée sous le contrôle de l'artiste </p>
-            <p>Elle est imprimée en série limitée </p>
-            <p>Chaque épreuve est accompagnée d'un certificat d'authenticité </p>
-            <p>L’ épreuve est numérotée et signée de la main de l'artiste </p>
-          </div>
-          <p>Une série limitée avec une impression numérique pourra prendre sa source dans des croquis et peintures réalisés avec des techniques traditionnelles puis numérisés et transformés à l'aide de logiciels et de tablettes graphiques ou d’écrans tactiles.</p>
-          <p>En matière de photo numérique, les épreuves des tirages ne dépassant pas 30 exemplaires sont considérées comme des "originaux" et se voient appliquer par le fisc un taux de TVA réduit.</p>
+          <img src="<?php echo url('assets/images/asset-finition-3.jpg'); ?>" alt="Plexicollage Éric Fayolle" />
         </div>
         <div class="custom-grid-part right">
-          <div class="asset-bg tirages2">
-            <img src="<?php echo url('assets/images/asset-tirages2.png'); ?>" class='' alt="Edition d'Art / Serie Limité" />
-          </div>
+          <img src="<?php echo url('assets/images/asset-finition-4.jpg'); ?>" alt="Plexicollage Éric Fayolle" />
         </div>
+        <span class="copyright right">© Éric Fayolle</span>
       </div>
-      <div class="windowRow digigraphie">
-        <div class="custom-grid-part left">
-          <h3>DIGIGRAPHIE</h3>
-          <p>Pour ses productions et reproductions d’oeuvres d’art<br/> l’atelier a adopté la Digigraphie, label très utilisé<br/> par les artistes, les musées, les galeries et les<br/> professionnels de l’édition.</p>
-          <p class="bold white">Nous sommes agréÉS Digigraphie depuis 2007</p>
-          <img src="<?php echo url('assets/images/asset-tirages-digi1.png'); ?>" class='' alt="Digigraphie" />
-        </div>
-        <div class="custom-grid-part right">
-          <p class="bold">Le label Digigraphie certifie la qualité et la pérennité des oeuvres par l'utilisation des meilleures technologies d'impression jet d'encre disponibles aujourd'hui</p>
-          <p class="white">Impression sur traceurs Epson Stylus Pro <br/>
-          Utilisation de papiers certifés par Epson<br/>
-          Encres pigmentaires Ultrachrome<br/>
-          Contrôle régulier des paramètres d'impression par Epson</p>
-          <img src="<?php echo url('assets/images/asset-tirages-digi2.png'); ?>" class='' alt="Digigraphie" />
-        </div>
-        <p class='full'>Les tirages certifiés Digigraphie sont authentifiés par un poinçon à sec ou par un tampon au dos du tirage si celui-ci est contrecollé. Les papiers certifiés ont tous subi des tests de tenue dans le temps pour vous garantir une très longue durée de conservation.</p>
-      </div>
-      <div class="windowRow ratioImg">
-        <img src="<?php echo url('assets/images/asset-tirages-bg3.jpg'); ?>" alt="Philippe Marinig">
-        <span class="copyright left">© Eric Fayolle</span>
-        <span class="copyright right">© Marie Hudelot</span>
-      </div>
+
       <div class="windowRow">
         <div class="custom-grid-part left">
-          <h3>Tirages argentiques lambda</h3>
-          <p>Le tirage "Lambda" est réalisé d'après un fichier numérique sur de nombreux papiers argentiques : brillant, satiné, métallique ou haute réflexion Fujiflex mais aussi en transparent et sur film Duratrans adapté aux  caissons lumineux. Le papier est développé dans un procédé chimique chromogène RA4 puis fixé, lavé et séché. Largeur maximum des tirages lambda 125 cm.</p>
-          <h3>Tirages direct sur supports</h3>
-          <p>Pour vos événements ponctuels, expositions en extérieur, nous pouvons imprimer directement sur de nombreux matériaux : cartons, pvc, moussse, dibond 2 ou 3 mm, aluminium anodisé, plexiglass… <br/>
-          Ces impressions sont réalisées à base d'encres UV. Le format maximum en un lé est de 120x250 cm</p>
+          <h3>Encadement</h3>
+          <h4>Nos cadres sont fabriqués à la main et sur medure</h4>
+          <h5>caisse américaine sans verre</h5>
+          <p>L'encadrement dit en Caisse Américaine est un montage de tirage collé sur un support, et monté dans une cornière de section 30x40 ou 35x47 mm, en fonction du tirage. <br/>
+          La Caisse Américaine présente sur sa face, un dégagé de 5 à 8 mm (à définir) visible entre le tirage et son cadre. Ce dégagé donne la vision d'une pièce flottant dans son encadrement.</p>
+          <p><span class='bold'>Finition</span>&nbsp;&nbsp; blanc, noir, wengé, chêne naturel …</p>
+          <p>Pour les grands formats, il est conseillé d’utilisé une caisse US plus large et plus haute : Bois 50/60,  noir, blanc, gris ou wengé.</p>
         </div>
         <div class="custom-grid-part right">
-          <div class="asset-bg tirages3">
-            <img src="<?php echo url('assets/images/asset-tirages3.png'); ?>" alt="Tirages">
-            <span class="copyright bottom-left">© Sabine Delcour</span>
+          <div class="asset-bg finitions2">
+            <img src="<?php echo url('assets/images/asset-finition-5.png'); ?>" class='' alt="Caisse américaine sans verre - Exemples de finitions" />
           </div>
         </div>
+      </div>
+
+      <div class="windowRow">
+        <div class="custom-grid-part left">
+          <img src="<?php echo url('assets/images/asset-finition-6.png'); ?>" class='' alt="Digigraphie" />
+          <span class="copyright">© Philippe Marinig</span>
+        </div>
+        <div class="custom-grid-part right">
+          <img src="<?php echo url('assets/images/asset-finition-7.png'); ?>" class='' alt="Digigraphie" />
+          <span class="copyright">© Elene Usdin</span>
+        </div>
+      </div>
+
+      <div class="windowRow">
+        <div class="custom-grid-part left">
+          <h5>encadrement traditionnel</h5>
+          <p>L'encadrement traditionnel se devise à la demande. Il est fonction des choix que vous allez effectuer concernant le profil de la baguette, le choix éventuel d'une rehausse, le verre ou le plexiglas, la finition de montage, la finition au dos de l'encadrement... <br/>
+          Le montage peut par exemple s'effectuer sous un verre clair, anti reflet, anti UV / reflet et en différente épaisseurs : 2, 3, 4 mm... Mais aussi sous plexiglas</p>
+          <p><span class="bold">L'encadrement traditionnel avec  "passe-partout"</span><br/>Le passe-partout est un contre collé au pH neutre de 15/10ème d’épaisseur dans lequel on découpe une fenêtre au format du visuel en créant une marge tournante du format et de la couleur de son choix. En plus de sa fonction esthétique, le passe partout d’encadrement a pour but d'isoler l'œuvre du contact direct avec la vitre.</p>
+          <p>Le passe partout peut aussi etre biseauté, permettant ainsi d'aérer les images de petite taille, de leur donner de la profondeur et de les isoler du verre ou du plexiglas lors des montages.</p>
+
+          <h5>CADRE BOITE AVEC VERRE</h5>
+          <p>Le cadre-boite présente un léger espacement entre le verre et l'œuvre ce qui donne une impression de volume à l'ensemble. </p>
+          <p><span class='bold'>Finition</span>&nbsp;&nbsp; blanc, noir, wengé, chêne naturel …</p>
+        </div>
+        <div class="custom-grid-part right">
+          <div class="asset-bg finitions2">
+            <img src="<?php echo url('assets/images/asset-finition-8.png'); ?>" class='' alt="Encadrement traditionnel - Cadre en bois" />
+          </div>
+        </div>
+      </div>
+
+      <div class="windowRow ratioImg">
+        <img src="<?php echo url('assets/images/asset-finition-9.jpg'); ?>" class='' alt="Olivia Gay - Marie Hudelot" />
       </div>
     </div>
   </div>
