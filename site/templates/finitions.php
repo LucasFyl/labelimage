@@ -22,8 +22,7 @@
       <div class="windowRow">
         <div class="custom-grid-part left first">
           <h3>contre collage</h3>
-          <h4>Différents supports sont proposés pour présenter vos tirages photographiques</h4>
-          Nos tirages sont réalisés sur des imprimantes Epson et des papiers jet d'encre de première qualité, sélectionnés de manière à couvrir une large gamme de teintes, d’épaisseurs, de textures et de brillances.</p>
+          <h4>Différents supports sont proposés pour présenter <br/> vos tirages photographiques</h4>
           <h5>collage sur aluminium ou dibond</h5>
           <p>Le tirage est contrecollé sur une plaque d’aluminium d'1mm ou sur un  Dibond 2mm. selon les qualités de rigidité et de conservation désirées.
           Un châssis aluminium peut être posé au dos du support pour l'accrocher tout en le décollant du mur.</p>
@@ -35,6 +34,10 @@
           <p>Le plexiglass existe également en anti reflet.</p>
         </div>
         <div class="custom-grid-part right">
+          <div class="h2-bloc">
+              <h2>Personnalisez</h2>
+              <h2>Vos tirages</h2>
+          </div>  
           <div class="asset-bg finitions1">
             <img src="<?php echo url('assets/images/asset-finition-2.png'); ?>"  alt="Collage sur aluminium " />
           </div>
