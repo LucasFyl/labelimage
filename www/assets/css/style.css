@@ -6220,6 +6220,9 @@ a:visited {
   color: black;
   text-decoration: none;
 }
+.fullH {
+  height: 100vh;
+}
 .loader {
   width: 100%;
   height: 100%;
@@ -6441,6 +6444,12 @@ a.arrow-down:hover {
   height: auto;
   min-height: 100%;
 }
+#prestation .container-fluid > .left {
+  padding-left: 90px;
+}
+#prestation .container-fluid > .right {
+  padding-right: 90px;
+}
 #prestation .main-content {
   background-color: #f6f2ef;
   position: absolute;
@@ -6449,30 +6458,27 @@ a.arrow-down:hover {
   left: 0;
   right: 0;
 }
-#prestation .main-content .left h3:first-child {
+#prestation .main-content h3:first-child {
   margin-top: 0;
 }
 #prestation .main-content .h2-bloc {
   margin-bottom: 19.01em;
   position: relative;
   padding-left: 0;
+  white-space: nowrap;
+}
+#prestation .main-content .h2-bloc h2 {
+  white-space: nowrap;
 }
 #prestation .main-content .h2-bloc div {
   padding-right: 50px;
 }
-#prestation .main-content .row > div:nth-child(2) {
-  padding-left: 50px;
-  margin-top: 227px;
-}
 #prestation .main-content .asset-bg {
-  width: auto;
-  height: auto;
-  position: static;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 #prestation .main-content .asset-bg img {
-  position: absolute;
-  right: 60px;
-  bottom: 35px;
   float: right;
 }
 #prestation .main-content .asset-bg img.stylet {
@@ -6515,9 +6521,6 @@ a.arrow-down:hover {
 }
 #prestation .main-content h2:first-child {
   margin-top: 50px;
-}
-#prestation .main-content h2:nth-child(2) {
-  padding-left: 3.65em;
 }
 #prestation .main-content h3 {
   font-family: 'DIN-Medium', helvetica, sans-serif;
@@ -6621,6 +6624,12 @@ a.arrow-down:hover {
   text-transform: none;
   font-size: 1em;
 }
+#prestation.traitement .main-content > .left:first-child {
+  padding-top: 227px;
+}
+#prestation.traitement .main-content > .right h2:nth-child(2) {
+  text-align: right;
+}
 #prestation.traitement h4:nth-child(2) {
   margin-top: 40px;
   margin-bottom: 0;
@@ -6704,40 +6713,6 @@ a.arrow-down:hover {
   height: 350px;
   padding: 40px 80px 40px 90px;
   background-color: #989898;
-}
-#prestation.tirages .digigraphie .custom-grid-part {
-  padding: 0;
-  margin: 0;
-  height: auto;
-}
-#prestation.tirages .digigraphie .custom-grid-part:before,
-#prestation.tirages .digigraphie .custom-grid-part:after {
-  display: table;
-  content: " ";
-}
-#prestation.tirages .digigraphie .custom-grid-part h3 {
-  font-size: 2.1em;
-  color: white;
-}
-#prestation.tirages .digigraphie .custom-grid-part p {
-  margin-top: 0;
-  font-size: 1.8em;
-}
-#prestation.tirages .digigraphie .custom-grid-part .bold {
-  font-size: 1.5em;
-  line-height: 1.5;
-  text-transform: uppercase;
-  text-align: justify;
-  line-height: 28.5px;
-}
-#prestation.tirages .digigraphie .custom-grid-part .bold.white {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-#prestation.tirages .digigraphie .custom-grid-part img {
-  position: absolute;
-  top: 0;
-  right: 0;
 }
 #prestation.tirages .digigraphie .left img {
   width: 195px;

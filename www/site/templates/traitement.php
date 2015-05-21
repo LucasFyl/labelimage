@@ -18,8 +18,8 @@
     <div id="trigger2"></div>
     <div id="trigger3"></div>
       
-    <div class="main-content" id="custom-grid-container">
-        <div class="custom-grid-part left first">
+    <div class="main-content container-fluid fullH">
+        <div class="col-xs-12 col-sm-6 left">
           <h3>Traitement numerique</h3>
           <h4>Nous effectuons de multiples operations </h4>
           <h4>afin d’optimiser vos fichiers et obtenir le meilleur de vos images</h4>
@@ -29,12 +29,12 @@
           Pour l'espace CMJN, nous proposons une épreuve numérique de contrôle certifiée Fogra, réalisée sur un Epson Stylus Pro 3880.</p>
           <p>La simulation Fogra 39 est la plus utilisée dans l'échange d'épreuve contratuelle<br>Elle est le reflet d'une impression sur un papier couché mat/brillant sur une presse Offset calibrée suivant la norme ISO 12647-2</p>
         </div>
-        <div class="custom-grid-part right">
+        <div class="col-sm-6 hidden-xs right">
           <div class="h2-bloc">
               <h2>Optimiser</h2>
               <h2>vos fichiers</h2>
           </div>  
-          <div class="asset-bg">
+          <div class="asset-bg traitement">
             <img src="<?php echo url('assets/images/asset-stylet.png'); ?>" class='stylet' alt="Traitement Numérique">
           </div>
         </div>
