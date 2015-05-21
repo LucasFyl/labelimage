@@ -7400,7 +7400,7 @@ a.arrow-down:hover {
 #prestation.tirages .copyright.bottom-left {
   color: black;
   left: 215px;
-  top: 80%;
+  bottom: -540px;
 }
 #prestation.tirages .digigraphie {
   height: 350px;

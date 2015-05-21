@@ -39,6 +39,7 @@
         </div>
       </div>
       <div class="row ratioImg">
+        <!-- <div id="trigger5"></div> -->
         <div class="col-xs-12 fullH">
           <span class="copyright right">© Philippe Marinig</span>
         </div>
@@ -83,6 +84,7 @@
         <p class='col-xs-12'>Les tirages certifiés Digigraphie sont authentifiés par un poinçon à sec ou par un tampon au dos du tirage si celui-ci est contrecollé. Les papiers certifiés ont tous subi des tests de tenue dans le temps pour vous garantir une très longue durée de conservation.</p>
       </div>
       <div class="row ratioImg">
+        <div id="trigger4"></div>
         <div class="col-xs-12 fullH">
           <span class="copyright left">© Eric Fayolle</span>
           <span class="copyright right">© Marie Hudelot</span>
@@ -119,5 +121,22 @@
       .setTween(TweenMax.to('.landing h1', 0.5, {opacity:0,ease:Power2.easeOut}))
       // .addIndicators({name: 'headline'})
       .addTo(controller);
+
+      new ScrollMagic.Scene({
+            triggerElement: '#trigger4',
+            triggerHook: 0,
+            duration: '100%'
+        })
+      .setTween(TweenMax.to('.main-content > div:nth-child(5) > div', 0.1, {backgroundAttachment:'initial'}))
+      // .addIndicators({name: 'Position'})
+      .addTo(controller);
+      // new ScrollMagic.Scene({
+      //       triggerElement: '#trigger5',
+      //       triggerHook: 0,
+      //       duration: '100%'
+      //   })
+      // .setTween(TweenMax.to('.main-content > div:nth-child(2) > div', 0.1, {backgroundAttachment:'initial'}))
+      // .addIndicators({name: 'Position 2'})
+      // .addTo(controller);
     });
   </script>
