@@ -149,7 +149,8 @@ a.arrow-down {
 	min-height: 100%;
 
 	.container-fluid {
-		
+		max-width: 100vw;
+		overflow-x: hidden;
 		> .left {
 			padding-left: 90px;
 			@media screen and (max-width: @screen-md-max) {
@@ -187,49 +188,16 @@ a.arrow-down {
 				padding-right: 50px;				
 			}
 		}
-		// .row > div {
-		// 	&:nth-child(2) {
-		// 		padding-left: 50px;
-		// 		margin-top: 227px;
-		// 	}
-		// }
 		.asset-bg {
 			width: 100%;
 			height: 100%;
 			position: relative;
 
 			img {
-				// position: absolute;
-				// right: 60px;bottom: 35px;
 				float: right;
 				&.stylet {max-width: 60%;}
 				&.scan {max-width: 90%;margin-right: -50px;}
 			}
-			// &.traitement {
-			// 	img {
-
-			// 	}
-			// }
-			// &.scan {
-			// 	img {
-			// 		right: 0; bottom: 0;
-			// 	}
-			// }
-			// &.tirages1 {
-			// 	img {
-			// 		right: 90px;bottom: 80px;
-			// 	}
-			// }
-			// &.tirages2 {
-			// 	img {
-			// 		right: 90px;bottom: 50px;
-			// 	}
-			// }
-			// &.tirages3 {
-			// 	img {
-			// 		right: 90px;top: 90px;
-			// 	}
-			// }
 			.caption {
 				position: absolute;
 				color: #999899;
@@ -312,28 +280,122 @@ a.arrow-down {
 	#trigger {
 		bottom: -50px;
 	}
-	section:not(.windowRow) {
-		width: 100%;
+	section {
+		width: 100vw;
 		height: auto;
 		.clearfix();
-		> .left, > .right {
-			height: auto;
+		> .left {
+			padding-left: 90px;
 		}
-		
 		&:first-child {
-			height: auto;
-			min-height: 1330px;
-			.left img {
-				display: block;
-				margin-top: 40px auto;
+			.left{
+				padding-top: 200px;
+				img {
+					display: block;
+					margin: 50px auto; 
+				}
+			} 
+			.right {
+				padding-right: 0 ;
+				h2:nth-child(2) {
+					text-align: center;
+				}
+				.asset-bg {
+					img {margin-top: 180px;}
+				}
 			}
 		}
 		&:nth-child(2) {
-			height: auto;
-			min-height: 460px;
 			float: left;
-			> div {padding:0;
-			&:nth-child(2) img {float: right;}}
+			> div {
+				padding:0;
+				max-height: 458px;
+				overflow: hidden;
+				&:first-child {
+					padding-right: 5px;
+				}
+				&:last-child {
+					padding-left: 5px;
+				}
+				img {
+					width: 100%;
+				}
+				&.right {
+					position: relative;
+					.copyright {
+						color: black;
+						top: 430px;
+						right: 563px;
+					}
+				}
+			}
+		}
+
+		&:nth-child(3) {
+			> div {
+				padding-top: 90px;
+				&.right {
+					img {
+						display: block;
+						margin: 0 auto;
+					}
+				}
+				&.left {
+					margin-bottom: 60px;
+				}
+			}
+		}
+
+		&:nth-child(4) {
+			background: #c9c9c9;
+			.copyright {
+				color: black;
+				white-space: nowrap;
+			}
+			.left {
+				padding-top: 50px;
+				.copyright {
+					bottom: 20px;
+					right: -60px;
+				}
+			}
+			.right {
+				padding-right: 0;
+				img {
+					float: right;
+					margin-bottom: 50px;
+				}
+				.copyright {
+					bottom: 60px;
+					right: 140px;
+				}
+			}
+		}
+
+
+		&:nth-child(5) {
+			> div {
+
+				&.right {
+					padding-top: 160px;
+					img {
+						display: block;
+						margin: 0 auto;
+					}
+				}
+				&.left {
+					padding-top: 100px;
+					padding-bottom: 110px;
+				}
+			}
+		}
+
+		&:nth-child(6) {
+			> div {
+				padding: 0;
+				background: url('../images/asset-finition-9.jpg') no-repeat center center fixed;
+				background-size: cover;
+			}
 		}
 
 		p {
@@ -354,6 +416,8 @@ a.arrow-down {
 			font-family: @Med;
 			text-transform: none;
 			font-size: 1em;
+			letter-spacing: 0;
+			white-space: nowrap;
 		}
 	}
 }
@@ -418,10 +482,10 @@ a.arrow-down {
 			}
 		}
 		> div:first-child {
-			> div:first-child {
+			.left {
 				padding-top: 230px;
 			}
-			> div:nth-child(2) {
+			.right {
 				h2:nth-child(2) {
 					text-align: center;
 				}
@@ -445,7 +509,7 @@ a.arrow-down {
 			}
 		}
 		> div:nth-child(3) {
-			> div:first-child {
+			.left {
 				padding-top: 0;
 				h3 {
 					margin: 60px 0;
@@ -457,7 +521,7 @@ a.arrow-down {
 					}
 				}
 			}
-			> div:nth-child(2) {
+			.right {
 				padding-top: 320px;
 		  		padding-right: 90px;
 			}
@@ -471,11 +535,11 @@ a.arrow-down {
 			}
 		}
 		> div:nth-child(6) {
-			> div:first-child {
+			.left {
 				padding-top: 150px;
 				margin-bottom: 150px;
 			}
-			> div:nth-child(2) {
+			.right {
 				.asset-bg {
 					padding-top: 90px;
 					padding-right: 90px;
@@ -529,11 +593,6 @@ a.arrow-down {
 		}
 	}
 	.copyright {
-		color: #f6f2ef;
-		font-size: 1.4em;
-		position: absolute;
-		z-index: 999;
-
 		&.right {
 			right: 200px;
 			bottom: 20px;

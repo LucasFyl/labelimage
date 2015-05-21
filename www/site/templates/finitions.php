@@ -9,18 +9,17 @@
 
     <a href="#" class="arrow-down fadeIn"></a>
 
-    <div class="landing ratioImg">
+    <div class="landing">
       <h1 class="fadeIn">finitions</h1>
-      <img src="<?php echo url('assets/images/landing-finition.jpg'); ?>" alt="" class="background"/> 
     </div>
     
     <div id="trigger"></div>
     <div id="trigger2"></div>
     <div id="trigger3"></div>
      
-    <div class="main-content" id="custom-grid-container">
-      <section class="first">
-        <div class="custom-grid-part left first">
+    <div class="main-content container-fluid" >
+      <section class="row">
+        <div class="col-xs-12 col-md-6 left">
           <h3>contre collage</h3>
           <h4>Différents supports sont proposés pour présenter <br/> vos tirages photographiques</h4>
           <h5>collage sur aluminium ou dibond</h5>
@@ -29,33 +28,33 @@
           <img src="<?php echo url('assets/images/asset-finition-1.png'); ?>" alt="Collage sur dibond" /> 
           <h5>Le plexicollage</h5>
           <p>Votre tirage photo, argentique ou pigmentaire est contrecollé à la colle liquide neutre sous un plexiglass de  3 ou 4mm d 'épaisseur. Au dos de ce collage, nous positionnons un plexiglas, un aluminium ou un dibond</p>
-          <p><span>Le traitement de la plaque acrylique évite aux ultraviolets de détériorer le visuel.</span>
+          <p><span class="bold">Le traitement de la plaque acrylique évite aux ultraviolets de détériorer le visuel.</span>
           La plaque de plexi assure une protection optimale de l’œuvre et une mise en valeur des couleurs et des contrastes qui donne une profondeur unique à vos images. </p>
           <p>Le plexiglass existe également en anti reflet.</p>
         </div>
-        <div class="custom-grid-part right">
+        <div class="col-xs-12 col-md-6 hidden-xs hidden-sm right">
           <div class="h2-bloc">
               <h2>Personnalisez</h2>
-              <h2>Vos tirages</h2>
+              <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Vos tirages</h2>
           </div>  
-          <div class="asset-bg finitions1">
+          <div class="asset-bg">
             <img src="<?php echo url('assets/images/asset-finition-2.png'); ?>"  alt="Collage sur aluminium " />
           </div>
         </div>
       </section>
 
-      <section>
-        <div class="custom-grid-part left">
+      <section class="row">
+        <div class="col-xs-12 col-md-6 left">
           <img src="<?php echo url('assets/images/asset-finition-3.jpg'); ?>" alt="Plexicollage Éric Fayolle" />
         </div>
-        <div class="custom-grid-part right">
+        <div class="col-xs-12 col-md-6 hidden-xs hidden-sm right">
           <img src="<?php echo url('assets/images/asset-finition-4.jpg'); ?>" alt="Plexicollage Éric Fayolle" />
+          <span class="copyright">© Éric Fayolle</span>
         </div>
-        <span class="copyright right">© Éric Fayolle</span>
       </section>
 
-      <section>
-        <div class="custom-grid-part left">
+      <section class="row">
+        <div class="col-xs-12 col-md-6 left">
           <h3>Encadement</h3>
           <h4>Nos cadres sont fabriqués à la main et sur medure</h4>
           <h5>caisse américaine sans verre</h5>
@@ -64,26 +63,24 @@
           <p><span class='bold'>Finition</span>&nbsp;&nbsp; blanc, noir, wengé, chêne naturel …</p>
           <p>Pour les grands formats, il est conseillé d’utilisé une caisse US plus large et plus haute : Bois 50/60,  noir, blanc, gris ou wengé.</p>
         </div>
-        <div class="custom-grid-part right">
-          <div class="asset-bg finitions2">
-            <img src="<?php echo url('assets/images/asset-finition-5.png'); ?>" class='' alt="Caisse américaine sans verre - Exemples de finitions" />
-          </div>
+        <div class="col-xs-12 col-md-6 hidden-xs hidden-sm right">
+          <img src="<?php echo url('assets/images/asset-finition-5.png'); ?>" class='' alt="Caisse américaine sans verre - Exemples de finitions" />
         </div>
       </section>
 
-      <section>
-        <div class="custom-grid-part left">
+      <section class="row">
+        <div class="col-xs-12 col-md-6 left">
           <img src="<?php echo url('assets/images/asset-finition-6.png'); ?>" class='' alt="Digigraphie" />
           <span class="copyright">© Philippe Marinig</span>
         </div>
-        <div class="custom-grid-part right">
-          <img src="<?php echo url('assets/images/asset-finition-7.png'); ?>" class='' alt="Digigraphie" />
+        <div class="col-xs-12 col-md-6 hidden-xs hidden-sm right">
           <span class="copyright">© Elene Usdin</span>
+          <img src="<?php echo url('assets/images/asset-finition-7.png'); ?>" class='' alt="Digigraphie" />
         </div>
       </section>
 
-      <section>
-        <div class="custom-grid-part left">
+      <section class="row">
+        <div class="col-xs-12 col-md-6 left">
           <h5>encadrement traditionnel</h5>
           <p>L'encadrement traditionnel se devise à la demande. Il est fonction des choix que vous allez effectuer concernant le profil de la baguette, le choix éventuel d'une rehausse, le verre ou le plexiglas, la finition de montage, la finition au dos de l'encadrement... <br/>
           Le montage peut par exemple s'effectuer sous un verre clair, anti reflet, anti UV / reflet et en différente épaisseurs : 2, 3, 4 mm... Mais aussi sous plexiglas</p>
@@ -94,15 +91,14 @@
           <p>Le cadre-boite présente un léger espacement entre le verre et l'œuvre ce qui donne une impression de volume à l'ensemble. </p>
           <p><span class='bold'>Finition</span>&nbsp;&nbsp; blanc, noir, wengé, chêne naturel …</p>
         </div>
-        <div class="custom-grid-part right">
-          <div class="asset-bg finitions2">
-            <img src="<?php echo url('assets/images/asset-finition-8.png'); ?>" class='' alt="Encadrement traditionnel - Cadre en bois" />
-          </div>
+        <div class="col-xs-12 col-md-6 hidden-xs hidden-sm right">
+          <img src="<?php echo url('assets/images/asset-finition-8.png'); ?>" class='' alt="Encadrement traditionnel - Cadre en bois" />
         </div>
       </section>
 
-      <section class="windowRow ratioImg">
-        <img src="<?php echo url('assets/images/asset-finition-9.jpg'); ?>" class='' alt="Olivia Gay - Marie Hudelot" />
+      <section class="row ratioImg">
+        <div class="col-xs-12 fullH">
+        </div>
       </section>
     </div>
   </div>

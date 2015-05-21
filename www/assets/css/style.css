@@ -6916,6 +6916,12 @@ a:visited {
   bottom: 45px;
   right: 0;
 }
+.copyright {
+  color: #f6f2ef;
+  font-size: 1.4em;
+  position: absolute;
+  z-index: 999;
+}
 body {
   height: 100%;
 }
@@ -7040,6 +7046,10 @@ a.arrow-down:hover {
   width: 100%;
   height: auto;
   min-height: 100%;
+}
+#prestation .container-fluid {
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 #prestation .container-fluid > .left {
   padding-left: 90px;
@@ -7168,77 +7178,151 @@ a.arrow-down:hover {
 #prestation.finitions #trigger {
   bottom: -50px;
 }
-#prestation.finitions section:not(.windowRow) {
-  width: 100%;
+#prestation.finitions section {
+  width: 100vw;
   height: auto;
 }
-#prestation.finitions section:not(.windowRow):before,
-#prestation.finitions section:not(.windowRow):after {
+#prestation.finitions section:before,
+#prestation.finitions section:after {
   content: " ";
   display: table;
 }
-#prestation.finitions section:not(.windowRow):after {
+#prestation.finitions section:after {
   clear: both;
 }
-#prestation.finitions section:not(.windowRow):before,
-#prestation.finitions section:not(.windowRow):after {
+#prestation.finitions section:before,
+#prestation.finitions section:after {
   content: " ";
   display: table;
 }
-#prestation.finitions section:not(.windowRow):after {
+#prestation.finitions section:after {
   clear: both;
 }
-#prestation.finitions section:not(.windowRow):before,
-#prestation.finitions section:not(.windowRow):after {
+#prestation.finitions section:before,
+#prestation.finitions section:after {
   display: table;
   content: " ";
 }
-#prestation.finitions section:not(.windowRow):before,
-#prestation.finitions section:not(.windowRow):after {
+#prestation.finitions section:before,
+#prestation.finitions section:after {
   display: table;
   content: " ";
 }
-#prestation.finitions section:not(.windowRow) > .left,
-#prestation.finitions section:not(.windowRow) > .right {
-  height: auto;
+#prestation.finitions section > .left {
+  padding-left: 90px;
 }
-#prestation.finitions section:not(.windowRow):first-child {
-  height: auto;
-  min-height: 1330px;
+#prestation.finitions section:first-child .left {
+  padding-top: 200px;
 }
-#prestation.finitions section:not(.windowRow):first-child .left img {
+#prestation.finitions section:first-child .left img {
   display: block;
-  margin-top: 40px auto;
+  margin: 50px auto;
 }
-#prestation.finitions section:not(.windowRow):nth-child(2) {
-  height: auto;
-  min-height: 460px;
+#prestation.finitions section:first-child .right {
+  padding-right: 0 ;
+}
+#prestation.finitions section:first-child .right h2:nth-child(2) {
+  text-align: center;
+}
+#prestation.finitions section:first-child .right .asset-bg img {
+  margin-top: 180px;
+}
+#prestation.finitions section:nth-child(2) {
   float: left;
 }
-#prestation.finitions section:not(.windowRow):nth-child(2) > div {
+#prestation.finitions section:nth-child(2) > div {
   padding: 0;
+  max-height: 458px;
+  overflow: hidden;
 }
-#prestation.finitions section:not(.windowRow):nth-child(2) > div:nth-child(2) img {
+#prestation.finitions section:nth-child(2) > div:first-child {
+  padding-right: 5px;
+}
+#prestation.finitions section:nth-child(2) > div:last-child {
+  padding-left: 5px;
+}
+#prestation.finitions section:nth-child(2) > div img {
+  width: 100%;
+}
+#prestation.finitions section:nth-child(2) > div.right {
+  position: relative;
+}
+#prestation.finitions section:nth-child(2) > div.right .copyright {
+  color: black;
+  top: 430px;
+  right: 563px;
+}
+#prestation.finitions section:nth-child(3) > div {
+  padding-top: 90px;
+}
+#prestation.finitions section:nth-child(3) > div.right img {
+  display: block;
+  margin: 0 auto;
+}
+#prestation.finitions section:nth-child(3) > div.left {
+  margin-bottom: 60px;
+}
+#prestation.finitions section:nth-child(4) {
+  background: #c9c9c9;
+}
+#prestation.finitions section:nth-child(4) .copyright {
+  color: black;
+  white-space: nowrap;
+}
+#prestation.finitions section:nth-child(4) .left {
+  padding-top: 50px;
+}
+#prestation.finitions section:nth-child(4) .left .copyright {
+  bottom: 20px;
+  right: -60px;
+}
+#prestation.finitions section:nth-child(4) .right {
+  padding-right: 0;
+}
+#prestation.finitions section:nth-child(4) .right img {
   float: right;
-}
-#prestation.finitions section:not(.windowRow) p {
-  margin-bottom: 40px;
-}
-#prestation.finitions section:not(.windowRow) h3 {
   margin-bottom: 50px;
 }
-#prestation.finitions section:not(.windowRow) h4 {
+#prestation.finitions section:nth-child(4) .right .copyright {
+  bottom: 60px;
+  right: 140px;
+}
+#prestation.finitions section:nth-child(5) > div.right {
+  padding-top: 160px;
+}
+#prestation.finitions section:nth-child(5) > div.right img {
+  display: block;
+  margin: 0 auto;
+}
+#prestation.finitions section:nth-child(5) > div.left {
+  padding-top: 100px;
+  padding-bottom: 110px;
+}
+#prestation.finitions section:nth-child(6) > div {
+  padding: 0;
+  background: url('../images/asset-finition-9.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+#prestation.finitions section p {
   margin-bottom: 40px;
 }
-#prestation.finitions section:not(.windowRow) h5 {
+#prestation.finitions section h3 {
+  margin-bottom: 50px;
+}
+#prestation.finitions section h4 {
+  margin-bottom: 40px;
+}
+#prestation.finitions section h5 {
   font-size: 1.5em;
   font-family: 'AvenirNextLTPro-Medium', helvetica, sans-serif;
   text-transform: uppercase;
 }
-#prestation.finitions section:not(.windowRow) .bold {
+#prestation.finitions section .bold {
   font-family: 'AvenirNextLTPro-Medium', helvetica, sans-serif;
   text-transform: none;
   font-size: 1em;
+  letter-spacing: 0;
+  white-space: nowrap;
 }
 #prestation.traitement .landing {
   background: url('../images/landing-traitement.jpg') no-repeat center center fixed;
@@ -7287,36 +7371,36 @@ a.arrow-down:hover {
 #prestation.tirages .main-content > div.ratioImg img {
   max-height: 100vh;
 }
-#prestation.tirages .main-content > div:first-child > div:first-child {
+#prestation.tirages .main-content > div:first-child .left {
   padding-top: 230px;
 }
-#prestation.tirages .main-content > div:first-child > div:nth-child(2) h2:nth-child(2) {
+#prestation.tirages .main-content > div:first-child .right h2:nth-child(2) {
   text-align: center;
 }
-#prestation.tirages .main-content > div:first-child > div:nth-child(2) .asset-bg {
+#prestation.tirages .main-content > div:first-child .right .asset-bg {
   padding-right: 120px;
 }
-#prestation.tirages .main-content > div:first-child > div:nth-child(2) .asset-bg img {
+#prestation.tirages .main-content > div:first-child .right .asset-bg img {
   margin-top: -150px;
 }
-#prestation.tirages .main-content > div:first-child > div:nth-child(2) .asset-bg .caption {
+#prestation.tirages .main-content > div:first-child .right .asset-bg .caption {
   bottom: -310px;
 }
 #prestation.tirages .main-content > div:nth-child(2) > div {
   background: url('../images/asset-tirages-bg2.jpg') no-repeat center center fixed;
   background-size: cover;
 }
-#prestation.tirages .main-content > div:nth-child(3) > div:first-child {
+#prestation.tirages .main-content > div:nth-child(3) .left {
   padding-top: 0;
 }
-#prestation.tirages .main-content > div:nth-child(3) > div:first-child h3 {
+#prestation.tirages .main-content > div:nth-child(3) .left h3 {
   margin: 60px 0;
 }
-#prestation.tirages .main-content > div:nth-child(3) > div:first-child h4:nth-child(3) {
+#prestation.tirages .main-content > div:nth-child(3) .left h4:nth-child(3) {
   padding-left: 80px;
   margin-bottom: 60px;
 }
-#prestation.tirages .main-content > div:nth-child(3) > div:nth-child(2) {
+#prestation.tirages .main-content > div:nth-child(3) .right {
   padding-top: 320px;
   padding-right: 90px;
 }
@@ -7324,11 +7408,11 @@ a.arrow-down:hover {
   background: url('../images/asset-tirages-bg3.jpg') no-repeat center center fixed;
   background-size: cover;
 }
-#prestation.tirages .main-content > div:nth-child(6) > div:first-child {
+#prestation.tirages .main-content > div:nth-child(6) .left {
   padding-top: 150px;
   margin-bottom: 150px;
 }
-#prestation.tirages .main-content > div:nth-child(6) > div:nth-child(2) .asset-bg {
+#prestation.tirages .main-content > div:nth-child(6) .right .asset-bg {
   padding-top: 90px;
   padding-right: 90px;
 }
@@ -7380,12 +7464,6 @@ a.arrow-down:hover {
   height: 1.4em;
   letter-spacing: .5px;
   vertical-align: middle;
-}
-#prestation.tirages .copyright {
-  color: #f6f2ef;
-  font-size: 1.4em;
-  position: absolute;
-  z-index: 999;
 }
 #prestation.tirages .copyright.right {
   right: 200px;
