@@ -1,0 +1,52 @@
+{
+  "name": "LabelImage",
+  "version": "2.1.0",
+  "homepage": "https://github.com/LucasFyl/labelimage",
+  "authors": [
+    "Lucas F <lfayolle1@gmail.com>"
+  ],
+  "description": "Atelier photographique artisanal de tirages d'exposition",
+  "main": "www/index.php",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "Label",
+    "Image",
+    "Atelier",
+    "Impression",
+    "Tirages",
+    "Expositions",
+    "photo",
+    "Photographie",
+    "Encadrement",
+    "Scan",
+    "Finitions",
+    "Traitement",
+    "Traitement artistique",
+    "Tirages Noir et Blanc"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "www/assets/scripts/vendor/*"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "gsap": "~1.16.1",
+    "bootstrap": "~3.3.4",
+    "nicescroll": "~3.6.0",
+    "ScrollMagic": "~2.0.5"
+  },
+  "devDependencies": {
+    "jquery": "~2.1.4",
+    "gsap": "~1.16.1",
+    "bootstrap": "~3.3.4",
+    "nicescroll": "~3.6.0",
+    "ScrollMagic": "~2.0.5"
+  }
+}
