@@ -11,6 +11,7 @@ body {
 		margin-top: 45px;
 		height: ~"calc(100vh - 45px)";
 		overflow: hidden;
+		padding: 0;
 		
 		.croix {
 			top: 0;
@@ -90,18 +91,24 @@ body {
 	top:0; 
 	z-index:-1;
 
-	.background {
-		width: 100%;
-		height: auto;
+	// .background {
+	// 	width: 100%;
+	// 	height: auto;
 	
-		position: fixed;
-		z-index: -1;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		margin: auto;
-	}	
+	// 	position: fixed;
+	// 	z-index: -1;
+	// 	top: 0;
+	// 	left: 0;
+	// 	right: 0;
+	// 	bottom: 0;
+	// 	margin: auto;
+	// }
+
+	background: url('../images/landing-traitement.jpg') no-repeat center center fixed;
+	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+
 	h1 {
 		text-align: right;
 		position: fixed;
@@ -110,6 +117,14 @@ body {
 		bottom: 245px;
 		font-size: 11.3em;
 		letter-spacing: 17px;
+
+		@media screen and (max-width: @screen-md-max) {
+			left: 0;
+			bottom: 120px;
+			right: 0;
+			margin: auto;
+			text-align: center;
+		}
 	}
 
 }
@@ -134,9 +149,17 @@ a.arrow-down {
 	min-height: 100%;
 
 	.container-fluid {
-
+		
 		> .left {
 			padding-left: 90px;
+			@media screen and (max-width: @screen-md-max) {
+				padding-right: 90px;
+			}
+			&:first-child {
+				@media screen and (max-width: @screen-md-max) {
+					padding-top: 110px !important;
+				}
+			}
 		}
 		> .right {
 			padding-right: 90px;
@@ -180,7 +203,7 @@ a.arrow-down {
 				// right: 60px;bottom: 35px;
 				float: right;
 				&.stylet {max-width: 60%;}
-				&.scan {max-width: 90%;}
+				&.scan {max-width: 90%;margin-right: -50px;}
 			}
 			&.traitement {
 				img {
@@ -263,7 +286,12 @@ a.arrow-down {
 #prestation.finitions {
 
 	.landing {
-		img {margin-top: 45px;}
+		background: url('../images/landing-finitions.jpg') no-repeat center center fixed;
+		background-size: cover;
+		-moz-background-size: cover;
+		-webkit-background-size: cover;
+
+
 		h1 {
 			bottom: 135px;
 			left: 50%;
@@ -330,6 +358,12 @@ a.arrow-down {
 	}
 }
 #prestation.traitement {
+	.landing {
+		background: url('../images/landing-traitement.jpg') no-repeat center center fixed;
+		background-size: cover;
+		-moz-background-size: cover;
+		-webkit-background-size: cover;
+	}
 	.main-content {
 		> .left {
 			&:first-child {
@@ -351,13 +385,26 @@ a.arrow-down {
 			padding-left: 2.5em;
 			margin-top: 0;
 			margin-bottom: 40px;
+			@media screen and (max-width: @screen-md-max) {
+				padding-left: 0;
+  				white-space: initial;
+			}
 		}
 	}
 	.left p {
 		text-align: right;
+		@media screen and (max-width: @screen-md-max) {
+			text-align: left;
+		}
 	}
 }
 #prestation.tirages {
+	.landing {
+		background: url('../images/landing-tirages.jpg') no-repeat center center fixed;
+		background-size: cover;
+		-moz-background-size: cover;
+		-webkit-background-size: cover;
+	}
 	.windowRow:last-child {
 		.left {
 			padding-top: 150px;
@@ -476,6 +523,10 @@ a.arrow-down {
 }
 #prestation.scan {
 	.landing {
+		background: url('../images/landing-scan.jpg') no-repeat center center fixed;
+		background-size: cover;
+		-moz-background-size: cover;
+		-webkit-background-size: cover;
 		h1 {
 			right: 355px;
 			bottom: 110px;
@@ -485,7 +536,11 @@ a.arrow-down {
 		bottom: 0;
 	}
 	.main-content {
+		.right {
+			padding-right: 50px;
+		}
 		.left {
+			padding-top: 240px;
 			p {
 				text-align: left;
 				margin-top: 0;
@@ -511,6 +566,9 @@ a.arrow-down {
 			p:last-child {
 				margin-bottom: 0 !important;
 			}
+		}
+		.h2-bloc {
+			margin-bottom: 124px;
 		}
 		h2 {
 			letter-spacing: 5px;

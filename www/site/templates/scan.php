@@ -9,17 +9,16 @@
 
     <a href="#" class="arrow-down fadeIn"></a>
 
-    <div class="landing">
+    <div class="landing ratioImg">
       <h1 class="fadeIn">scan</h1>
-      <img src="<?php echo url('assets/images/landing-scan.jpg'); ?>" alt="" class="background"/> 
     </div>
     
     <div id="trigger"></div>
     <div id="trigger2"></div>
     <div id="trigger3"></div>
       
-    <div class="main-content" id="custom-grid-container">
-      <div class="custom-grid-part left first">
+    <div class="main-content container-fluid fullH" >
+      <div class="col-xs-12 col-md-6 left">
         <h3>Scan</h3>
         <h4>L'atelier vous propose la numerisation de vos originaux <br/>
         a des fins artistiques ou de reproduction</h4>
@@ -32,7 +31,7 @@
         <p>Les tableaux ou toiles tendues peuvent être parcourus par leur vitrage sans déplacement de leurs cadres.<br/>
         Les fichiers Tiff sont remis en 16 bits couleur ou noir et blanc, sur DVD ou en téléchargement. Ils sont livrés dépoussiérés, optimisés en chromie et netteté.</p>
       </div>
-      <div class="custom-grid-part right">
+      <div class="col-xs-12 col-md-6 hidden-xs hidden-sm right">
         <div class="h2-bloc">
           <h2>Creer</h2>
           <h2>votre original</h2>
