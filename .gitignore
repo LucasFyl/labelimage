@@ -25,3 +25,5 @@ node_modules
 dist
 .tmp
 app/bower_components
+.yo-rc.json
+bower_components/

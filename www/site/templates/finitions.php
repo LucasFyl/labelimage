@@ -19,7 +19,7 @@
     <div id="trigger3"></div>
      
     <div class="main-content" id="custom-grid-container">
-      <div class="windowRow">
+      <section class="first">
         <div class="custom-grid-part left first">
           <h3>contre collage</h3>
           <h4>Différents supports sont proposés pour présenter <br/> vos tirages photographiques</h4>
@@ -42,9 +42,9 @@
             <img src="<?php echo url('assets/images/asset-finition-2.png'); ?>"  alt="Collage sur aluminium " />
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="windowRow">
+      <section>
         <div class="custom-grid-part left">
           <img src="<?php echo url('assets/images/asset-finition-3.jpg'); ?>" alt="Plexicollage Éric Fayolle" />
         </div>
@@ -52,9 +52,9 @@
           <img src="<?php echo url('assets/images/asset-finition-4.jpg'); ?>" alt="Plexicollage Éric Fayolle" />
         </div>
         <span class="copyright right">© Éric Fayolle</span>
-      </div>
+      </section>
 
-      <div class="windowRow">
+      <section>
         <div class="custom-grid-part left">
           <h3>Encadement</h3>
           <h4>Nos cadres sont fabriqués à la main et sur medure</h4>
@@ -69,9 +69,9 @@
             <img src="<?php echo url('assets/images/asset-finition-5.png'); ?>" class='' alt="Caisse américaine sans verre - Exemples de finitions" />
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="windowRow">
+      <section>
         <div class="custom-grid-part left">
           <img src="<?php echo url('assets/images/asset-finition-6.png'); ?>" class='' alt="Digigraphie" />
           <span class="copyright">© Philippe Marinig</span>
@@ -80,9 +80,9 @@
           <img src="<?php echo url('assets/images/asset-finition-7.png'); ?>" class='' alt="Digigraphie" />
           <span class="copyright">© Elene Usdin</span>
         </div>
-      </div>
+      </section>
 
-      <div class="windowRow">
+      <section>
         <div class="custom-grid-part left">
           <h5>encadrement traditionnel</h5>
           <p>L'encadrement traditionnel se devise à la demande. Il est fonction des choix que vous allez effectuer concernant le profil de la baguette, le choix éventuel d'une rehausse, le verre ou le plexiglas, la finition de montage, la finition au dos de l'encadrement... <br/>
@@ -99,11 +99,11 @@
             <img src="<?php echo url('assets/images/asset-finition-8.png'); ?>" class='' alt="Encadrement traditionnel - Cadre en bois" />
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="windowRow ratioImg">
+      <section class="windowRow ratioImg">
         <img src="<?php echo url('assets/images/asset-finition-9.jpg'); ?>" class='' alt="Olivia Gay - Marie Hudelot" />
-      </div>
+      </section>
     </div>
   </div>
 

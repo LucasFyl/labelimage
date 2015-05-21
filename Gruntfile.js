@@ -21,16 +21,6 @@ module.exports = function (grunt) {
               "www/assets/css/style.css": "www/assets/less/main.less" // destination file and source file
             }
           },
-          watch: {
-            options: {
-              compress: false,
-              yuicompress: false,
-              optimization: 1
-            },
-            files: {
-              "www/assets/css/style.css": "www/assets/less/main.less" // destination file and source file
-            }
-          }
         },
         concat: {
             options: {
