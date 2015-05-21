@@ -9,7 +9,7 @@
 
     <a href="#" class="arrow-down fadeIn"></a>
 
-    <div class="landing ratioImg">
+    <div class="landing">
       <h1 class="fadeIn">scan</h1>
     </div>
     

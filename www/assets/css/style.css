@@ -6814,6 +6814,7 @@ a:visited {
 }
 .fullH {
   height: 100vh;
+  overflow-y: hidden;
 }
 .loader {
   width: 100%;
@@ -7094,22 +7095,6 @@ a.arrow-down:hover {
   max-width: 90%;
   margin-right: -50px;
 }
-#prestation .main-content .asset-bg.scan img {
-  right: 0;
-  bottom: 0;
-}
-#prestation .main-content .asset-bg.tirages1 img {
-  right: 90px;
-  bottom: 80px;
-}
-#prestation .main-content .asset-bg.tirages2 img {
-  right: 90px;
-  bottom: 50px;
-}
-#prestation .main-content .asset-bg.tirages3 img {
-  right: 90px;
-  top: 90px;
-}
 #prestation .main-content .asset-bg .caption {
   position: absolute;
   color: #999899;
@@ -7296,14 +7281,63 @@ a.arrow-down:hover {
   -moz-background-size: cover;
   -webkit-background-size: cover;
 }
-#prestation.tirages .windowRow:last-child .left {
+#prestation.tirages .main-content > div {
+  background: #f6f2ef;
+}
+#prestation.tirages .main-content > div.ratioImg img {
+  max-height: 100vh;
+}
+#prestation.tirages .main-content > div:first-child > div:first-child {
+  padding-top: 230px;
+}
+#prestation.tirages .main-content > div:first-child > div:nth-child(2) h2:nth-child(2) {
+  text-align: center;
+}
+#prestation.tirages .main-content > div:first-child > div:nth-child(2) .asset-bg {
+  padding-right: 120px;
+}
+#prestation.tirages .main-content > div:first-child > div:nth-child(2) .asset-bg img {
+  margin-top: -150px;
+}
+#prestation.tirages .main-content > div:first-child > div:nth-child(2) .asset-bg .caption {
+  bottom: -310px;
+}
+#prestation.tirages .main-content > div:nth-child(2) > div {
+  background: url('../images/asset-tirages-bg2.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+#prestation.tirages .main-content > div:nth-child(3) > div:first-child {
+  padding-top: 0;
+}
+#prestation.tirages .main-content > div:nth-child(3) > div:first-child h3 {
+  margin: 60px 0;
+}
+#prestation.tirages .main-content > div:nth-child(3) > div:first-child h4:nth-child(3) {
+  padding-left: 80px;
+  margin-bottom: 60px;
+}
+#prestation.tirages .main-content > div:nth-child(3) > div:nth-child(2) {
+  padding-top: 320px;
+  padding-right: 90px;
+}
+#prestation.tirages .main-content > div:nth-child(5) > div {
+  background: url('../images/asset-tirages-bg3.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+#prestation.tirages .main-content > div:nth-child(6) > div:first-child {
   padding-top: 150px;
+  margin-bottom: 150px;
+}
+#prestation.tirages .main-content > div:nth-child(6) > div:nth-child(2) .asset-bg {
+  padding-top: 90px;
+  padding-right: 90px;
 }
 #prestation.tirages .left {
   padding-top: 60px;
   margin-bottom: 50px;
+  padding-left: 90px;
 }
-#prestation.tirages .left.first .stand-out {
+#prestation.tirages .left:first-child .stand-out {
   font-size: 0.765em;
   line-height: 1em;
 }
@@ -7311,12 +7345,14 @@ a.arrow-down:hover {
   margin-top: 20px;
 }
 #prestation.tirages .left .bold {
+  font-family: 'AvenirNextLTPro-Demi', helvetica, sans-serif;
   font-size: 0.765em;
+  white-space: nowrap;
 }
 #prestation.tirages .left .stand-out-wrap {
-  padding-left: 50px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-left: 40px;
+  padding-top: 30px;
+  padding-bottom: 40px;
 }
 #prestation.tirages .left .stand-out-wrap p {
   margin-top: 0;
@@ -7330,6 +7366,9 @@ a.arrow-down:hover {
   letter-spacing: .5px;
   vertical-align: middle;
   font-family: 'AvenirNextLTPro-Regular', helvetica, sans-serif;
+}
+#prestation.tirages .left .stand-out-wrap + p {
+  margin-top: 0;
 }
 #prestation.tirages .left .stand-out {
   padding-left: 12px;
@@ -7366,7 +7405,67 @@ a.arrow-down:hover {
 #prestation.tirages .digigraphie {
   height: 350px;
   padding: 40px 80px 40px 90px;
-  background-color: #989898;
+  background-color: #989898 !important;
+}
+#prestation.tirages .digigraphie p:last-child {
+  margin-top: 0;
+  padding-left: 0;
+}
+#prestation.tirages .digigraphie > div {
+  padding: 0;
+  margin: 0;
+  height: auto;
+}
+#prestation.tirages .digigraphie > div:before,
+#prestation.tirages .digigraphie > div:after {
+  content: " ";
+  display: table;
+}
+#prestation.tirages .digigraphie > div:after {
+  clear: both;
+}
+#prestation.tirages .digigraphie > div:before,
+#prestation.tirages .digigraphie > div:after {
+  content: " ";
+  display: table;
+}
+#prestation.tirages .digigraphie > div:after {
+  clear: both;
+}
+#prestation.tirages .digigraphie > div:before,
+#prestation.tirages .digigraphie > div:after {
+  display: table;
+  content: " ";
+}
+#prestation.tirages .digigraphie > div:before,
+#prestation.tirages .digigraphie > div:after {
+  display: table;
+  content: " ";
+}
+#prestation.tirages .digigraphie > div.left h3 {
+  font-size: 2.1em;
+  color: white ;
+  margin-top: 0;
+}
+#prestation.tirages .digigraphie > div p {
+  margin-top: 0;
+  font-size: 1.8em;
+}
+#prestation.tirages .digigraphie > div .bold {
+  font-size: 1.5em;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-align: justify;
+  line-height: 28.5px;
+}
+#prestation.tirages .digigraphie > div .bold.white {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#prestation.tirages .digigraphie > div img {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 #prestation.tirages .digigraphie .left img {
   width: 195px;

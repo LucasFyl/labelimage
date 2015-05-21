@@ -205,31 +205,31 @@ a.arrow-down {
 				&.stylet {max-width: 60%;}
 				&.scan {max-width: 90%;margin-right: -50px;}
 			}
-			&.traitement {
-				img {
+			// &.traitement {
+			// 	img {
 
-				}
-			}
-			&.scan {
-				img {
-					right: 0; bottom: 0;
-				}
-			}
-			&.tirages1 {
-				img {
-					right: 90px;bottom: 80px;
-				}
-			}
-			&.tirages2 {
-				img {
-					right: 90px;bottom: 50px;
-				}
-			}
-			&.tirages3 {
-				img {
-					right: 90px;top: 90px;
-				}
-			}
+			// 	}
+			// }
+			// &.scan {
+			// 	img {
+			// 		right: 0; bottom: 0;
+			// 	}
+			// }
+			// &.tirages1 {
+			// 	img {
+			// 		right: 90px;bottom: 80px;
+			// 	}
+			// }
+			// &.tirages2 {
+			// 	img {
+			// 		right: 90px;bottom: 50px;
+			// 	}
+			// }
+			// &.tirages3 {
+			// 	img {
+			// 		right: 90px;top: 90px;
+			// 	}
+			// }
 			.caption {
 				position: absolute;
 				color: #999899;
@@ -405,15 +405,91 @@ a.arrow-down {
 		-moz-background-size: cover;
 		-webkit-background-size: cover;
 	}
-	.windowRow:last-child {
-		.left {
-			padding-top: 150px;
+	> div:first-child {
+		
+	}
+	.main-content {
+		> div {
+			background: @bg;
+		}
+		> div.ratioImg {
+			img {
+				max-height: 100vh;
+			}
+		}
+		> div:first-child {
+			> div:first-child {
+				padding-top: 230px;
+			}
+			> div:nth-child(2) {
+				h2:nth-child(2) {
+					text-align: center;
+				}
+				.asset-bg {
+					padding-right: 120px;
+					img {
+						margin-top: -150px;
+					}
+					.caption{
+						bottom: -310px;
+					}
+				}
+			}
+		}
+
+		// nth2 = bg image
+		> div:nth-child(2) {
+			> div {
+				background: url('../images/asset-tirages-bg2.jpg') no-repeat center center fixed;
+				background-size: cover;
+			}
+		}
+		> div:nth-child(3) {
+			> div:first-child {
+				padding-top: 0;
+				h3 {
+					margin: 60px 0;
+				}
+				h4 {
+					&:nth-child(3) {
+						padding-left: 80px;
+						margin-bottom: 60px;
+					}
+				}
+			}
+			> div:nth-child(2) {
+				padding-top: 320px;
+		  		padding-right: 90px;
+			}
+		}
+		// nth4 = digigraphie
+		// nth5 = bg image
+		> div:nth-child(5) {
+			> div {
+				background: url('../images/asset-tirages-bg3.jpg') no-repeat center center fixed;
+				background-size: cover;
+			}
+		}
+		> div:nth-child(6) {
+			> div:first-child {
+				padding-top: 150px;
+				margin-bottom: 150px;
+			}
+			> div:nth-child(2) {
+				.asset-bg {
+					padding-top: 90px;
+					padding-right: 90px;
+				}
+			}
 		}
 	}
+		
 	.left {
 		padding-top: 60px;
 		margin-bottom: 50px;
-		&.first {
+  		padding-left: 90px;
+
+		&:first-child {
 			.stand-out {
 				font-size: 0.765em;
 				line-height: 1em;
@@ -423,17 +499,22 @@ a.arrow-down {
 			margin-top: 20px;
 		}
 		.bold {
+			font-family: @Demi;
 			font-size: 0.765em; // 13px base 17
+			white-space: nowrap;
 		}
 		.stand-out-wrap {
-			padding-left: 50px;
-			padding-top: 50px;
-			padding-bottom: 50px;
+			padding-left: 40px;
+			padding-top: 30px;
+			padding-bottom: 40px;
 			p {
 				margin-top: 0;
 				.stand-out();
 				font-family: @Reg;
 			}
+		}
+		.stand-out-wrap + p {
+			margin-top: 0;
 		}
 		.stand-out {
 			padding-left: 12px;
@@ -472,37 +553,44 @@ a.arrow-down {
 	.digigraphie {
 		height: 350px;
 		padding: 40px 80px 40px 90px;
-		background-color: #989898;
-		// .custom-grid-part {
-		// 	padding: 0;margin: 0;
-		// 	height: auto;
-		// 	.clearfix();
-		// 	h3 {
-		// 		font-size: 2.1em;
-		// 		color: white;
-		// 	}
-		// 	p {
-		// 		margin-top: 0;
-		// 		font-size: 1.8em;
-		// 	}
-		// 	.bold {
-		// 		font-size: 1.5em;
-		// 		line-height: 1.5;
-		// 		text-transform: uppercase;
-		// 		text-align: justify;
-		// 		line-height: 28.5px;
-				
-		// 		&.white {
-		// 			margin-top: 30px;
-		// 			margin-bottom: 30px;
-		// 		}
-		// 	}
-		// 	img {
-		// 		position: absolute;
-		// 		top: 0;right: 0;
-		// 	}
+		background-color: #989898 !important;
 
-		// }
+		p:last-child {
+			margin-top: 0;
+				padding-left: 0;
+		}
+
+		> div {
+			padding: 0;margin: 0;
+			height: auto;
+			.clearfix();
+			&.left h3 {
+				font-size: 2.1em;
+				color: white ;
+				margin-top: 0;
+			}
+			p {
+				margin-top: 0;
+				font-size: 1.8em;
+			}
+			.bold {
+				font-size: 1.5em;
+				line-height: 1.5;
+				text-transform: uppercase;
+				text-align: justify;
+				line-height: 28.5px;
+				
+				&.white {
+					margin-top: 30px;
+					margin-bottom: 30px;
+				}
+			}
+			img {
+				position: absolute;
+				top: 0;right: 0;
+			}
+
+		}
 		.left img {
 			width: 195px; height: 120px;
 			top: 80px; right: 10px;
