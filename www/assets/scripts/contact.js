@@ -13,7 +13,7 @@ $( document ).ready(function(){
 
 	new ScrollMagic.Scene({
         triggerElement: '#trigger2',
-        triggerHook: .767,
+        triggerHook: 0.767,
         duration: '50%'
     })
 	.setTween(TweenMax.to('.landing .background', 0.5, {top:'-25%',ease:Linear.easeNone}))

@@ -6,30 +6,72 @@
 	      <span class="croix spin"></span>
 	    </div>
 
-	    <div class="center-block">
-	    	
-	    	<br /><br /><br /><br /><br />
-	    	<h2 class="text-center"><?php echo $page->title(); ?></h2>
+        <div class="landing">
+            <div class="bandeau">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <h1 class="text-hide">Label Image</h1>
+                    </div>
+                    <div class="col-xs-6">
+                        <h2>atelier photographique artisanal de tirages d'exposition</h2>
+                        <p>Spécialisé dans le tirage noir et blanc et le tirage Fine Art, <br />
+                        l'atelier est aussi une structure de post production numérique.</p>
+                        <span class="stamp-digi"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+	    <div class="container-fluid main-content">
+	    	<div class="landing-home-2"></div>
+            
+            <div class="row">
+                <h3>nos préstations</h3>
+                <div class="col-xs-4 col-sm-2">
+                    <a href="#">
+                        <span>Scan</span>
+                    </a>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <a href="#">
+                        <span>Traitement</span>
+                    </a>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <a href="#">
+                        <span>Tirages</span>
+                    </a>
+                </div>
+                <div class="col-xs-2 col-sm-2">
+                    <a href="#">
+                        <span>Finitions</span>
+                    </a>
+                </div>
+                <div class="col-xs-2 col-sm-2">
+                    <a href="#">
+                        <span>Tarifs</span>
+                    </a>
+                </div>
+            </div>
+            <div class="row footer-part">
+                <div class="col-sm-3">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+                <div class="col-sm-6">
+                    <p>   ©  COPYRIGHT 2015  ATELIER LABEL IMAGE  <span class="o-b"></span> <span> 01 43 38 03 01 </span>   <span class="o-b"></span>    DESIGN ET DEVELOPPEMENT fayolle   </p>
+                </div>
+                <div class="col-sm-3">
+                    <a href="#">Tarifs PDF</a>
+                </div>
+            </div>
+
 	    </div>
 	</div>
 
-	<!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
-
-    <!-- build:js scripts/main.js -->
-    <script src="<?php echo url ('assets/scripts/vendor/jquery/jquery.js'); ?>"></script>
-    <script src="<?php echo url ('assets/scripts/vendor/nicescroll/nicescroll.min.js'); ?>"></script>
-    <script src="<?php echo url('assets/scripts/vendor/gsap/src/minified/jquery.gsap.min.js'); ?>"></script>
-    <script src="<?php echo url('assets/scripts/vendor/gsap/src/minified/TweenMax.min.js'); ?>"></script>
-    <script src="<?php echo url('assets/scripts/vendor/gsap/src/minified/plugins/ScrollToPlugin.min.js'); ?>"></script>
-    <script src="<?php echo url('assets/scripts/vendor/gsap/src/minified/plugins/CSSRulePlugin.min.js'); ?>"></script>
-    <script src="<?php echo url('assets/scripts/vendor/ScrollMagic/scrollmagic/uncompressed/ScrollMagic.js'); ?>"></script>
-    <script src="<?php echo url('assets/scripts/vendor/ScrollMagic/scrollmagic/uncompressed/plugins/jquery.ScrollMagic.js'); ?>"></script>
-    <script src="<?php echo url('assets/scripts/vendor/ScrollMagic/scrollmagic/uncompressed/plugins/animation.gsap.js'); ?>"></script>
-    <script src="<?php echo url('assets/scripts/vendor/ScrollMagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js'); ?>"></script>
-    <!-- <script src="scripts/chromeSmoothScroll.js"></script>-->
-    <script src="<?php echo url('assets/scripts/main.js'); ?>"></script>
-    <script src="<?php echo url('assets/scripts/prestation.js'); ?>"></script>
+    <?php snippet('scripts') ?>
     <script src="<?php echo url('assets/scripts/hello.js'); ?>"></script>
+
+    <script>
+
+    </script>

@@ -94,14 +94,17 @@ module.exports = function (grunt) {
                     "VelocityTracker" : false, 
                     "CSSPlugin" : false,
                     "ThrowPropsPlugin" : false, 
-                    "BezierPlugin" : false
+                    "BezierPlugin" : false,
+                    // ScrollMagic 
+                    "ScrollMagic": true,
+                    "controller": true
                 }
             },
             gruntfile: {
                 src: 'gruntfile.js'
             },
             scripts: {
-                src: ['www/assets/scripts/**/*.js', 'www/assets/scripts/**/**/*.js', 'www/assets/scripts/*.js']
+                src: ['www/assets/scripts/*.js']
             },
             lib_test: {
                 src: ['lib/**/*.js', 'test/**/*.js']

@@ -7249,7 +7249,7 @@ a.arrow-down:hover {
 }
 #prestation.finitions section:nth-child(2) > div.right .copyright {
   color: black;
-  top: 430px;
+  top: 420px;
   right: 563px;
 }
 #prestation.finitions section:nth-child(3) > div {
@@ -7840,4 +7840,36 @@ a.arrow-down:hover {
   margin: 0 10px;
   background: #eb5c08;
   vertical-align: middle;
+}
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+#home {
+  width: 100%;
+  max-width: 100vw;
+  height: 100%;
+  overflow-x: hidden;
+}
+#home .landing {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../images/landing-home.jpg');
+  background-position: center top;
+}
+#home .bandeau {
+  width: 100%;
+  max-width: 100vw;
+  background-color: #f6f2ef;
+  height: calc(50vh - 45px);
+  position: absolute;
+  bottom: 0;
+}
+#home .main-content {
+  position: absolute;
+  top: 100%;
+}
+#home .main-content .landing-home-2 {
+  background: url('../images/landing-home-2.jpg') no-repeat center center fixed;
+  background-size: cover;
 }

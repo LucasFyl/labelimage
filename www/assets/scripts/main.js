@@ -1,7 +1,8 @@
+ /*jshint unused:false*/
 // Controller Scroll animations
 var controller = new ScrollMagic.Controller();
 
-function ratioImage() {
+var ratioImage = function() {
   $('.ratioImg').each(function(){
     var box = $(this),
         image = $(this).find('img'),
@@ -31,12 +32,11 @@ function ratioImage() {
       }});
     }
   });
-  
-}
+};
 
 
 // $(document).ready(function() {
 
-// 	'use strict';
+//	'use strict';
 
 // });
