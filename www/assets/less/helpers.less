@@ -18,6 +18,14 @@
 	-ms-transform: 		 scale(@factor);
 	-o-transform: 		 scale(@factor);
 }
+.vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.fixed {position: fixed;z-index: 9999;}
 .browsehappy {
   margin: 0.2em 0; 
   background: #ccc; 

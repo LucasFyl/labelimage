@@ -10,7 +10,7 @@ $(document).ready(function(){
         zindex: 99999,
         railpadding: { top: 0, right: 5, left: 0, bottom: 0 },
         mousescrollstep: 60,
-        scrollX: false, 
+        scrollX: false,
         scrollY: true
 	});
 	var customScroll = $("body").getNiceScroll();
@@ -21,15 +21,10 @@ $(document).ready(function(){
 
 	TweenMax.set('header', {y:'-45px'});
 	TweenMax.to('.fadeIn', 0.25, {opacity:1,ease:Power1.easeOut,delay:0.1});
-// .set('.loader', {display:'none'});
-
 	
 });
 
 $(window).load(function(){
-
-	// $(window).on('resize', ratioImage);
-
 
 	var animHeader = new TimelineMax({paused:true});
 	animHeader.set('header', {backgroundColor:'#f6f2ef'})

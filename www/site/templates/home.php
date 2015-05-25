@@ -1,12 +1,15 @@
 	<?php snippet('header') ?>
  	
- 	<div id="home">
+ 	<div id="home" class="container-fluid">
 
 	    <div class="loader">
 	      <span class="croix spin"></span>
 	    </div>
 
         <div class="landing">
+            <div id="trigger"></div>
+            <div id="trigger2"></div>
+
             <div class="bandeau">
                 <div class="row">
                     <div class="col-xs-6">
@@ -22,10 +25,10 @@
             </div>
         </div>
 
-	    <div class="container-fluid main-content">
+	    <div class="main-content">
 	    	<div class="landing-home-2"></div>
             
-            <div class="row">
+            <div class="row prestations">
                 <h3>nos préstations</h3>
                 <div class="col-xs-4 col-sm-2">
                     <a href="#">
@@ -71,6 +74,7 @@
 
     <?php snippet('scripts') ?>
     <script src="<?php echo url('assets/scripts/hello.js'); ?>"></script>
+    <script src="<?php echo url('assets/scripts/home.js'); ?>"></script>
 
     <script>
 
