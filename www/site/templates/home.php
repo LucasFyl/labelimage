@@ -27,8 +27,6 @@
 
 	    <div class="main-content">
 
-	    	<!-- <div class="landing-home-2"></div> -->
-            
             <div class="row prestations">
 
                 <h3>nos préstations</h3>

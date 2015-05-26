@@ -7,7 +7,7 @@
 	padding: 0;margin: 0;
 	
 	#trigger {
-		top:  ~"calc(50vh)";	
+		top:  @height;	
 	}
 	#trigger2 {
 		position: absolute;
@@ -81,19 +81,14 @@
 	}
 		
 	.main-content {
-		// position: absolute;
 		width: 100%;
-		// height: ~"calc( 100vh - 45px )";
 		height: 100vh;
 		max-height: 100vh;
 		position: relative;
 		z-index: 888;
-		// top: 100%;
 		
 		background: url('../images/asset-home-bg-1.jpg') no-repeat center center;
 		background-size: cover;
-		// background-size: 100%;
-		// padding-left: 0;padding-right: 0;
 
 		.row {
 			margin: 0;
@@ -108,21 +103,6 @@
 			font-family: @UltLt;
 		}
 
-		// .landing-home-2 {
-		// 	width: 100%;
-		// 	height: @height;
-		// 	background: url('../images/landing-home-2.jpg') no-repeat;	
-		// 	background-size: cover;
-		// 	// background-attachment: fixed;
-		// 	background-position-y: 0;
-		// 	// z-index: 88;
-		// 	&.follow {
-		// 		background-attachment: initial;
-		// 		background-position-y: initial;
-		// 	}
-		// 	// position: absolute;
-		// 	// top: 0;
-		// }
 		.prestations {
 			height: @height;
 			padding-top: @height;
@@ -153,7 +133,6 @@
 			}
 		}
 		.footer-part {
-			// height: 45px;
 			position: relative;
 			bottom: 0;
 			p {

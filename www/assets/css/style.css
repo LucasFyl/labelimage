@@ -7860,7 +7860,7 @@ a.arrow-down:hover {
   margin: 0;
 }
 #home #trigger {
-  top: calc(50vh);
+  top: calc(50vh - 22.5px);
 }
 #home #trigger2 {
   position: absolute;
