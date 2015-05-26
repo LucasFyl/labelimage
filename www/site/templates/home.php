@@ -7,10 +7,13 @@
 	    </div>
 
         <div class="landing">
-            <div id="trigger"></div>
+            <div class="background"></div>
             <div id="trigger2"></div>
+            <div id="trigger3"></div>
 
             <div class="bandeau">
+                <div id="trigger"></div>
+
                 <div class="row">
                     <div class="col-xs-6">
                         <h1 class="hidden">Label Image</h1>

@@ -7877,22 +7877,30 @@ a.arrow-down:hover {
   margin: 0;
 }
 #home #trigger {
-  top: calc(50vh - 22.5px);
+  position: relative;
+  top: -45px;
 }
 #home #trigger2 {
   position: absolute;
-  top: calc(50vh + 45px);
+  top: 51vh;
+}
+#home #trigger3 {
+  position: absolute;
+  top: calc(100vh - 45px);
 }
 #home .landing {
   width: 100vw;
   height: 100vh;
   position: relative;
-  background-image: url('../images/landing-home.jpg');
-  background-position-x: center;
-  background-position-y: top;
   padding-top: calc(50vh + 22.5px);
   overflow-y: visible;
   z-index: 999;
+}
+#home .landing .background {
+  position: absolute;
+  background-image: url('../images/landing-home.jpg');
+  background-attachment: fixed;
+  background-position: center top;
 }
 #home .landing .bandeau {
   width: 100vw;
@@ -7900,7 +7908,7 @@ a.arrow-down:hover {
   height: calc(50vh - 22.5px);
   max-height: calc(50vh - 22.5px);
   z-index: 999;
-  position: relative;
+  position: fixed;
   z-index: 99999;
 }
 #home .landing .bandeau:before {

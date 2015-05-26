@@ -9,7 +9,7 @@ $( document ).ready(function(){
         duration: '100%'
     })
 	.setTween(TweenMax.to('.landing .background', 0.5, {top:'-55%',ease:Linear.easeNone}))
-	.addIndicators({name: 'background'})
+	// .addIndicators({name: 'background'})
 	.addTo(controller);
 
 	var header = new ScrollMagic.Scene({

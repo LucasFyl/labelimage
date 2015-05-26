@@ -7,20 +7,29 @@
 	padding: 0;margin: 0;
 	
 	#trigger {
-		top:  @height;	
+		position: relative;
+		top:  -45px;	
 	}
 	#trigger2 {
 		position: absolute;
-		top:  ~"calc(50vh + 45px)";		
+		top:  51vh;		
+	}
+	#trigger3 {
+		position: absolute;
+		top:  ~"calc(100vh - 45px)";		
 	}
 
 	.landing {
 		width: 100vw;
 		height: 100vh;
 		position: relative;
-		background-image: url('../images/landing-home.jpg');
-		background-position-x: center;
-		background-position-y: top;
+		.background {
+			position: absolute;
+			background-image: url('../images/landing-home.jpg');
+			background-attachment: fixed;
+			background-position: center top;
+		}
+		
 		padding-top: ~"calc(50vh + 22.5px)";
 		overflow-y: visible;
 		z-index: 999;
@@ -31,7 +40,7 @@
 			max-height: @height;
 			z-index: 999;
 
-			position: relative;
+			position: fixed;
 			z-index: 99999;
 			.before-gradient;
 			.after-gradient;
@@ -91,6 +100,8 @@
 		height: 100vh;
 		max-height: 100vh;
 		position: relative;
+		// position: absolute;
+		// top: 100%;
 		z-index: 888;
 		
 		background: url('../images/asset-home-bg-1.jpg') no-repeat center center;
@@ -102,7 +113,8 @@
 		
 		h3 {
 			position: absolute;
-			right: 90px;top: ~"calc(50vh - 1.58em)";
+			right: 90px;
+			top: ~"calc(50vh - 1.58em)";
 			z-index: 999;
 			color: white;
 			font-size: 9em;
@@ -115,6 +127,7 @@
 
 		.prestations {
 			height: ~"calc(100vh - 45px)";
+			// height: auto;
 			padding-top: ~"calc(50vh - 45px)";
 
 			background-size: 100%;
@@ -123,6 +136,7 @@
 					width: 20%; 
 					height: @height;	
 				}
+
 				height: ~"calc( ( 50vh - 22.5px ) / 2 )";
 				padding: 0;
 
