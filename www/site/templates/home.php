@@ -26,9 +26,11 @@
         </div>
 
 	    <div class="main-content">
-	    	<div class="landing-home-2"></div>
+
+	    	<!-- <div class="landing-home-2"></div> -->
             
             <div class="row prestations">
+
                 <h3>nos préstations</h3>
                 <div class="col-xs-4 col-sm-2">
                     <a href="#">
@@ -55,14 +57,16 @@
                         <span>Tarifs</span>
                     </a>
                 </div>
+
             </div>
+
             <div class="row footer-part">
                 <div class="col-sm-3">
-                    <a href="#"></a>
-                    <a href="#"></a>
+                    <a href="#">f</a>
+                    <a href="#">m</a>
                 </div>
                 <div class="col-sm-6">
-                    <p>   ©  COPYRIGHT 2015  ATELIER LABEL IMAGE  <span class="o-b"></span> <span> 01 43 38 03 01 </span>   <span class="o-b"></span>    DESIGN ET DEVELOPPEMENT fayolle   </p>
+                    <p> © COPYRIGHT 2015 ATELIER LABEL IMAGE <span class="o-b"></span> <span> 01 43 38 03 01 </span> <span class="o-b"></span> DESIGN ET DEVELOPPEMENT FAYOLLE  </p>
                 </div>
                 <div class="col-sm-3">
                     <a href="#">Tarifs PDF</a>
@@ -70,12 +74,9 @@
             </div>
 
 	    </div>
+
 	</div>
 
     <?php snippet('scripts') ?>
     <script src="<?php echo url('assets/scripts/hello.js'); ?>"></script>
     <script src="<?php echo url('assets/scripts/home.js'); ?>"></script>
-
-    <script>
-
-    </script>

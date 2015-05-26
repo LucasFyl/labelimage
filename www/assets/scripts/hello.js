@@ -1,3 +1,4 @@
+/*jshint smarttabs:true */
 $(document).ready(function(){
 
 	'use strict';
