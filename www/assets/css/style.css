@@ -7969,15 +7969,15 @@ a.arrow-down:hover {
 #home .main-content h3 {
   position: absolute;
   right: 90px;
-  top: calc(50vh - 1.54em);
+  top: calc(50vh - 1.58em);
   z-index: 999;
   color: white;
   font-size: 9em;
   font-family: 'AvenirNextLTPro-UltLt', helvetica, sans-serif;
 }
 #home .main-content .prestations {
-  height: calc(50vh - 22.5px);
-  padding-top: calc(50vh - 22.5px);
+  height: calc(100vh - 45px);
+  padding-top: calc(50vh - 45px);
   background-size: 100%;
 }
 #home .main-content .prestations div {

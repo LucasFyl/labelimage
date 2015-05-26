@@ -96,7 +96,7 @@
 		
 		h3 {
 			position: absolute;
-			right: 90px;top: ~"calc(50vh - 1.54em)";
+			right: 90px;top: ~"calc(50vh - 1.58em)";
 			z-index: 999;
 			color: white;
 			font-size: 9em;
@@ -104,8 +104,8 @@
 		}
 
 		.prestations {
-			height: @height;
-			padding-top: @height;
+			height: ~"calc(100vh - 45px)";
+			padding-top: ~"calc(50vh - 45px)";
 
 			background-size: 100%;
 			div {
@@ -128,7 +128,9 @@
 					text-align: center;
 					letter-spacing: 1px;
 
-					&:hover {text-decoration: none;}
+					&:hover {
+						text-decoration: none;
+					}
 				}
 			}
 		}

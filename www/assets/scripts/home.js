@@ -13,7 +13,7 @@ $(document).ready(function(){
         duration: 45
     })
 	.setTween(TweenMax.to('header', 0.25, {top:'-=45',ease:Linear.easeNone}))
-	.addIndicators({name: 'header'})
+	// .addIndicators({name: 'header'})
 	.addTo(controller);
 
 });
