@@ -10,8 +10,9 @@
         <div class="landing">
             <a href="#" class="arrow-down fadeIn"></a>
             <h1 class="fadeIn">contact</h1>
-            <img src="<?php echo url('assets/images/landing-contact.jpg'); ?>" alt="Contact" class="background"/> 
-            <img src="<?php echo url('assets/images/landing-contact.jpg'); ?>" alt="Contact" class="background fixed"/> 
+            <div class="background"></div>
+            <!-- <img src="<?php echo url('assets/images/landing-contact.jpg'); ?>" alt="Contact" class="background"/> 
+            <img src="<?php echo url('assets/images/landing-contact.jpg'); ?>" alt="Contact" class="background fixed"/>  -->
         </div>
         
         <div id="trigger"></div>

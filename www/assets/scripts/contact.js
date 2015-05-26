@@ -1,6 +1,7 @@
 $( document ).ready(function(){
 
 	'use strict';
+	// TweenMax.set('.background', {top:0});
 
     new ScrollMagic.Scene({
           triggerElement: '#trigger',
@@ -13,7 +14,7 @@ $( document ).ready(function(){
 
 	new ScrollMagic.Scene({
         triggerElement: '#trigger2',
-        triggerHook: 0.767,
+        triggerHook: 0.5,
         duration: '50%'
     })
 	.setTween(TweenMax.to('.landing .background', 0.5, {top:'-25%',ease:Linear.easeNone}))

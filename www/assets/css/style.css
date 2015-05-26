@@ -6376,6 +6376,7 @@ button.close {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  float: none;
 }
 .pull-right {
   float: right !important;
@@ -6810,6 +6811,7 @@ body {
 h1 {
   color: white;
   font-family: 'AvenirNextLTPro-UltLt', helvetica, sans-serif;
+  z-index: 99999;
 }
 h2 {
   color: black;
@@ -6956,6 +6958,9 @@ span.o-b {
   width: 25px;
   height: 26px;
   background: url('../images/icon-facebook.png') no-repeat center center;
+}
+.center-block {
+  float: none;
 }
 body {
   height: 100%;
@@ -7674,36 +7679,38 @@ a.arrow-down:hover {
 #contact #trigger {
   bottom: 0;
 }
+#contact #trigger2 {
+  top: 569px;
+}
 #contact #trigger3 {
-  top: 552px;
+  top: 479px;
 }
 #contact .landing {
-  position: static;
   height: auto;
+  min-height: 524px;
+  overflow: hidden;
+  position: relative;
 }
-#contact .landing img {
-  position: static;
-  margin-top: 45px;
-  opacity: 0;
-  display: block;
-}
-#contact .landing img.fixed {
+#contact .landing .background {
+  min-width: 100vw;
+  min-height: 524px;
+  background: url('../images/landing-contact.jpg') no-repeat center center;
+  background-size: cover;
   position: fixed;
-  opacity: 1;
-  top: 0px;
-  left: 0;
-  right: 0;
+  top: 0;
+  z-index: 1;
 }
 #contact .landing h1 {
   right: 255px;
-  bottom: 245px;
+  top: 325px;
 }
 #contact .landing .arrow-down {
   right: 92px;
-  bottom: 255px;
+  bottom: 315px;
 }
 #contact .main-content {
-  position: static;
+  position: relative;
+  z-index: 999;
   background-color: #f6f2ef;
 }
 #contact .main-content section:first-child {
@@ -8033,22 +8040,24 @@ a.arrow-down:hover {
   position: relative;
   bottom: 0;
 }
-#home .main-content .footer-part p {
+#home .main-content .footer-part p,
+#home .main-content .footer-part a {
+  text-align: center;
   font-size: 1.1em;
   text-transform: uppercase;
   color: white;
   letter-spacing: 1px;
   line-height: 26px;
-  text-align: center;
 }
-#home .main-content .footer-part p span {
+#home .main-content .footer-part p span,
+#home .main-content .footer-part a span {
   color: #eb5c08;
 }
 #home .main-content .footer-part .cta-btn {
   padding-left: 50px;
 }
 #home .main-content .footer-part .cta-btn a {
-  background-position: top left;
+  background-position-y: 100%;
 }
 #home .main-content .footer-part .cta-btn a:first-child {
   width: 37px;
@@ -8056,4 +8065,10 @@ a.arrow-down:hover {
 }
 #home .main-content .footer-part .cta-btn a:nth-child(2) {
   width: 27px;
+}
+#home .main-content .footer-part .pdf a {
+  display: block;
+  padding-right: 34px;
+  background: url('../images/icon-dl.png') no-repeat;
+  background-position-x: 70%;
 }

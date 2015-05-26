@@ -13,7 +13,7 @@
             <div class="bandeau">
                 <div class="row">
                     <div class="col-xs-6">
-                        <h1 class="text-hide">Label Image</h1>
+                        <h1 class="hidden">Label Image</h1>
                     </div>
                     <div class="col-xs-6">
                         <h2>atelier photographique artisanal de tirages d'exposition</h2>
@@ -31,27 +31,27 @@
 
                 <h3>nos préstations</h3>
                 <div class="col-xs-4 col-sm-2">
-                    <a href="<?php echo u('prestations/scan'); ?>">
+                    <a href="<?php echo url('prestations/scan'); ?>">
                         <span>Scan</span>
                     </a>
                 </div>
                 <div class="col-xs-4 col-sm-2">
-                    <a href="<?php echo u('prestations/traitement'); ?>">
+                    <a href="<?php echo url('prestations/traitement'); ?>">
                         <span>Traitement</span>
                     </a>
                 </div>
                 <div class="col-xs-4 col-sm-2">
-                    <a href="<?php echo u('prestations/tirages'); ?>">
+                    <a href="<?php echo url('prestations/tirages'); ?>">
                         <span>Tirages</span>
                     </a>
                 </div>
                 <div class="col-xs-6 col-sm-2">
-                    <a href="<?php echo u('prestations/finitions'); ?>">
+                    <a href="<?php echo url('prestations/finitions'); ?>">
                         <span>Finitions</span>
                     </a>
                 </div>
                 <div class="col-xs-6 col-sm-2">
-                    <a href="<?php echo u('prestations/tarifs'); ?>">
+                    <a href="<?php echo url('prestations/tarifs'); ?>">
                         <span>Tarifs</span>
                     </a>
                 </div>
@@ -66,7 +66,7 @@
                 <div class="col-sm-6">
                     <p> © COPYRIGHT 2015 ATELIER LABEL IMAGE <span class="o-b"></span> <span> 01 43 38 03 01 </span> <span class="o-b"></span> DESIGN ET DEVELOPPEMENT FAYOLLE  </p>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-3 pdf">
                     <a href="#">Tarifs PDF</a>
                 </div>
             </div>
