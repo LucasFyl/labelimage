@@ -31,27 +31,27 @@
 
                 <h3>nos préstations</h3>
                 <div class="col-xs-4 col-sm-2">
-                    <a href="#">
+                    <a href="<?php echo u('prestations/scan'); ?>">
                         <span>Scan</span>
                     </a>
                 </div>
                 <div class="col-xs-4 col-sm-2">
-                    <a href="#">
+                    <a href="<?php echo u('prestations/traitement'); ?>">
                         <span>Traitement</span>
                     </a>
                 </div>
                 <div class="col-xs-4 col-sm-2">
-                    <a href="#">
+                    <a href="<?php echo u('prestations/tirages'); ?>">
                         <span>Tirages</span>
                     </a>
                 </div>
-                <div class="col-xs-2 col-sm-2">
-                    <a href="#">
+                <div class="col-xs-6 col-sm-2">
+                    <a href="<?php echo u('prestations/finitions'); ?>">
                         <span>Finitions</span>
                     </a>
                 </div>
-                <div class="col-xs-2 col-sm-2">
-                    <a href="#">
+                <div class="col-xs-6 col-sm-2">
+                    <a href="<?php echo u('prestations/tarifs'); ?>">
                         <span>Tarifs</span>
                     </a>
                 </div>
@@ -59,9 +59,9 @@
             </div>
 
             <div class="row footer-part">
-                <div class="col-sm-3">
-                    <a href="#">f</a>
-                    <a href="#">m</a>
+                <div class="col-sm-3 cta-btn">
+                    <a href="#"></a>
+                    <a href="#"></a>
                 </div>
                 <div class="col-sm-6">
                     <p> © COPYRIGHT 2015 ATELIER LABEL IMAGE <span class="o-b"></span> <span> 01 43 38 03 01 </span> <span class="o-b"></span> DESIGN ET DEVELOPPEMENT FAYOLLE  </p>
