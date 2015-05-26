@@ -11,6 +11,7 @@
 
     <div class="landing">
       <h1 class="fadeIn">scan</h1>
+      <div class="background"></div>
     </div>
     
     <div id="trigger"></div>

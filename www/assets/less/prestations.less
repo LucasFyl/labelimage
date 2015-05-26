@@ -91,23 +91,15 @@ body {
 	top:0; 
 	z-index:-1;
 
-	// .background {
-	// 	width: 100%;
-	// 	height: auto;
-	
-	// 	position: fixed;
-	// 	z-index: -1;
-	// 	top: 0;
-	// 	left: 0;
-	// 	right: 0;
-	// 	bottom: 0;
-	// 	margin: auto;
-	// }
-
-	background: url('../images/landing-traitement.jpg') no-repeat center center fixed;
-	background-size: cover;
-	-moz-background-size: cover;
-	-webkit-background-size: cover;
+	.background {
+		position: fixed; z-index: 9; top: 0;
+		min-width: 100vw; min-height: 100vh;
+		background: url('../images/landing-traitement.jpg') no-repeat center center;
+		background-size: cover;
+		-moz-background-size: cover;
+		-webkit-background-size: cover;
+	}
+		
 
 	h1 {
 		text-align: right;
@@ -254,10 +246,12 @@ a.arrow-down {
 #prestation.finitions {
 
 	.landing {
-		background: url('../images/landing-finitions.jpg') no-repeat center center fixed;
-		background-size: cover;
-		-moz-background-size: cover;
-		-webkit-background-size: cover;
+		.background {
+			background: url('../images/landing-finitions.jpg') no-repeat center center;
+			background-size: cover;
+			-moz-background-size: cover;
+			-webkit-background-size: cover;
+		}
 
 
 		h1 {
@@ -423,10 +417,12 @@ a.arrow-down {
 }
 #prestation.traitement {
 	.landing {
-		background: url('../images/landing-traitement.jpg') no-repeat center center fixed;
-		background-size: cover;
-		-moz-background-size: cover;
-		-webkit-background-size: cover;
+		.background {
+			background: url('../images/landing-traitement.jpg') no-repeat center center;
+			background-size: cover;
+			-moz-background-size: cover;
+			-webkit-background-size: cover;
+		}
 	}
 	.main-content {
 		> .left {
@@ -465,10 +461,12 @@ a.arrow-down {
 }
 #prestation.tirages {
 	.landing {
-		background: url('../images/landing-tirages.jpg') no-repeat center center fixed;
-		background-size: cover;
-		-moz-background-size: cover;
-		-webkit-background-size: cover;
+		.background {
+			background: url('../images/landing-tirages.jpg') no-repeat center center;
+			background-size: cover;
+			-moz-background-size: cover;
+			-webkit-background-size: cover;
+		}
 	}
 	> div:first-child {
 		
@@ -671,10 +669,12 @@ a.arrow-down {
 }
 #prestation.scan {
 	.landing {
-		background: url('../images/landing-scan.jpg') no-repeat center center fixed;
-		background-size: cover;
-		-moz-background-size: cover;
-		-webkit-background-size: cover;
+		.background {
+			background: url('../images/landing-scan.jpg') no-repeat center center;
+			background-size: cover;
+			-moz-background-size: cover;
+			-webkit-background-size: cover;
+		}
 		h1 {
 			right: 355px;
 			bottom: 110px;

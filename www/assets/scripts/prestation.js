@@ -3,15 +3,13 @@ $( document ).ready(function(){
 
 	'use strict';
 
-
-
 	var background = new ScrollMagic.Scene({
         triggerElement: '#trigger2',
         triggerHook: 0,
         duration: '100%'
     })
-	.setTween(TweenMax.to('.landing .background', 0.5, {top:'-75%',ease:Linear.easeNone}))
-	// .addIndicators({name: 'background'})
+	.setTween(TweenMax.to('.landing .background', 0.5, {top:'-55%',ease:Linear.easeNone}))
+	.addIndicators({name: 'background'})
 	.addTo(controller);
 
 	var header = new ScrollMagic.Scene({
@@ -38,24 +36,11 @@ $( document ).ready(function(){
 		TweenLite.to(window, 1, {scrollTo:{y:wH}, ease:Power2.easeInOut});
 	});
 
-	// if ($('#prestation').hasClass('finitions')){
-       // background.remove();
-
-       // var background = new ScrollMagic.Scene({
-       //    triggerElement: '#trigger2',
-       //    triggerHook: 0,
-       //    duration: '100%'
-       //  })
-       //  .setTween(TweenMax.to('.landing .background', 0.5, {top:'-40px',ease:Linear.easeNone}))
-       //  // .addIndicators({name: 'background'})
-       //  .addTo(controller);
-	// }
 });
 
 $( window ).load(function(){ 
 
 	'use strict';
-
-    // initScroll();
+  
 	
 });

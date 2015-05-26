@@ -68,6 +68,7 @@
         <script>
           $(document).ready(function() {
             $('body').css('height', 'auto');
+            ratioImage();
             $(document).on({
               mouseenter: function () {
                 var bgNb = $(this).find('.nb');

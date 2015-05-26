@@ -11,6 +11,7 @@
 
     <div class="landing ratioImg">
       <h1 class="fadeIn">traitement</h1>
+      <div class="background"></div>
     </div>
     
     <div id="trigger"></div>

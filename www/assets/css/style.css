@@ -7044,7 +7044,14 @@ body {
   position: absolute;
   top: 0;
   z-index: -1;
-  background: url('../images/landing-traitement.jpg') no-repeat center center fixed;
+}
+.landing .background {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  background: url('../images/landing-traitement.jpg') no-repeat center center;
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
@@ -7193,8 +7200,8 @@ a.arrow-down:hover {
   text-align: left;
   margin-top: 40px;
 }
-#prestation.finitions .landing {
-  background: url('../images/landing-finitions.jpg') no-repeat center center fixed;
+#prestation.finitions .landing .background {
+  background: url('../images/landing-finitions.jpg') no-repeat center center;
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
@@ -7364,8 +7371,8 @@ a.arrow-down:hover {
   letter-spacing: 0;
   white-space: nowrap;
 }
-#prestation.traitement .landing {
-  background: url('../images/landing-traitement.jpg') no-repeat center center fixed;
+#prestation.traitement .landing .background {
+  background: url('../images/landing-traitement.jpg') no-repeat center center;
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
@@ -7400,8 +7407,8 @@ a.arrow-down:hover {
     text-align: left;
   }
 }
-#prestation.tirages .landing {
-  background: url('../images/landing-tirages.jpg') no-repeat center center fixed;
+#prestation.tirages .landing .background {
+  background: url('../images/landing-tirages.jpg') no-repeat center center;
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
@@ -7605,8 +7612,8 @@ a.arrow-down:hover {
   margin-top: 0;
   overflow: auto;
 }
-#prestation.scan .landing {
-  background: url('../images/landing-scan.jpg') no-repeat center center fixed;
+#prestation.scan .landing .background {
+  background: url('../images/landing-scan.jpg') no-repeat center center;
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
