@@ -2,7 +2,7 @@
 #home {
 	@height : ~"calc(50vh - 22.5px)" ;
 	max-width: 100vw;
-	height: 200vh;
+	height: ~"calc(250vh - 22.5px)";
 	overflow-x: hidden;
 	padding: 0;margin: 0;
 	
@@ -28,7 +28,7 @@
 		position: fixed;
 		top: ~"calc(50vh + 22.5px)";
 		z-index: 999;
-		
+
 		.before-gradient;
 		.after-gradient;
 		&:before {
@@ -103,7 +103,7 @@
 		
 	.main-content {
 		width: 100%;
-		height: 100vh;
+		height: ~"calc(150vh - 22.5px)";
 		max-height: 100vh;
 		position: relative;
 		// position: absolute;
@@ -111,7 +111,7 @@
 		// margin-top: 22px;
 		z-index: 888;
 		
-		background: url('../images/asset-home-bg-2.jpg') no-repeat center center;
+		background: url('../images/asset-home-bg-2.jpg') no-repeat center bottom;
 		background-size: cover;
 
 		.row {
@@ -121,7 +121,7 @@
 		h3 {
 			position: absolute;
 			right: 90px;
-			top: ~"calc(50vh - 1.58em)";
+			top: ~"calc(50vh - 1.735em)";
 			z-index: 999;
 			color: white;
 			font-size: 9em;

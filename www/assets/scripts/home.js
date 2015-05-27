@@ -4,19 +4,19 @@ $(document).ready(function(){
 
 	var vh = $( window ).height(),
 		vh50 = ( vh / 2 ),
-		// height = vh50 - 22.5,
-		// topPos = vh50 + 22.5 + vh50 + 45 + 'px', 
 		topPos = vh50 + 45 + 'px', 
+		topPos2 = ( vh + vh50 ) - 22.5 + 'px', 
 		bgPos = '-=' + ( vh50 - 22 ) + 'px';
-		// posheight = (vh50 - 45) + 'px',
-		// negHeight = '-=' + height + 'px';
 
 	var firstTl = new TimelineMax({paused:true});
 	var secondTl = new TimelineMax({paused:true});
-	firstTl.set('.background', {backgroundAttachment:'fixed',backgroundPositionY:bgPos})
-			.set('.main-content', {position:'fixed',top:topPos})
-			.set('.bandeau', {position:'absolute',top:'100vh'});
-	secondTl.set('.main-content', {position:'absolute',top:'147%'});
+
+	firstTl.set('.bandeau', {css:{position:'absolute',top:'100vh'}})
+			.set('.background', {backgroundAttachment:'fixed',backgroundPositionY:bgPos})
+			.set('.main-content', {css:{position:'fixed',top:topPos}});
+			
+	secondTl.set('.main-content', {css:{position:'absolute',top:topPos2}});
+
 
 	var header = new ScrollMagic.Scene({
         triggerElement: '#trigger',
@@ -30,7 +30,7 @@ $(document).ready(function(){
 	var firstPart = new ScrollMagic.Scene({
         triggerElement: '#trigger2',
         triggerHook: 'onLeave',
-        offset: -50
+        offset: -45
     })
 	.setTween(firstTl.play())
 	// .addIndicators({name: 'firstBg'})
@@ -42,7 +42,7 @@ $(document).ready(function(){
         offset: -68
     })
 	.setTween(secondTl.play())
-	// .addIndicators({name: 'secondPart'})
+	.addIndicators({name: 'secondPart'})
 	.addTo(controller);
 
 

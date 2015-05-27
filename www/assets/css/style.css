@@ -7871,7 +7871,7 @@ a.arrow-down:hover {
 }
 #home {
   max-width: 100vw;
-  height: 200vh;
+  height: calc(250vh - 22.5px);
   overflow-x: hidden;
   padding: 0;
   margin: 0;
@@ -7989,11 +7989,11 @@ a.arrow-down:hover {
 }
 #home .main-content {
   width: 100%;
-  height: 100vh;
+  height: calc(150vh - 22.5px);
   max-height: 100vh;
   position: relative;
   z-index: 888;
-  background: url('../images/asset-home-bg-2.jpg') no-repeat center center;
+  background: url('../images/asset-home-bg-2.jpg') no-repeat center bottom;
   background-size: cover;
 }
 #home .main-content .row {
@@ -8002,7 +8002,7 @@ a.arrow-down:hover {
 #home .main-content h3 {
   position: absolute;
   right: 90px;
-  top: calc(50vh - 1.58em);
+  top: calc(50vh - 1.735em);
   z-index: 999;
   color: white;
   font-size: 9em;
