@@ -10,20 +10,20 @@
             <div class="background"></div>
             <div id="trigger2"></div>
             <div id="trigger3"></div>
+        </div>
 
-            <div class="bandeau">
-                <div id="trigger"></div>
+        <div class="bandeau">
+            <div id="trigger"></div>
 
-                <div class="row">
-                    <div class="col-xs-6">
-                        <h1 class="hidden">Label Image</h1>
-                    </div>
-                    <div class="col-xs-6">
-                        <h2>atelier photographique artisanal de tirages d'exposition</h2>
-                        <p>Spécialisé dans le tirage noir et blanc et le tirage Fine Art, <br />
-                        l'atelier est aussi une structure de post production numérique.</p>
-                        <span class="stamp-digi"></span>
-                    </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <h1 class="hidden">Label Image</h1>
+                </div>
+                <div class="col-xs-6">
+                    <h2>atelier photographique artisanal de tirages d'exposition</h2>
+                    <p>Spécialisé dans le tirage noir et blanc et le tirage Fine Art, <br />
+                    l'atelier est aussi une structure de post production numérique.</p>
+                    <span class="stamp-digi"></span>
                 </div>
             </div>
         </div>

@@ -12,87 +12,93 @@
 	}
 	#trigger2 {
 		position: absolute;
-		top:  51vh;		
+		top:  ~"calc(50vh + 22.5px)";		
 	}
 	#trigger3 {
 		position: absolute;
 		top:  ~"calc(100vh - 45px)";		
 	}
 
+	.bandeau {
+		width: 100vw;
+		background-color: @bg;
+		height: @height;
+		max-height: @height;
+		z-index: 999;
+
+		position: fixed;
+		z-index: 99999;
+		.before-gradient;
+		.after-gradient;
+		top: ~"calc(50vh + 22.5px)";
+		&:before {
+			top: -13px;
+		}
+		&:after {
+			top: auto;
+			bottom: -13px;
+		}
+
+		div {
+			margin: 0;
+
+			> div:first-child {
+				background: url('../images/logo-big-bigger.png') no-repeat center center;
+				min-height: 260px;
+				padding-top: 80px;
+				background-position-y: 80px;
+				@media screen and (max-width: @screen-sm-max) {
+					background-size: 100%;
+				}
+			}
+			> div:nth-child(2) {
+				position: relative;
+				padding-top: 125px;
+				padding-right: 0;
+
+				h2 {
+					font-family: @DMedium;
+					font-size: 1.6em;
+					margin-bottom: 20px;
+					margin-top: 0;
+				}
+				p {
+					font-size: 1.9em;
+					line-height: 1.474em;
+					margin-bottom: 0;
+				}
+				.stamp-digi {
+					position: absolute;
+					background: url('../images/asset-home-digi.png') no-repeat center center;
+					width: 140px;height: 100px;
+					bottom: -110px;
+					right: 90px;
+					@media screen and (max-width: @screen-md-max) {
+						display: none;
+					}
+					}
+			}
+		}
+	}
+
 	.landing {
 		width: 100vw;
 		height: 100vh;
 		position: relative;
+
+		
+		// padding-top: ~"calc(50vh + 22.5px)";
+		overflow-y: visible;
+		z-index: 999;
+
 		.background {
-			position: absolute;
+			position: absolute; 
+			// top: ~"calc( 50vh + 22.5px)";
 			background-image: url('../images/landing-home.jpg');
-			background-attachment: fixed;
+			// background-attachment: fixed;
 			background-position: center top;
 		}
 		
-		padding-top: ~"calc(50vh + 22.5px)";
-		overflow-y: visible;
-		z-index: 999;
-		.bandeau {
-			width: 100vw;
-			background-color: @bg;
-			height: @height;
-			max-height: @height;
-			z-index: 999;
-
-			position: fixed;
-			z-index: 99999;
-			.before-gradient;
-			.after-gradient;
-			&:before {
-				top: -13px;
-			}
-			&:after {
-				top: auto;
-				bottom: -13px;
-			}
-
-			div {
-				margin: 0;
-
-				> div:first-child {
-					background: url('../images/logo-big-bigger.png') no-repeat center center;
-					min-height: 260px;
-					padding-top: 80px;
-					background-position-y: 80px;
-					@media screen and (max-width: @screen-sm-max) {
-						background-size: 100%;
-					}
-				}
-				> div:nth-child(2) {
-					position: relative;
-					padding-top: 125px;
-					padding-right: 0;
-
-					h2 {
-						font-family: @DMedium;
-						font-size: 1.6em;
-						margin-bottom: 20px;
-						margin-top: 0;
-					}
-					p {
-						font-size: 1.9em;
-						line-height: 1.474em;
-						margin-bottom: 0;
-					}
-					.stamp-digi {
-						position: absolute;
-						background: url('../images/asset-home-digi.png') no-repeat center center;
-						width: 140px;height: 100px;
-						bottom: -110px;
-						right: 90px;
-						@media screen and (max-width: @screen-md-max) {
-							display: none;
-						}
-  					}
-				}
-			}
-		}
 	}
 		
 	.main-content {
@@ -102,9 +108,10 @@
 		position: relative;
 		// position: absolute;
 		// top: 100%;
+		// margin-top: 22px;
 		z-index: 888;
 		
-		background: url('../images/asset-home-bg-1.jpg') no-repeat center center;
+		background: url('../images/asset-home-bg-2.jpg') no-repeat center center;
 		background-size: cover;
 
 		.row {

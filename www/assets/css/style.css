@@ -7882,27 +7882,13 @@ a.arrow-down:hover {
 }
 #home #trigger2 {
   position: absolute;
-  top: 51vh;
+  top: calc(50vh + 22.5px);
 }
 #home #trigger3 {
   position: absolute;
   top: calc(100vh - 45px);
 }
-#home .landing {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  padding-top: calc(50vh + 22.5px);
-  overflow-y: visible;
-  z-index: 999;
-}
-#home .landing .background {
-  position: absolute;
-  background-image: url('../images/landing-home.jpg');
-  background-attachment: fixed;
-  background-position: center top;
-}
-#home .landing .bandeau {
+#home .bandeau {
   width: 100vw;
   background-color: #f6f2ef;
   height: calc(50vh - 22.5px);
@@ -7910,8 +7896,9 @@ a.arrow-down:hover {
   z-index: 999;
   position: fixed;
   z-index: 99999;
+  top: calc(50vh + 22.5px);
 }
-#home .landing .bandeau:before {
+#home .bandeau:before {
   content: " ";
   width: 100%;
   height: 13px;
@@ -7925,7 +7912,7 @@ a.arrow-down:hover {
   background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0) 100%);
   background: linear-gradient(bottom, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0) 100%);
 }
-#home .landing .bandeau:after {
+#home .bandeau:after {
   content: " ";
   width: 100%;
   height: 13px;
@@ -7939,44 +7926,44 @@ a.arrow-down:hover {
   background: -o-linear-gradient(top, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0) 100%);
   background: linear-gradient(top, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0) 100%);
 }
-#home .landing .bandeau:before {
+#home .bandeau:before {
   top: -13px;
 }
-#home .landing .bandeau:after {
+#home .bandeau:after {
   top: auto;
   bottom: -13px;
 }
-#home .landing .bandeau div {
+#home .bandeau div {
   margin: 0;
 }
-#home .landing .bandeau div > div:first-child {
+#home .bandeau div > div:first-child {
   background: url('../images/logo-big-bigger.png') no-repeat center center;
   min-height: 260px;
   padding-top: 80px;
   background-position-y: 80px;
 }
 @media screen and (max-width: 991px) {
-  #home .landing .bandeau div > div:first-child {
+  #home .bandeau div > div:first-child {
     background-size: 100%;
   }
 }
-#home .landing .bandeau div > div:nth-child(2) {
+#home .bandeau div > div:nth-child(2) {
   position: relative;
   padding-top: 125px;
   padding-right: 0;
 }
-#home .landing .bandeau div > div:nth-child(2) h2 {
+#home .bandeau div > div:nth-child(2) h2 {
   font-family: 'DIN-Medium', helvetica, sans-serif;
   font-size: 1.6em;
   margin-bottom: 20px;
   margin-top: 0;
 }
-#home .landing .bandeau div > div:nth-child(2) p {
+#home .bandeau div > div:nth-child(2) p {
   font-size: 1.9em;
   line-height: 1.474em;
   margin-bottom: 0;
 }
-#home .landing .bandeau div > div:nth-child(2) .stamp-digi {
+#home .bandeau div > div:nth-child(2) .stamp-digi {
   position: absolute;
   background: url('../images/asset-home-digi.png') no-repeat center center;
   width: 140px;
@@ -7985,9 +7972,21 @@ a.arrow-down:hover {
   right: 90px;
 }
 @media screen and (max-width: 1199px) {
-  #home .landing .bandeau div > div:nth-child(2) .stamp-digi {
+  #home .bandeau div > div:nth-child(2) .stamp-digi {
     display: none;
   }
+}
+#home .landing {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow-y: visible;
+  z-index: 999;
+}
+#home .landing .background {
+  position: absolute;
+  background-image: url('../images/landing-home.jpg');
+  background-position: center top;
 }
 #home .main-content {
   width: 100%;
@@ -7995,7 +7994,7 @@ a.arrow-down:hover {
   max-height: 100vh;
   position: relative;
   z-index: 888;
-  background: url('../images/asset-home-bg-1.jpg') no-repeat center center;
+  background: url('../images/asset-home-bg-2.jpg') no-repeat center center;
   background-size: cover;
 }
 #home .main-content .row {
