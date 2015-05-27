@@ -4,17 +4,19 @@ $(document).ready(function(){
 
 	var vh = $( window ).height(),
 		vh50 = ( vh / 2 ),
-		height = vh50 - 22.5,
-		topPos = vh50 + 22.5 + vh50 + 45 + 'px', 
-		topPos2 = vh50 + 45 + 'px', 
-		bgPos = '-=' + ( vh50 + 22.5 ) + 'px',
-		posheight = (vh50 - 45) + 'px',
-		negHeight = '-=' + height + 'px';
+		// height = vh50 - 22.5,
+		// topPos = vh50 + 22.5 + vh50 + 45 + 'px', 
+		topPos = vh50 + 45 + 'px', 
+		bgPos = '-=' + ( vh50 - 22 ) + 'px';
+		// posheight = (vh50 - 45) + 'px',
+		// negHeight = '-=' + height + 'px';
 
-	var timeline = new TimelineMax();
-	timeline.set('.background', {backgroundAttachment:'fixed',backgroundPositionY:bgPos})
-			.set('.main-content', {position:'fixed',top:topPos2})
+	var firstTl = new TimelineMax({paused:true});
+	var secondTl = new TimelineMax({paused:true});
+	firstTl.set('.background', {backgroundAttachment:'fixed',backgroundPositionY:bgPos})
+			.set('.main-content', {position:'fixed',top:topPos})
 			.set('.bandeau', {position:'absolute',top:'100vh'});
+	secondTl.set('.main-content', {position:'absolute',top:'147%'});
 
 	var header = new ScrollMagic.Scene({
         triggerElement: '#trigger',
@@ -25,24 +27,23 @@ $(document).ready(function(){
 	// .addIndicators({name: 'header'})
 	.addTo(controller);
 
-	var firstBg = new ScrollMagic.Scene({
+	var firstPart = new ScrollMagic.Scene({
         triggerElement: '#trigger2',
         triggerHook: 'onLeave',
-        offset: -45
+        offset: -50
     })
-	.setTween(timeline)
-	.addIndicators({name: 'firstBg'})
+	.setTween(firstTl.play())
+	// .addIndicators({name: 'firstBg'})
 	.addTo(controller);
 
-	// var bandeau = new ScrollMagic.Scene({
- //        triggerElement: '.bandeau',
- //        duration: height,
- //        triggerHook: 'onLeave',
- //        offset: -45
- //    })
-	// .setTween(bandeauTween)
-	// .addIndicators({name: 'bandeau'})
-	// .addTo(controller);
+	var secondPart = new ScrollMagic.Scene({
+        triggerElement: '.bandeau',
+        triggerHook: 'onLeave',
+        offset: -68
+    })
+	.setTween(secondTl.play())
+	// .addIndicators({name: 'secondPart'})
+	.addTo(controller);
 
 
 });

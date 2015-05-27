@@ -24,13 +24,13 @@
 		background-color: @bg;
 		height: @height;
 		max-height: @height;
-		z-index: 999;
 
 		position: fixed;
-		z-index: 99999;
+		top: ~"calc(50vh + 22.5px)";
+		z-index: 999;
+		
 		.before-gradient;
 		.after-gradient;
-		top: ~"calc(50vh + 22.5px)";
 		&:before {
 			top: -13px;
 		}
