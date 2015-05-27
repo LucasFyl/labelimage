@@ -42,7 +42,7 @@ $(document).ready(function(){
         offset: -68
     })
 	.setTween(secondTl.play())
-	.addIndicators({name: 'secondPart'})
+	// .addIndicators({name: 'secondPart'})
 	.addTo(controller);
 
 

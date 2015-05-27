@@ -8085,3 +8085,38 @@ a.arrow-down:hover {
   background: url('../images/icon-dl.png') no-repeat;
   background-position-x: 70%;
 }
+#labelnews {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 0;
+}
+#labelnews .landing {
+  width: 100%;
+  display: block;
+  height: auto;
+  min-height: 400px;
+  position: static;
+}
+#labelnews .landing .background {
+  background: url('../images/landing-news.jpg') no-repeat center 45px fixed;
+  background-size: 100%;
+  min-height: 400px;
+}
+#labelnews .landing h1 {
+  position: fixed;
+  margin: 0;
+  width: 406px;
+  height: 175px;
+  background: url('../images/asset-logo-labelnews.png') no-repeat center center;
+  top: 155px;
+  right: 350px;
+  z-index: 88;
+}
+#labelnews .main-content {
+  width: 100%;
+  height: auto;
+  background-color: #f6f2ef;
+  position: absolute;
+  z-index: 99;
+}
