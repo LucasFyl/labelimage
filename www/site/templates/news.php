@@ -13,12 +13,12 @@
 
 	    <div class="main-content container">
 	    	
-	    	<br /><br /><br /><br /><br />
-	    	<h2 class="text-center"><?php echo $page->title(); ?></h2>
 
 			<div class="row">
+
 				<?php snippet('news') ?>	
-			</div>
+			
+            </div>
 
 	    </div>
 	</div>
