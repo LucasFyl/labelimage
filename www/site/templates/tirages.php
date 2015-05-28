@@ -111,33 +111,15 @@
   
   <?php snippet('scripts') ?>  
   <script src="<?php echo url('assets/scripts/prestation.js'); ?>"></script>
+  <script src="<?php echo url('assets/scripts/scenes-presta.js'); ?>"></script>
   <script src="<?php echo url('assets/scripts/hello.js'); ?>"></script>
   <script>
     $(document).ready(function() {
-      new ScrollMagic.Scene({
-            triggerElement: '#trigger',
-            triggerHook: 1,
-            duration: '25%'
-        })
-      .setTween(TweenMax.to('.landing h1', 0.5, {opacity:0,ease:Power2.easeOut}))
-      // .addIndicators({name: 'headline'})
-      .addTo(controller);
-
-      new ScrollMagic.Scene({
-            triggerElement: '#trigger4',
-            triggerHook: 0,
-            duration: '100%'
-        })
-      .setTween(TweenMax.to('.main-content > div:nth-child(5) > div', 0.1, {backgroundAttachment:'initial'}))
-      // .addIndicators({name: 'Position'})
-      .addTo(controller);
-      // new ScrollMagic.Scene({
-      //       triggerElement: '#trigger5',
-      //       triggerHook: 0,
-      //       duration: '100%'
-      //   })
-      // .setTween(TweenMax.to('.main-content > div:nth-child(2) > div', 0.1, {backgroundAttachment:'initial'}))
-      // .addIndicators({name: 'Position 2'})
-      // .addTo(controller);
+      prestaController.addScene([
+        headerPresta,
+        landingPresta,
+        headlinePresta,
+        footerTirages
+      ]);
     });
   </script>

@@ -1,6 +1,12 @@
  /*jshint unused:false*/
-// Controller Scroll animations
-var controller = new ScrollMagic.Controller();
+
+
+function arrowScroll(e) {
+  e.preventDefault();
+  var wH = $(window).height();
+  TweenLite.to(window, 1, {scrollTo:{y:wH}, ease:Power2.easeInOut});
+}
+
 
 var ratioImage = function() {
   $('.ratioImg').each(function(){
@@ -33,10 +39,3 @@ var ratioImage = function() {
     }
   });
 };
-
-
-// $(document).ready(function() {
-
-//	'use strict';
-
-// });

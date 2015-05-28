@@ -106,11 +106,14 @@
 
   <?php snippet('scripts') ?>  
   <script src="<?php echo url('assets/scripts/prestation.js'); ?>"></script>
+  <script src="<?php echo url('assets/scripts/scenes-presta.js'); ?>"></script>
   <script src="<?php echo url('assets/scripts/hello.js'); ?>"></script>
   <script>
     $(document).ready(function() {
-        
-
-      
+      prestaController.addScene([
+        headerPresta,
+        landingPresta,
+        headlinePresta
+      ]);
     });
   </script>

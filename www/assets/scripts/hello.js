@@ -2,6 +2,7 @@
 $(document).ready(function(){
 
 	'use strict';
+	
 	$("body").niceScroll({
 		cursorcolor: "#000000", // change cursor color in hex
         cursoropacitymin: 0, // change opacity when cursor is inactive (scrollabar "hidden" state), range from 1 to 0

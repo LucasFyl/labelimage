@@ -36,7 +36,7 @@
                 <div class="col-xs-4 col-sm-2">
                     <a href="<?php echo url('prestations/scan'); ?>">
                         <span>Scan</span>
-                    </a>
+                    </a> 
                 </div>
                 <div class="col-xs-4 col-sm-2">
                     <a href="<?php echo url('prestations/traitement'); ?>">
@@ -81,3 +81,11 @@
     <?php snippet('scripts') ?>
     <script src="<?php echo url('assets/scripts/hello.js'); ?>"></script>
     <script src="<?php echo url('assets/scripts/home.js'); ?>"></script>
+    <script src="<?php echo url('assets/scripts/scenes-home.js'); ?>"></script>
+    <script>
+        homeController.addScene([
+            headerHome,
+            firstPart,
+            secondPart
+        ]);
+    </script>
