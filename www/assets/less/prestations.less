@@ -10,18 +10,35 @@ body {
 	.container-fluid.outer {
 		margin-top: 45px;
 		height: ~"calc(100vh - 45px)";
+		@media screen and (max-width: @screen-xs-max) {
+			height: 100%;
+		}
 		overflow: hidden;
 		padding: 0;
-		
+		> div {
+			width: 100%;
+			height: 100%;
+			padding: 0;
+			margin: 0;
+		}
 		.croix {
 			top: 0;
+			@media screen and (max-width: @screen-xs-max) {
+				opacity: 0;
+				display: none;
+			}
 		}
 
 		.toPresta {
-			width: 50%; height: 50%;
+			height: 50%;
+			@media screen and (max-width: @screen-xs-max) {
+				height: 100vw;
+			}
 			float: left; overflow: hidden;
 			position: relative;
-			
+			padding: 0;
+			background: black;
+
 			a {
 				position: absolute;
 				width: 100%;height: 100%;
@@ -41,24 +58,18 @@ body {
 				letter-spacing: 5px;
 
 				.transition(all 0.3s ease-in-out);
-
-				// @media screen and (max-width: @screen-md-max) {
-				// 	left: 40%;
-				// 	.scale(0.7);
-				// }
-				// @media screen and (max-width: @screen-sm-max) {
-				// 	left: 40%;
-				// 	.scale(0.5);
-				// }
 			}
 
 			img {
 				position: absolute;
-				top: 0;left: 0;bottom: 0;right: 0;
-				margin: auto;
 				z-index: 98;
+				height: 100%;
+				left: 0;right: 0;
 				&.nb {
 					z-index: 99;
+				}
+				@media screen and (min-width: 1377px) {
+					width: 100%;
 				}
 			}
 			&:last-child {

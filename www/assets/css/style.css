@@ -6977,15 +6977,38 @@ body {
   overflow: hidden;
   padding: 0;
 }
+@media screen and (max-width: 767px) {
+  #prestations .container-fluid.outer {
+    height: 100%;
+  }
+}
+#prestations .container-fluid.outer > div {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
 #prestations .container-fluid.outer .croix {
   top: 0;
 }
+@media screen and (max-width: 767px) {
+  #prestations .container-fluid.outer .croix {
+    opacity: 0;
+    display: none;
+  }
+}
 #prestations .container-fluid.outer .toPresta {
-  width: 50%;
   height: 50%;
   float: left;
   overflow: hidden;
   position: relative;
+  padding: 0;
+  background: black;
+}
+@media screen and (max-width: 767px) {
+  #prestations .container-fluid.outer .toPresta {
+    height: 100vw;
+  }
 }
 #prestations .container-fluid.outer .toPresta a {
   position: absolute;
@@ -7013,15 +7036,18 @@ body {
 }
 #prestations .container-fluid.outer .toPresta img {
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
   z-index: 98;
+  height: 100%;
+  left: 0;
+  right: 0;
 }
 #prestations .container-fluid.outer .toPresta img.nb {
   z-index: 99;
+}
+@media screen and (min-width: 1377px) {
+  #prestations .container-fluid.outer .toPresta img {
+    width: 100%;
+  }
 }
 #prestations .container-fluid.outer .toPresta:last-child h1:after {
   content: "contre collage et encadrement";
