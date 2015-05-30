@@ -13,13 +13,8 @@
 
 	    <div class="main-content container">
 	    	
-
-			<div class="row">
-
-				<?php snippet('news') ?>	
+			<?php snippet('news') ?>	
 			
-            </div>
-
 	    </div>
 	</div>
 
