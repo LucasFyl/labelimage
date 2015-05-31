@@ -8199,9 +8199,15 @@ a.arrow-down:hover {
   position: static;
 }
 #labelnews .landing .background {
-  background: url('../images/landing-news.jpg') no-repeat center 45px fixed;
+  background: url('../images/landing-news.jpg') no-repeat center top 45px fixed;
   background-size: 100%;
   min-height: 400px;
+}
+@media screen and (max-width: 1366px) {
+  #labelnews .landing .background {
+    background-position: center center;
+    background-size: cover;
+  }
 }
 #labelnews .landing h1 {
   position: fixed;
@@ -8212,6 +8218,14 @@ a.arrow-down:hover {
   top: 155px;
   right: 350px;
   z-index: 88;
+}
+@media screen and (max-width: 1199px) {
+  #labelnews .landing h1 {
+    left: 0;
+    right: 0;
+    top: -200px;
+    margin: auto;
+  }
 }
 #labelnews .main-content {
   width: 100%;

@@ -12,9 +12,13 @@
 		position: static;
 
 		.background	{
-			background: url('../images/landing-news.jpg') no-repeat center 45px fixed;
+			background: url('../images/landing-news.jpg') no-repeat center top 45px fixed;
 			background-size: 100%;
 			min-height: 400px;
+			@media screen and (max-width: 1366px) {
+				background-position: center center;
+				background-size: cover;
+			}
 		}
 		h1 {
 			position: fixed;
@@ -24,6 +28,12 @@
 			background: url('../images/asset-logo-labelnews.png') no-repeat center center;
 			top: 155px; right: 350px;
 			z-index: 88;
+			@media screen and (max-width: @screen-md-max) {
+				left:0;
+				right: 0;
+				top: -200px;
+				margin: auto;
+			}
 		}
 	}
 	.main-content {
