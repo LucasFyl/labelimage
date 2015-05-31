@@ -7026,6 +7026,16 @@ span.o-b {
 .center-block {
   float: none;
 }
+figcaption {
+  line-height: 2.2;
+  margin-top: .5em;
+  letter-spacing: .5px;
+  font-size: 1.3em;
+  font-family: 'DIN-Light', helvetica, sans-serif;
+  text-align: right;
+  width: 100%;
+  overflow: hidden;
+}
 body {
   height: 100%;
 }
@@ -8219,19 +8229,22 @@ a.arrow-down:hover {
   margin: 0;
   line-height: 1;
 }
-#labelnews .main-content h1 {
+#labelnews .main-content h1,
+#labelnews .main-content .h1 {
   font-family: 'DIN-Regular', helvetica, sans-serif;
   font-size: 4.8em;
   color: black;
   margin-bottom: 35px;
 }
-#labelnews .main-content h2 {
+#labelnews .main-content h2,
+#labelnews .main-content .h2 {
   font-family: 'DIN-Medium', helvetica, sans-serif;
   color: #8b8b8b;
   font-style: italic;
   margin-bottom: 15px;
 }
-#labelnews .main-content h3 {
+#labelnews .main-content h3,
+#labelnews .main-content .h3 {
   font-family: 'DIN-Regular', helvetica, sans-serif;
   font-size: 3em;
   color: #8b8b8b;
@@ -8262,6 +8275,10 @@ a.arrow-down:hover {
 #labelnews .main-content section article.anews {
   margin: 50px auto;
 }
+#labelnews .main-content section article.anews div:last-child a,
+#labelnews .main-content section article.anews div:last-child img {
+  width: 100%;
+}
 #labelnews.single .main-content {
   padding-top: 95px;
 }
@@ -8277,6 +8294,9 @@ a.arrow-down:hover {
 #labelnews.single .main-content .more-img img {
   width: 100%;
   margin-bottom: 50px;
+}
+#labelnews.single .main-content nav {
+  margin-bottom: 60px;
 }
 #labelnews.single .main-content nav a {
   font-family: 'DIN-Light', helvetica, sans-serif;
@@ -8299,14 +8319,4 @@ a.arrow-down:hover {
 #labelnews.single .main-content article + div figure img {
   float: right;
   width: 100%;
-}
-#labelnews.single .main-content article + div figure figcaption {
-  line-height: 2.2;
-  margin-top: .5em;
-  letter-spacing: .5px;
-  font-size: 1.3em;
-  font-family: 'DIN-Light', helvetica, sans-serif;
-  text-align: right;
-  width: 100%;
-  overflow: hidden;
 }

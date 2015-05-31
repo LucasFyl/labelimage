@@ -40,19 +40,19 @@
 			margin: 0;
 			line-height: 1;
 		}
-		h1 {
+		h1, .h1 {
 			font-family: @DReg;
 			font-size: 4.8em;
 			color: black;
 			margin-bottom: 35px;
 		}
-		h2 {
+		h2, .h2 {
 			font-family: @DMedium;
 			color: #8b8b8b;
 			font-style: italic;
 			margin-bottom: 15px;
 		}
-		h3 {
+		h3, .h3 {
 			font-family: @DReg;
 			font-size: 3em;
 			color: #8b8b8b;
@@ -87,7 +87,9 @@
 					
 				}
 				div:last-child {
-					
+					a, img {
+						width: 100%;	
+					}
 				}
 			}
 		}
@@ -111,6 +113,7 @@
 			}
 		}
 		nav {
+			margin-bottom: 60px;
 			a {
 				font-family: @DLight;
 				font-size: 3.2em;
@@ -134,15 +137,6 @@
 
 				img {float: right;width: 100%;}
 				
-				figcaption {
-					line-height: 2.2;
-					margin-top: .5em;
-					letter-spacing: .5px;
-					font-size: 1.3em;
-					font-family: @DLight;
-					text-align: right;
-					width: 100%;overflow: hidden;
-				}
 			}
 		}
 

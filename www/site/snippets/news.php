@@ -2,19 +2,24 @@
   <div class="row">
   <?php foreach(page('news')->children()->visible() as $thenews): ?>
     
-    <article class="col-sm-10 col-xs-12 anews">
+    <article class="col-xs-12 anews">
       <div class="row">
   
-        <div class="infos col-xs-12 col-sm-8">
-          <h3><a href="<?php echo $thenews->url() ?>"><?php echo $thenews->title()->html() ?></a></h3>
-          <p><?php echo $thenews->text()->excerpt(330) ?><a href="<?php echo $thenews->url() ?>">&nbsp;&nbsp;read&nbsp;more&nbsp;→</a></p>
+        <div class="infos col-xs-12 col-sm-7">
+          <h2 class="h1"><a href="<?php echo $thenews->url() ?>"><?php echo $thenews->title()->html() ?></a></h2>
+          <h3 class="h2"><a href="<?php echo $thenews->url() ?>"><?php echo $thenews->title2()->html() ?></a></h3>
+          <h4 class="h3"><a href="<?php echo $thenews->url() ?>"><?php echo $thenews->title3()->html() ?></a></h4>
+          <p><?php echo $thenews->text()->excerpt(250) ?><a href="<?php echo $thenews->url() ?>">&nbsp;&nbsp;read&nbsp;more&nbsp;→</a></p>
         </div>
         
-        <div class="thumb col-xs-12 col-sm-4">
+        <div class="thumb col-xs-12 col-sm-5">
           <?php if($image = $thenews->images()->sortBy('sort', 'asc')->first()): ?>
-          <a href="<?php echo $thenews->url() ?>">
-            <img src="<?php echo $image->url() ?>" alt="<?php echo $thenews->title()->html() ?>">
-          </a>
+          <figure>
+                <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>">
+                <figcaption>
+                  <?php echo $image->caption() ?>
+                </figcaption>
+              </figure>
           <?php endif ?>
         </div>
       </div>

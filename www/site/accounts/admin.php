@@ -8,6 +8,8 @@ language: fr
 role: admin
 token: 6afc8fb85a8af4a1c03ffcd7214682bf68da00fe
 history:
+  - news/stephan-quatre
   - news/stephan-trois
+  - news/stephan-deux
   - news/stephan-zaubitzer
   - news
