@@ -9,15 +9,14 @@
       <div class="main-content container">
         <div class="container">
           <div class="row">
-            
-            <article class="col-xs-12 col-sm-6">
-              
-
+            <div class="col-xs-12 title">
               <h1><?php echo $page->title() ?></h1>
               <h2><?php echo $page->title2() ?></h2>
               <h3><?php echo $page->title3() ?></h3>
-
-              <ul class="meta">
+            </div>
+            <article class="col-xs-12 col-sm-6">
+              
+              <ul class="meta hidden">
                 <li><b>Date:</b> 
                     <time datetime="<?php echo $page->date('c') ?>">
                       <?php echo $page->date('d/m/Y') ?>
@@ -31,7 +30,7 @@
               </div>  
 
               <div class="bloc-adress">
-                <p><?php echo $page->adressBloc() ?></p>
+                <p><?php echo $page->adressBloc()->kirbytext() ?></p>
                 <a href="<?php echo $page->adressUrl() ?>"><?php echo $page->adressUrl() ?></a>
               </div>
             </article>
@@ -47,7 +46,7 @@
               <?php endforeach ?>
             </div>
 
-            <div class="col-xs-12 more-images">
+            <div class="col-xs-12 more-img">
               <?php foreach($page->images()->slice(2)->sortBy('sort', 'asc') as $image): ?>
               <figure>
                 <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>">
@@ -60,10 +59,10 @@
             
             <nav class="nextprev col-xs-12" role="navigation">
               <?php if($prev = $page->prevVisible()): ?>
-              <a class="prev" href="<?php echo $prev->url() ?>">&larr; previous</a>
+              <a class="prev col-xs-6" href="<?php echo $prev->url() ?>">&larr; article précédent</a>
               <?php endif ?>
               <?php if($next = $page->nextVisible()): ?>
-              <a class="next" href="<?php echo $next->url() ?>">next &rarr;</a>
+              <a class="next col-xs-6" href="<?php echo $next->url() ?>">article suivant &rarr;</a>
               <?php endif ?>
             </nav>
 

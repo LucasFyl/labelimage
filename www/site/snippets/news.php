@@ -2,12 +2,12 @@
   <div class="row">
   <?php foreach(page('news')->children()->visible() as $thenews): ?>
     
-    <article class="col-sm-10 col-xs-12 ">
+    <article class="col-sm-10 col-xs-12 anews">
       <div class="row">
   
         <div class="infos col-xs-12 col-sm-8">
           <h3><a href="<?php echo $thenews->url() ?>"><?php echo $thenews->title()->html() ?></a></h3>
-          <p><?php echo $thenews->text()->excerpt(350) ?><a href="<?php echo $thenews->url() ?>">read&nbsp;more&nbsp;→</a></p>
+          <p><?php echo $thenews->text()->excerpt(330) ?><a href="<?php echo $thenews->url() ?>">&nbsp;&nbsp;read&nbsp;more&nbsp;→</a></p>
         </div>
         
         <div class="thumb col-xs-12 col-sm-4">
