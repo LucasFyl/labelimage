@@ -3,7 +3,6 @@
 title: News
 pages:
   template: single-news
-  limit: 10
   num: 
     mode: date
     field: added
