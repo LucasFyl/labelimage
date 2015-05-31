@@ -9,7 +9,8 @@
           <h2 class="h1"><a href="<?php echo $thenews->url() ?>"><?php echo $thenews->title()->html() ?></a></h2>
           <h3 class="h2"><a href="<?php echo $thenews->url() ?>"><?php echo $thenews->title2()->html() ?></a></h3>
           <h4 class="h3"><a href="<?php echo $thenews->url() ?>"><?php echo $thenews->title3()->html() ?></a></h4>
-          <p><?php echo $thenews->text()->excerpt(250) ?><a href="<?php echo $thenews->url() ?>">&nbsp;&nbsp;read&nbsp;more&nbsp;→</a></p>
+          <p><?php echo $thenews->text()->excerpt(250) ?></p>
+          <a class="h3" href="<?php echo $thenews->url() ?>">Suite de l'article&nbsp;→</a>
         </div>
         
         <div class="thumb col-xs-12 col-sm-5">

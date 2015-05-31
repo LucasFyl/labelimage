@@ -8236,6 +8236,10 @@ a.arrow-down:hover {
   color: black;
   margin-bottom: 35px;
 }
+#labelnews .main-content h1 a,
+#labelnews .main-content .h1 a {
+  color: black;
+}
 #labelnews .main-content h2,
 #labelnews .main-content .h2 {
   font-family: 'DIN-Medium', helvetica, sans-serif;
@@ -8243,10 +8247,18 @@ a.arrow-down:hover {
   font-style: italic;
   margin-bottom: 15px;
 }
+#labelnews .main-content h2 a,
+#labelnews .main-content .h2 a {
+  color: #8b8b8b;
+}
 #labelnews .main-content h3,
 #labelnews .main-content .h3 {
   font-family: 'DIN-Regular', helvetica, sans-serif;
   font-size: 3em;
+  color: #8b8b8b;
+}
+#labelnews .main-content h3 a,
+#labelnews .main-content .h3 a {
   color: #8b8b8b;
 }
 #labelnews .main-content p {
@@ -8273,11 +8285,55 @@ a.arrow-down:hover {
   padding: 50px auto;
 }
 #labelnews .main-content section article.anews {
-  margin: 50px auto;
+  margin: 25px auto;
+  position: relative;
+}
+#labelnews .main-content section article.anews:first-child {
+  margin-top: 50px;
+}
+#labelnews .main-content section article.anews:last-child {
+  margin-bottom: 50px;
+}
+#labelnews .main-content section article.anews div:first-child .h1 {
+  margin-bottom: 20px;
+  font-size: 4em;
+}
+#labelnews .main-content section article.anews div:first-child .h2 {
+  margin-bottom: 20px;
+  font-size: 2.6em;
+}
+#labelnews .main-content section article.anews div:first-child .h3 {
+  font-size: 1.8em;
+}
+#labelnews .main-content section article.anews div:first-child a.h3 {
+  display: block;
+  margin-top: 30px;
+  color: black;
+  text-decoration: underline !important;
+}
+@media screen and (max-width: 767px) {
+  #labelnews .main-content section article.anews div:first-child a.h3 {
+    margin-bottom: 30px;
+  }
 }
 #labelnews .main-content section article.anews div:last-child a,
 #labelnews .main-content section article.anews div:last-child img {
   width: 100%;
+}
+#labelnews .main-content section article.anews div:last-child figcaption {
+  margin-bottom: 10px;
+}
+#labelnews .main-content section article.anews:after {
+  content: " ";
+  width: 90%;
+  height: 1px;
+  background-color: #d3d3d3;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  margin: 0 auto;
 }
 #labelnews.single .main-content {
   padding-top: 95px;

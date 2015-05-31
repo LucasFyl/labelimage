@@ -45,10 +45,12 @@
 			font-size: 4.8em;
 			color: black;
 			margin-bottom: 35px;
+			a {color: black;}
 		}
 		h2, .h2 {
 			font-family: @DMedium;
 			color: #8b8b8b;
+			a {color: #8b8b8b;}
 			font-style: italic;
 			margin-bottom: 15px;
 		}
@@ -56,6 +58,7 @@
 			font-family: @DReg;
 			font-size: 3em;
 			color: #8b8b8b;
+			a {color: #8b8b8b;}
 		}
 		p {
 			font-size: 2em;
@@ -82,14 +85,50 @@
 		section {
 			padding: 50px auto;
 			article.anews {
-				margin: 50px auto;
+				margin: 25px auto;
+				&:first-child {margin-top: 50px;}
+				&:last-child {margin-bottom: 50px;}
+				position: relative;
+
 				div:first-child {
-					
+					// margin-bottom: 25px;
+					.h1 {
+						margin-bottom: 20px;
+						font-size: 4em;
+					}
+					.h2 {
+						margin-bottom: 20px;
+						font-size: 2.6em;
+					}
+					.h3 {
+						font-size: 1.8em;
+					}
+					a.h3 {
+						display: block;
+						margin-top: 30px;
+						color: black;
+						text-decoration: underline !important;
+						@media screen and (max-width: @screen-xs-max) {
+							margin-bottom: 30px;
+						}
+					}
 				}
 				div:last-child {
+					// margin-bottom: 25px;
 					a, img {
 						width: 100%;	
 					}
+					figcaption {margin-bottom: 10px;}
+				}
+				&:after {
+					content: " ";
+					width: 90%;
+					height: 1px;
+					background-color: #d3d3d3;
+					position: relative;
+					bottom: 0;
+					left: 0;right: 0;
+					display: block; margin: 0 auto;
 				}
 			}
 		}
