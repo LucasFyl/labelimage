@@ -6,11 +6,15 @@ var vh = $( window ).height(),
 	topPos2 = ( vh + vh50 ) - 22.5 + 'px', 
 	bgPos = '-=' + ( vh50 - 22 ) + 'px';
 
-var firstTl = new TimelineMax({paused:true});
+// var firstTl = new TweenMax();
 var secondTl = new TimelineMax({paused:true});
+function setters() {
+	TweenMax.set('.bandeau', {css:{position:'absolute'}});
+	TweenMax.set('.background', {backgroundAttachment:'fixed',backgroundPositionY:bgPos});
+	TweenMax.set('.main-content', {css:{position:'fixed'}});
+}
 
-firstTl.set('.bandeau', {css:{position:'absolute',top:'100vh'}})
-		.set('.background', {backgroundAttachment:'fixed',backgroundPositionY:bgPos})
-		.set('.main-content', {css:{position:'fixed',top:topPos}});
+var firstTl = new TweenMax.to('.background', 1, {top:'-=188px',ease:Power4.easeOut,onComplete:setters()});
+
 		
-secondTl.set('.main-content', {css:{position:'absolute',top:topPos2}});
+secondTl.set('.main-content', {css:{position:'absolute'}});

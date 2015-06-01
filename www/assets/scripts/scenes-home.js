@@ -17,16 +17,23 @@ var headerHome = new ScrollMagic.Scene({
 }).setTween(TweenMax.to('header', 0.25, {top:'-=45',ease:Linear.easeNone}));
 // .addIndicators({name: 'header'})
 
+// var firstPart = new ScrollMagic.Scene({
+//     triggerElement: '#trigger2',
+//     triggerHook: 'onLeave',
+//     offset: -45
+// }).setTween(firstTl.play())
+// .addIndicators({name: 'firstBg'});
 var firstPart = new ScrollMagic.Scene({
-    triggerElement: '#trigger2',
+    triggerElement: '.background',
     triggerHook: 'onLeave',
-    offset: -45
-}).setTween(firstTl.play());
-// .addIndicators({name: 'firstBg'})
+    duration: 188,
+    offset: 10
+}).setTween(firstTl).addIndicators({name: 'firstPart'});
+
 
 var secondPart = new ScrollMagic.Scene({
     triggerElement: '.bandeau',
     triggerHook: 'onLeave',
     offset: -68
-}).setTween(secondTl.play());
-// .addIndicators({name: 'secondPart'})
+}).setTween(secondTl.play())
+.addIndicators({name: 'secondPart'});
