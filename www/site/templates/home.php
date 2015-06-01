@@ -34,27 +34,27 @@
 
                 <h3>nos préstations</h3>
                 <div class="col-xs-4 col-sm-2">
-                    <a href="<?php echo url('prestations/scan'); ?>">
+                    <a href="<?php echo url('prestations/scan'); ?>" data-letters="Scan">
                         <span>Scan</span>
                     </a> 
                 </div>
                 <div class="col-xs-4 col-sm-2">
-                    <a href="<?php echo url('prestations/traitement'); ?>">
+                    <a href="<?php echo url('prestations/traitement'); ?>" data-letters="Traitement">
                         <span>Traitement</span>
                     </a>
                 </div>
                 <div class="col-xs-4 col-sm-2">
-                    <a href="<?php echo url('prestations/tirages'); ?>">
+                    <a href="<?php echo url('prestations/tirages'); ?>" data-letters="Tirages">
                         <span>Tirages</span>
                     </a>
                 </div>
                 <div class="col-xs-6 col-sm-2">
-                    <a href="<?php echo url('prestations/finitions'); ?>">
+                    <a href="<?php echo url('prestations/finitions'); ?>" data-letters="Finitions">
                         <span>Finitions</span>
                     </a>
                 </div>
                 <div class="col-xs-6 col-sm-2">
-                    <a href="<?php echo url('prestations/tarifs'); ?>">
+                    <a href="<?php echo url('prestations/tarifs'); ?>" data-letters="Tarifs">
                         <span>Tarifs</span>
                     </a>
                 </div>
