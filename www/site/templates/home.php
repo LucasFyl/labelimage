@@ -54,7 +54,7 @@
                     </a>
                 </div>
                 <div class="col-xs-6 col-sm-2">
-                    <a href="<?php echo url('prestations/tarifs'); ?>" data-letters="Tarifs">
+                    <a href="<?php echo url('tarifs'); ?>" data-letters="Tarifs">
                         <span>Tarifs</span>
                     </a>
                 </div>
