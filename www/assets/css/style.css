@@ -7036,6 +7036,9 @@ figcaption {
   width: 100%;
   overflow: hidden;
 }
+.op0 {
+  opacity: 0 !important;
+}
 body {
   height: 100%;
 }
@@ -8506,4 +8509,61 @@ a.arrow-down:hover {
   background-color: #f6f2ef;
   height: auto;
   min-height: 100%;
+}
+#tarifs .main-content > section {
+  margin-left: 95px;
+  margin-right: 95px;
+}
+#tarifs .main-content > section > section {
+  margin-top: 95px;
+}
+#tarifs .main-content > section > section:first-child {
+  margin-top: 55px;
+}
+#tarifs .main-content h3 {
+  font-family: 'DIN-Light', helvetica, sans-serif;
+  font-size: 3.1em;
+  color: #eb5c08;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+#tarifs .main-content .table {
+  text-align: center;
+}
+#tarifs .main-content .table h3 {
+  text-align: left;
+}
+#tarifs .main-content .tr > div:not(.row):first-child,
+#tarifs .main-content .td > div:not(.row):first-child {
+  text-align: left;
+}
+#tarifs .main-content .tr > div.row > div:first-child,
+#tarifs .main-content .td > div.row > div:first-child {
+  text-align: left;
+}
+#tarifs .main-content .custom5 {
+  width: calc(100% / 5);
+  display: inline-block;
+  float: left;
+  padding: 0 15px;
+}
+#tarifs .main-content .custom7 {
+  width: calc(100% / 7);
+  display: inline-block;
+  float: left;
+  padding: 0 15px;
+}
+#tarifs .main-content .tr {
+  line-height: 28px;
+}
+#tarifs .main-content .tr p {
+  text-transform: uppercase;
+  font-family: 'AvenirNextLTPro-Medium', helvetica, sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+#tarifs .main-content .tr span {
+  font-family: 'AvenirNextLTPro-Regular', helvetica, sans-serif;
+  font-size: 1.7em;
 }

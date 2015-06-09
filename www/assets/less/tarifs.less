@@ -15,6 +15,7 @@
 		min-height: 302px;
 		overflow: hidden;
 		position: relative;
+
 		.background {
 			min-width: 100vw;
 			min-height: 347px; //margin-top: 45px;
@@ -45,5 +46,60 @@
 		background-color:@bg; 
 		height: auto;
 		min-height: 100%;
+		> section { // .container-fluid
+			margin-left: 95px;
+			margin-right: 95px;
+			> section{margin-top: 95px;}
+			> section:first-child{margin-top: 55px;}
+		}
+		h3 {
+			font-family: @DLight;
+			font-size: 3.1em;
+			color: @orange;
+			line-height: 1;
+			text-transform: uppercase;
+			margin-bottom: 15px;
+		}
+		.table {
+			text-align: center;
+			h3 {
+				text-align: left;
+			}
+		}
+		.tr, .td {
+			> div:not(.row):first-child {
+				text-align: left;
+			}
+			> div.row {
+				> div:first-child {
+					text-align: left;
+				}
+			}
+		}
+		.custom5 {
+			width: ~"calc(100% / 5)";
+			display: inline-block;
+			float: left;
+			padding: 0 15px;
+		}
+		.custom7 {
+			width: ~"calc(100% / 7)";
+			display: inline-block;
+			float: left;
+			padding: 0 15px;
+		}
+		.tr {
+			line-height: 28px;
+			p {
+				text-transform: uppercase;
+				font-family: @Med;
+				font-size: 1.5em;
+				margin-bottom: 0;
+			}
+			span {
+				font-family: @Reg;
+				font-size: 1.7em;
+			}
+		}
 	}
 }
