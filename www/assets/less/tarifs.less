@@ -52,21 +52,31 @@
 			> section{margin-top: 95px;}
 			> section:first-child{margin-top: 55px;}
 		}
-		h3 {
-			font-family: @DLight;
-			font-size: 3.1em;
-			color: @orange;
-			line-height: 1;
-			text-transform: uppercase;
-			margin-bottom: 15px;
-		}
 		.table {
 			text-align: center;
 			h3 {
+				font-family: @DLight;
+				font-size: 3.1em;
+				color: @orange;
+				line-height: 1;
+				text-transform: uppercase;
+				margin-bottom: 15px;
 				text-align: left;
+			}
+			p {
+				text-transform: uppercase;
+				font-family: @Med;
+				font-size: 1.5em;
+				margin-bottom: 0;
+			}
+			span {
+				font-family: @Reg;
+				font-size: 1.7em;
 			}
 		}
 		.tr, .td {
+			margin-left: 0 !important;
+			margin-right: 0 !important;
 			> div:not(.row):first-child {
 				text-align: left;
 			}
@@ -81,25 +91,54 @@
 			display: inline-block;
 			float: left;
 			padding: 0 15px;
+			&:first-child {
+				padding-left: 0;
+			}
+			&:last-child {
+				padding-right: 0;
+			}
 		}
 		.custom7 {
 			width: ~"calc(100% / 7)";
 			display: inline-block;
 			float: left;
 			padding: 0 15px;
+			&:first-child {
+				padding-left: 0;
+			}
+			&:last-child {
+				padding-right: 0;
+			}
 		}
 		.tr {
 			line-height: 28px;
-			p {
-				text-transform: uppercase;
-				font-family: @Med;
-				font-size: 1.5em;
-				margin-bottom: 0;
+			
+			&:nth-child(3) {
+				border-bottom: 2px solid @orange;
 			}
-			span {
-				font-family: @Reg;
-				font-size: 1.7em;
+		}
+		.td {
+			line-height: 30px;
+			font-size: 1.7em;
+			font-family: @Med;
+			&:last-child {
+				border-bottom: 2px solid @orange;
 			}
+		}
+		.tirages1, .tirages2 {
+			.td div:first-child,
+			.tr div:first-child {
+				padding-left: 0;
+			}
+		}
+		.tirages2 .tr:nth-child(2){
+			border-bottom: 2px solid @orange;
+		}
+		.scan .custom5:first-child {
+			padding-left: 15px;
+		}
+		.traitement p.orange {
+			padding-left: 0;
 		}
 	}
 }

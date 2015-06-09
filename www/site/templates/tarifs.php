@@ -158,8 +158,8 @@
                             <div class="col-xs-3">
                                 <span>cd 15 euros <span class="o-b"></span> DVD 40 euros</span>
                             </div>
-                            <p class="col-xs-12">Retouches créatives sur devis uniquement</p>
                         </div>
+                        <p class="col-xs-12 orange text-left">Retouches créatives sur devis uniquement</p>
                     </div>
                 </section>
 
@@ -325,7 +325,7 @@
                             <div class="col-xs-3">255</div>
                         </div>
                         <div class="row">
-                            <p class="col-xs-12 orange">Test sans suite 30 euros</p>
+                            <p class="col-xs-12 orange text-left small">Test sans suite 30 euros</p>
                         </div>
                     </div>
                 </section>
@@ -463,7 +463,7 @@
                                 </div>
                             </div>
                             <div class="custom7">
-                                <p>x</p>
+                                <p class="op0">x</p>
                             </div>
                             <div class="custom7">
                                 <p>Caisse américaine</p>
@@ -631,10 +631,10 @@
                 
                 <section class="row footer-part">
                     <div class="col-xs-6">
-                        <a href="#">télécharger nos tarifs au format pdf</a>
+                        <a href="#" class="orange">télécharger nos tarifs au format pdf</a>
                     </div>
                     <div class="col-xs-6">
-                        <p>prix h.t.  juin 2015</p>
+                        <p class="orange text-right">prix h.t.  juin 2015</p>
                     </div>
                 </section>
             </section>
