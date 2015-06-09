@@ -8523,6 +8523,24 @@ a.arrow-down:hover {
 #tarifs .main-content > section > section:first-child {
   margin-top: 55px;
 }
+#tarifs .main-content .pigments {
+  display: block;
+  background: url('../images/asset-tarifs-bg.jpg') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  min-height: 429px;
+  margin-left: 0;
+}
+#tarifs .main-content .pigments h2 {
+  line-height: 429px;
+  font-family: 'AvenirNextLTPro-UltLt', helvetica, sans-serif;
+  font-size: 9em;
+  letter-spacing: 4px;
+  text-align: center;
+  color: white;
+  text-transform: none;
+}
 #tarifs .main-content .table {
   text-align: center;
 }
@@ -8532,8 +8550,14 @@ a.arrow-down:hover {
   color: #eb5c08;
   line-height: 1;
   text-transform: uppercase;
-  margin-bottom: 15px;
   text-align: left;
+  letter-spacing: 2px;
+  background: url('../images/asset-tarifs-filet.svg') no-repeat;
+  background-position-y: 0px;
+  background-position-x: -16px;
+  background-size: initial;
+  margin: 0;
+  padding: 15px 0;
 }
 #tarifs .main-content .table p {
   text-transform: uppercase;
@@ -8610,4 +8634,16 @@ a.arrow-down:hover {
 }
 #tarifs .main-content .traitement p.orange {
   padding-left: 0;
+}
+#tarifs .main-content .scan .table .h3 {
+  background-position-x: -130px;
+}
+#tarifs .main-content .tirages1 .table .h3 {
+  background-position-x: -130px;
+}
+#tarifs .main-content .finitions .table .h3 {
+  background-position-x: -130px;
+}
+#tarifs .main-content .traitement .orange {
+  margin-top: 35px;
 }

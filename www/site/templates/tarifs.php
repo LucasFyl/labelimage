@@ -162,11 +162,13 @@
                         <p class="col-xs-12 orange text-left">Retouches créatives sur devis uniquement</p>
                     </div>
                 </section>
+            </section>
 
-                <section class="background">
-                    <h2>Impressions Pigmentaires</h2>
-                </section>
-                
+            <section class="pigments">
+                <h2>Impressions Pigmentaires</h2>
+            </section>
+            
+            <section class="container-fluid">
                 <section class="row tirages1">
                     <div class="table col-xs-12">
                         <div class="header-part"><h3>tirages</h3></div>

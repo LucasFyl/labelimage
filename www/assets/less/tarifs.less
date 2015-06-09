@@ -52,6 +52,25 @@
 			> section{margin-top: 95px;}
 			> section:first-child{margin-top: 55px;}
 		}
+		.pigments {
+			display: block;
+			background: url('../images/asset-tarifs-bg.jpg') no-repeat center center;
+			background-size: cover;
+			width: 100%;
+			height: auto;
+			min-height: 429px;
+			margin-left: 0;
+			
+			h2 {
+				line-height: 429px;
+				font-family: @UltLt;
+				font-size: 9em;
+				letter-spacing: 4px;	
+				text-align: center;
+				color: white;
+				text-transform: none;
+			}
+		}
 		.table {
 			text-align: center;
 			h3 {
@@ -60,8 +79,14 @@
 				color: @orange;
 				line-height: 1;
 				text-transform: uppercase;
-				margin-bottom: 15px;
 				text-align: left;
+				letter-spacing: 2px;
+				background: url('../images/asset-tarifs-filet.svg') no-repeat;
+				background-position-y: 0px;
+				background-position-x: -16px;
+				background-size: initial;
+				margin: 0;
+				padding: 15px 0;
 			}
 			p {
 				text-transform: uppercase;
@@ -139,6 +164,18 @@
 		}
 		.traitement p.orange {
 			padding-left: 0;
+		}
+		.scan .table .h3 {
+			background-position-x: -130px;
+		}
+		.tirages1 .table .h3 {
+			background-position-x: -130px;
+		}
+		.finitions .table .h3 {
+			background-position-x: -130px;
+		}
+		.traitement .orange {
+			margin-top: 35px;
 		}
 	}
 }
