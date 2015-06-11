@@ -8558,11 +8558,20 @@ a.arrow-down:hover {
 #tarifs .main-content .td > div.row > div:first-child {
   text-align: left;
 }
+#tarifs .main-content .pull-left,
+#tarifs .main-content .pull-right {
+  display: inline-block;
+}
 #tarifs .main-content .custom5 {
   width: calc(100% / 5);
   display: inline-block;
   float: left;
   padding: 0 15px;
+}
+#tarifs .main-content .custom5 .med {
+  font-family: 'AvenirNextLTPro-Medium', helvetica, sans-serif;
+  font-size: 1.7em;
+  color: black;
 }
 #tarifs .main-content .custom5:first-child {
   padding-left: 0;
@@ -8610,6 +8619,16 @@ a.arrow-down:hover {
   border-bottom: 2px solid #eb5c08;
   margin-bottom: 15px;
 }
+#tarifs .main-content .tirages2 .tr:first-child {
+  border-top: 2px solid #eb5c08;
+  padding-top: 10px;
+}
+#tarifs .main-content .tirages2 .tr:nth-child(2) {
+  padding-bottom: 5px;
+}
+#tarifs .main-content .tr:nth-child(3) {
+  padding-bottom: 5px;
+}
 #tarifs .main-content .scan .custom5:first-child {
   padding-left: 15px;
 }
@@ -8640,4 +8659,26 @@ a.arrow-down:hover {
 #tarifs .main-content .traitement .col-xs-offset-3 p {
   display: block;
   text-align: center;
+}
+#tarifs .main-content .footer-part {
+  margin-top: 0px;
+  font-size: 1.1em;
+  color: #eb5c08;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+#tarifs .main-content .footer-part div {
+  height: 30px;
+  line-height: 30px;
+}
+#tarifs .main-content .footer-part div:first-child {
+  padding-left: 65px;
+  background: url(../images/icon-dl.png) no-repeat;
+  background-size: 34px;
+  background-position: 15px center;
+  overflow: visible;
+}
+#tarifs .main-content .footer-part div:first-child a:hover {
+  color: #eb5c08;
+  text-decoration: underline;
 }

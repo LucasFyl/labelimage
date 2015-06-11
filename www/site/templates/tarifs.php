@@ -61,11 +61,11 @@
                             <div class="custom5">
                                 <p class="op0">x</p>
                             </div>
-                            <div class="custom5">Documents et plan fins</div>
+                            <div class="custom5"><span class="med">Documents et plan fins</span></div>
                             <div class="custom5"><p class="op0">x</p></div>
                             <div class="custom5">
-                                <div class="col-xs-6">Ektas</div>
-                                <div class="col-xs-6">Négatifs</div>
+                                <div class="col-xs-6"><span class="med">Ektas</span></div>
+                                <div class="col-xs-6"><span class="med">Négatifs</span></div>
                             </div>
                             <div class="custom5"><p class="op0">x</p></div>
                         </div>
@@ -191,7 +191,12 @@
                                 <span>Formats</span>
                             </div>
                             <div class="col-xs-3">
-                                <span>Satiné <span class="o-b"></span> Brillant <span></span> Rag <span class="o-b"></span> Baryté</span>
+                                <div class="pull-left">
+                                    <span>Satiné <span class="o-b"></span> Brillant </span>    
+                                </div>
+                                <div class="pull-right">
+                                    <span> Rag <span class="o-b"></span> Baryté</span>
+                                </div>
                             </div>
                             <div class="col-xs-3">
                                 <span>Satiné <span class="o-b"></span> Brillant</span>
