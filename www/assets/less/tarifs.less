@@ -62,17 +62,27 @@
 			margin-left: 0;
 			
 			h2 {
-				line-height: 429px;
+				// line-height: 429px;
 				font-family: @UltLt;
 				font-size: 9em;
+				line-height: 1;
+				padding-top: 290px;
 				letter-spacing: 4px;	
 				text-align: center;
 				color: white;
 				text-transform: none;
+				text-transform: lowercase;
 			}
 		}
 		.table {
 			text-align: center;
+			.header-part {
+				background: url('../images/asset-tarifs-filet.svg') no-repeat;
+				background-size: cover;
+				background-position-x: -15px; 
+				height: 40px;
+				margin-bottom: 15px;
+			}
 			h3 {
 				font-family: @DLight;
 				font-size: 3.1em;
@@ -81,10 +91,10 @@
 				text-transform: uppercase;
 				text-align: left;
 				letter-spacing: 2px;
-				background: url('../images/asset-tarifs-filet.svg') no-repeat;
-				background-position-y: 0px;
-				background-position-x: -16px;
-				background-size: initial;
+				// background: url('../images/asset-tarifs-filet.svg') no-repeat;
+				// background-position-y: 0px;
+				// background-position-x: -16px;
+				// background-size: initial;
 				margin: 0;
 				padding: 15px 0;
 			}
@@ -140,14 +150,17 @@
 			
 			&:nth-child(3) {
 				border-bottom: 2px solid @orange;
+				margin-bottom: 15px;
 			}
 		}
 		.td {
 			line-height: 30px;
 			font-size: 1.7em;
 			font-family: @Med;
-			&:last-child {
+			&:last-child, &.last {
 				border-bottom: 2px solid @orange;
+				padding-bottom: 15px;
+				margin-bottom: 15px;
 			}
 		}
 		.tirages1, .tirages2 {
@@ -158,24 +171,39 @@
 		}
 		.tirages2 .tr:nth-child(2){
 			border-bottom: 2px solid @orange;
+			margin-bottom:15px;
 		}
 		.scan .custom5:first-child {
 			padding-left: 15px;
+
+			&.first {
+				padding-left: 0;
+			}
 		}
 		.traitement p.orange {
 			padding-left: 0;
 		}
-		.scan .table .h3 {
-			background-position-x: -130px;
+		.scan .table .header-part {
+			background-position-x: -135px;
 		}
-		.tirages1 .table .h3 {
-			background-position-x: -130px;
+		.tirages1 .table .header-part {
+			background-position-x: -90px;
 		}
-		.finitions .table .h3 {
-			background-position-x: -130px;
+		.finitions .table .header-part {
+			background-position-x: -60px;
+		}
+		.finitions .smaller {
+			font-size: 1.4em;
+			display: block;
+			text-align: center !important;
 		}
 		.traitement .orange {
-			margin-top: 35px;
+			margin-top: 20px;
+		}
+		.traitement .col-xs-offset-3 span, 
+		.traitement .col-xs-offset-3 p {
+			display: block;
+			text-align: center;
 		}
 	}
 }

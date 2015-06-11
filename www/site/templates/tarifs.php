@@ -41,7 +41,7 @@
                             </div>
                         </div>
                         <div class="row tr">
-                            <div class="custom5">
+                            <div class="custom5 first">
                                 <span>Poids</span>
                             </div>
                             <div class="custom5">
@@ -165,7 +165,7 @@
             </section>
 
             <section class="pigments">
-                <h2>Impressions Pigmentaires</h2>
+                <h2>Impressions&nbsp;&nbsp;Pigmentaires</h2>
             </section>
             
             <section class="container-fluid">
@@ -317,7 +317,7 @@
                             <div class="col-xs-3">165</div>
                             <div class="col-xs-3">-</div>
                         </div>
-                        <div class="row td">
+                        <div class="row td last">
                             <div class="col-xs-3">ML 150</div>
                             <div class="col-xs-3">
                                 <div class="col-xs-6">165</div>
@@ -468,44 +468,44 @@
                                 <p class="op0">x</p>
                             </div>
                             <div class="custom7">
-                                <p>Caisse américaine</p>
+                                <p>Caisse</p>
                             </div>
                             <div class="custom7">
-                                <p>plexicollage</p>
+                                <p>Diasec</p>
                             </div>
                             <div class="custom7">
                                 <p>encadrement</p>
                             </div>
                             <div class="custom7">
-                                <p>encadrement boite</p>
+                                <p>encadrement</p>
                             </div>
                         </div>
                         <div class="row tr">
                             <div class="custom7">
-                                <span>Formats</span>
+                                <span class='first'>Formats</span>
                             </div>
                             <div class="custom7">
                                 <div class="col-xs-6">
-                                    <span>1 mm</span>
+                                    <span class="smaller">1 mm</span>
                                 </div>
                                 <div class="col-xs-6">
-                                    <span>2 mm</span>
+                                    <span class="smaller">2 mm</span>
                                 </div>
                             </div>
                             <div class="custom7">
                                 <span>Chassis rentrant</span>
                             </div>
                             <div class="custom7">
-                                <span class="op0"></span>
+                                <p>américaine</p>
                             </div>
                             <div class="custom7">
                                 <span>Chassis rentrant</span>
                             </div>
                             <div class="custom7">
-                                <span>avec passe partout</span>
+                                <span class="smaller">avec passe partout</span>
                             </div>
                             <div class="custom7">
-                                <span class="op0">x</span>
+                                <p>boite</p>
                             </div>
                         </div>
                         <div class="row td">

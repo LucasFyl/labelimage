@@ -8174,27 +8174,6 @@ a.arrow-down:hover {
   background: #F9F9F9;
   transition: all 0.3s ease;
 }
-#home .main-content .prestations div a:before {
-  content: " ";
-  position: absolute;
-  z-index: 2;
-  width: 90%;
-  height: 90%;
-  top: 5%;
-  left: 5%;
-  border: 0px solid white;
-  transform: scale(1.05);
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  -o-transform: scale(1.05);
-  transition: all 0.35s ease;
-  -webkit-transition: all 0.35s ease;
-  -moz-transition: all 0.35s ease;
-  -ms-transition: all 0.35s ease;
-  -o-transition: all 0.35s ease;
-  opacity: 0;
-}
 #home .main-content .prestations div a:hover {
   text-decoration: none;
   font-family: 'AvenirNextLTPro-Demi', helvetica, sans-serif;
@@ -8204,15 +8183,6 @@ a.arrow-down:hover {
   -moz-transition: all 0.25s ease;
   -ms-transition: all 0.25s ease;
   -o-transition: all 0.25s ease;
-}
-#home .main-content .prestations div a:hover:before {
-  opacity: 1;
-  border-width: 3px;
-  transform: scale(1);
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
 }
 #home .main-content .prestations div a:hover span {
   color: white;
@@ -8533,16 +8503,25 @@ a.arrow-down:hover {
   margin-left: 0;
 }
 #tarifs .main-content .pigments h2 {
-  line-height: 429px;
   font-family: 'AvenirNextLTPro-UltLt', helvetica, sans-serif;
   font-size: 9em;
+  line-height: 1;
+  padding-top: 290px;
   letter-spacing: 4px;
   text-align: center;
   color: white;
   text-transform: none;
+  text-transform: lowercase;
 }
 #tarifs .main-content .table {
   text-align: center;
+}
+#tarifs .main-content .table .header-part {
+  background: url('../images/asset-tarifs-filet.svg') no-repeat;
+  background-size: cover;
+  background-position-x: -15px;
+  height: 40px;
+  margin-bottom: 15px;
 }
 #tarifs .main-content .table h3 {
   font-family: 'DIN-Light', helvetica, sans-serif;
@@ -8552,10 +8531,6 @@ a.arrow-down:hover {
   text-transform: uppercase;
   text-align: left;
   letter-spacing: 2px;
-  background: url('../images/asset-tarifs-filet.svg') no-repeat;
-  background-position-y: 0px;
-  background-position-x: -16px;
-  background-size: initial;
   margin: 0;
   padding: 15px 0;
 }
@@ -8611,14 +8586,18 @@ a.arrow-down:hover {
 }
 #tarifs .main-content .tr:nth-child(3) {
   border-bottom: 2px solid #eb5c08;
+  margin-bottom: 15px;
 }
 #tarifs .main-content .td {
   line-height: 30px;
   font-size: 1.7em;
   font-family: 'AvenirNextLTPro-Medium', helvetica, sans-serif;
 }
-#tarifs .main-content .td:last-child {
+#tarifs .main-content .td:last-child,
+#tarifs .main-content .td.last {
   border-bottom: 2px solid #eb5c08;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 #tarifs .main-content .tirages1 .td div:first-child,
 #tarifs .main-content .tirages2 .td div:first-child,
@@ -8628,22 +8607,36 @@ a.arrow-down:hover {
 }
 #tarifs .main-content .tirages2 .tr:nth-child(2) {
   border-bottom: 2px solid #eb5c08;
+  margin-bottom: 15px;
 }
 #tarifs .main-content .scan .custom5:first-child {
   padding-left: 15px;
 }
+#tarifs .main-content .scan .custom5:first-child.first {
+  padding-left: 0;
+}
 #tarifs .main-content .traitement p.orange {
   padding-left: 0;
 }
-#tarifs .main-content .scan .table .h3 {
-  background-position-x: -130px;
+#tarifs .main-content .scan .table .header-part {
+  background-position-x: -135px;
 }
-#tarifs .main-content .tirages1 .table .h3 {
-  background-position-x: -130px;
+#tarifs .main-content .tirages1 .table .header-part {
+  background-position-x: -90px;
 }
-#tarifs .main-content .finitions .table .h3 {
-  background-position-x: -130px;
+#tarifs .main-content .finitions .table .header-part {
+  background-position-x: -60px;
+}
+#tarifs .main-content .finitions .smaller {
+  font-size: 1.4em;
+  display: block;
+  text-align: center !important;
 }
 #tarifs .main-content .traitement .orange {
-  margin-top: 35px;
+  margin-top: 20px;
+}
+#tarifs .main-content .traitement .col-xs-offset-3 span,
+#tarifs .main-content .traitement .col-xs-offset-3 p {
+  display: block;
+  text-align: center;
 }
