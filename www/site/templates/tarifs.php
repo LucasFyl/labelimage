@@ -17,7 +17,7 @@
         <div id="trigger2"></div>
         <div id="trigger3"></div>
         
-        <div class="main-content" id="">
+        <div class="main-content">
             <section class="container-fluid">
 
                 <section class="row scan">
@@ -649,10 +649,10 @@
     <script src="<?php echo url('assets/scripts/hello.js'); ?>"></script>
     <script>
         $(document).ready(function(){
-            contactController.addScene([
-                headerContact,
-                backgroundContact,
-                headlineContact
+            tarifsController.addScene([
+                headerTarifs,
+                backgroundTarifs,
+                headlineTarifs
             ]);
         });
     </script>

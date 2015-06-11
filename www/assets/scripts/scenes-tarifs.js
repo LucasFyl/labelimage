@@ -4,26 +4,28 @@
     // C O N T A C T
 
 
-var contactController = new ScrollMagic.Controller();
+var tarifsController = new ScrollMagic.Controller();
 
 
-var headerContact = new ScrollMagic.Scene({
-    triggerElement: '#trigger3',
-    triggerHook: 0,
+var headerTarifs = new ScrollMagic.Scene({
+    triggerElement: '.main-content',
+    triggerHook: 'onLeave',
+    offset: -45,
     duration: 45
 }).setTween(TweenMax.to('header', 0.25, {top:'-=45',ease:Linear.easeNone}));
-// .addIndicators({name: 'header'})
+// .addIndicators({name: 'header'});
 
-var headlineContact = new ScrollMagic.Scene({
-      triggerElement: '#trigger',
-      triggerHook: 1,
-      duration: '25%'
+var headlineTarifs = new ScrollMagic.Scene({
+	triggerElement: '#tarifs',
+	triggerHook: 'onLeave',
+	duration: 150
   }).setTween(TweenMax.to('.landing h1', 0.5, {opacity:0,ease:Power2.easeOut}));
-// .addIndicators({name: 'headline'})
+// .addIndicators({name: 'headline'});
 
-var backgroundContact  = new ScrollMagic.Scene({
-    triggerElement: '#trigger2',
-    triggerHook: 0.5,
-    duration: '50%'
-}).setTween(TweenMax.to('.landing .background', 0.5, {top:'-25%',ease:Linear.easeNone}));
+var backgroundTarifs  = new ScrollMagic.Scene({
+    triggerElement: '#tarifs',
+    triggerHook: 'onLeave',
+    duration: 300,
+    offset: 0
+}).setTween(TweenMax.to('.landing .background', 0.5, {top:'-150px',ease:Linear.easeNone}));
 // .addIndicators({name: 'background'})
