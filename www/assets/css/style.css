@@ -7977,7 +7977,6 @@ a.arrow-down:hover {
 }
 #home {
   max-width: 100vw;
-  height: calc(250vh - 22.5px);
   overflow-x: hidden;
   padding: 0;
   margin: 0;

@@ -18,15 +18,15 @@ var headerHome = new ScrollMagic.Scene({
 // .addIndicators({name: 'header'})
 
 var firstPart = new ScrollMagic.Scene({
-    triggerElement: '#trigger2',
+    triggerElement: '#home',
     triggerHook: 'onLeave',
-    offset: -45
-}).setTween(firstTl.play());
-// .addIndicators({name: 'firstBg'})
+    offset: 225
+}).setTween(firstTl.play())
+.addIndicators({name: 'firstBg'});
 
 var secondPart = new ScrollMagic.Scene({
     triggerElement: '.bandeau',
     triggerHook: 'onLeave',
-    offset: -68
+    offset: -225
 }).setTween(secondTl.play());
 // .addIndicators({name: 'secondPart'})

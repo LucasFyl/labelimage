@@ -9,8 +9,11 @@ var vh = $( window ).height(),
 var firstTl = new TimelineMax({paused:true});
 var secondTl = new TimelineMax({paused:true});
 
-firstTl.set('.bandeau', {css:{position:'absolute',top:'100vh'}})
-		.set('.background', {backgroundAttachment:'fixed',backgroundPositionY:bgPos})
-		.set('.main-content', {css:{position:'fixed',top:topPos}});
+firstTl.set('.bandeau', {css:{position:'absolute',top:vh50 + 45 + 180 + 'px'}})
+		.set('.background', {backgroundAttachment:'fixed',backgroundPositionY:'-180px'})
+		.set('.main-content', {css:{position:'fixed',top:vh50 + 45 + 180 + 'px'}});
+
+//firstTl.to('.background', 0.25, {top:"-=300px",ease:Power2.easeInOut})
+//		.set('.bandeau', {bac});
 		
-secondTl.set('.main-content', {css:{position:'absolute',top:topPos2}});
+secondTl.set('.main-content', {css:{position:'absolute',top:vh + 180 + 'px'}});
