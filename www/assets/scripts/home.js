@@ -9,7 +9,7 @@ var vh = $( window ).height(),
 var firstTl = new TimelineMax({paused:true});
 var secondTl = new TimelineMax({paused:true});
 
-firstTl.set('.bandeau', {css:{position:'absolute',top:vh50 + 45 + 180 + 'px'}})
+firstTl.set('.bandeau', {css:{position:'absolute',top:vh50 + 22.5 + 180 + 'px'}})
 		.set('.background', {backgroundAttachment:'fixed',backgroundPositionY:'-180px'})
 		.set('.main-content', {css:{position:'fixed',top:vh50 + 45 + 180 + 'px'}});
 

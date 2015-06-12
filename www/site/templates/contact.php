@@ -8,7 +8,6 @@
 
 
         <div class="landing">
-            <a href="#" class="arrow-down fadeIn"></a>
             <h1 class="fadeIn">contact</h1>
             <div class="background"></div>
             <!-- <img src="<?php echo url('assets/images/landing-contact.jpg'); ?>" alt="Contact" class="background"/> 
@@ -54,26 +53,26 @@
                     <div class="col-sm-3 col-xs-6">
                         <ul>
                             <li>Partenaires</li>
-                            <li><a href="#">Association Luca Dolega</a></li>
-                            <li><a href="#">Images singulières</a></li>
-                            <li><a href="#">JRM</a></li>
-                            <li><a href="#">Atelier Martial</a></li>
-                            <li><a href="#">Plasticollage</a></li>
-                            <li><a href="#">Image Collée</a></li>
-                            <li><a href="#">Flamant encadrement</a></li>
-                            <li><a href="#">Zanzibar</a></li>
+                            <li><a href="http://www.lucasdolega.com/" target="_blank">Association Luca Dolega</a></li>
+                            <li><a href="http://www.imagesingulieres.com/" target="_blank">Images singulières</a></li>
+                            <li><a href="http://www.jrm-studio.com/" target="_blank">JRM</a></li>
+                            <li><a href="http://www.ateliermartial.net/" target="_blank">Atelier Martial</a></li>
+                            <li><a href="http://plasticollage.com/" target="_blank">Plasticollage</a></li>
+                            <li><a href="http://www.image-collee.com/" target="_blank">Image Collée</a></li>
+                            <li><a href="http://www.encadrement-flamant.com/" target="_blank">Flamant encadrement</a></li>
+                            <li><a href="https://plus.google.com/118051252642417748773/about?gl=de&hl=fr" target="_blank">Zanzibar</a></li>
                         </ul>
                     </div>                    
                     <div class="col-sm-3 col-xs-6">
                         <ul>
                             <li>Écoles</li>
-                            <li><a href="#">CE3P</a></li>
-                            <li><a href="#">ENSAD</a></li>
-                            <li><a href="#">Les Gobelins</a></li>
-                            <li><a href="#">Efet</a></li>
-                            <li><a href="#">Louis Lumière</a></li>
-                            <li><a href="#">Lycée Brassai</a></li>
-                            <li><a href="#">ETPA</a></li>
+                            <li><a href="http://ce3p.com/" target="_blank">CE3P</a></li>
+                            <li><a href="http://www.ensad.fr/" target="_blank">ENSAD</a></li>
+                            <li><a href="http://www.gobelins.fr/" target="_blank">Les Gobelins</a></li>
+                            <li><a href="http://www.efet.fr/" target="_blank">Efet</a></li>
+                            <li><a href="http://www.ens-louis-lumiere.fr/" target="_blank">Louis Lumière</a></li>
+                            <li><a href="http://www.lycee-brassai.fr/" target="_blank">Lycée Brassai</a></li>
+                            <li><a href="http://www.etpa.com/index.html" target="_blank">ETPA</a></li>
                         </ul>
                         <div class="cta-btn">
                             <a href="mailto:delphine@atelierlabelimage.com"></a>
