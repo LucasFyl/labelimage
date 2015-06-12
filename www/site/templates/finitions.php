@@ -99,6 +99,8 @@
 
       <section class="row ratioImg">
         <div class="col-xs-12 fullH">
+          <div class="col-xs-6 "><p>© Olivia Gay</p></div>
+          <div class="col-xs-6 "><p>© Marie Hudelot</p></div>
         </div>
       </section>
     </div>

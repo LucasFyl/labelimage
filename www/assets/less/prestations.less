@@ -260,6 +260,7 @@ a.arrow-down {
 	.landing {
 		.background {
 			background: url('../images/landing-finitions.jpg') no-repeat center center;
+			background-position-y: 45px;
 			background-size: cover;
 			-moz-background-size: cover;
 			-webkit-background-size: cover;
@@ -392,8 +393,17 @@ a.arrow-down {
 				&.left {
 					padding-top: 100px;
 					padding-bottom: 110px;
+					position: relative;
+
+					.after-gradient();
+					&:after {
+						width: 100vw;
+	  					z-index: 999;
+						top: ~"calc(100%)";
+					}
 				}
 			}
+
 		}
 
 		&:nth-child(6) {
@@ -401,6 +411,18 @@ a.arrow-down {
 				padding: 0;
 				background: url('../images/asset-finition-9.jpg') no-repeat center center fixed;
 				background-size: cover;
+
+				> div {
+					position: absolute;
+					bottom: 0;
+					&:first-child {
+						left: 90px;
+					}
+					&:nth-child(2) {
+						right: 90px;
+						p{text-align: right !important;}
+					}
+				}
 			}
 		}
 
