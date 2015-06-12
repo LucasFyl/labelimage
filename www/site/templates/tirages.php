@@ -47,9 +47,9 @@
       </div>
       <div class="row">
         <div class="col-xs-12 col-md-6 left">
-          <h3>EDITION D’ART / SERIE LIMITEE</h3>
-          <h4>Une impression numerique prend tout son caractere d'estampe</h4>
-          <h4>lorsqu'elle se differencie d'une reproduction mecanique en grande quantite</h4>
+          <h3>ÉDITION D’ART / SÉRIE LIMITÉE</h3>
+          <h4>Une impression numérique prend tout son caractère d'estampe</h4>
+          <h4>lorsqu'elle se différencie d'une reproduction mécanique en grande quantit&</h4>
           <p>L’estampe numérique est avant tout une impression <br/>
           <span style='text-align:left;' class="bold">Caractéristiques d'une estampe numérique originale selon l'atelier label image</span></p>
           <div class="stand-out-wrap">

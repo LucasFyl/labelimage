@@ -7514,6 +7514,10 @@ a.arrow-down:hover {
     text-align: left;
   }
 }
+#prestation.tirages .landing h1 {
+  top: 340px;
+  bottom: auto;
+}
 #prestation.tirages .landing .background {
   background: url('../images/landing-tirages.jpg') no-repeat center center;
   background-size: cover;
