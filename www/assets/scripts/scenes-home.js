@@ -21,8 +21,8 @@ var firstPart = new ScrollMagic.Scene({
     triggerElement: '#home',
     triggerHook: 'onLeave',
     offset: 225
-}).setTween(firstTl.play())
-.addIndicators({name: 'firstBg'});
+}).setTween(firstTl.play());
+// .addIndicators({name: 'firstBg'});
 
 var secondPart = new ScrollMagic.Scene({
     triggerElement: '.bandeau',

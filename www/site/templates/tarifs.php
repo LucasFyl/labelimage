@@ -80,6 +80,8 @@
                                 </div>
                                 <div class="custom5">50</div>
                             </div>
+                        </div>
+                        <div class="td">
                             <div class="row">
                                 <div class="custom5">80 Mo</div>
                                 <div class="custom5">70</div>
@@ -90,6 +92,8 @@
                                 </div>
                                 <div class="custom5">70</div>
                             </div>
+                        </div>
+                        <div class="td">
                             <div class="row">
                                 <div class="custom5">120 Mo</div>
                                 <div class="custom5">90</div>
@@ -100,6 +104,8 @@
                                 </div>
                                 <div class="custom5">85</div>
                             </div>
+                        </div>
+                        <div class="td">
                             <div class="row">
                                 <div class="custom5">150 Mo</div>
                                 <div class="custom5">105</div>
@@ -110,6 +116,8 @@
                                 </div>
                                 <div class="custom5">105</div>
                             </div>
+                        </div>
+                        <div class="td">
                             <div class="row">
                                 <div class="custom5">200 Mo</div>
                                 <div class="custom5">145</div>
@@ -120,6 +128,8 @@
                                 </div>
                                 <div class="custom5">145</div>
                             </div>
+                        </div>
+                        <div class="td">
                             <div class="row">
                                 <div class="custom5">300 Mo</div>
                                 <div class="custom5">170</div>
@@ -649,6 +659,7 @@
     </div>
 
     <?php snippet('scripts'); ?>
+    <script src="<?php echo url('assets/scripts/vendor/hoverIntent/hoverIntent.js'); ?>"></script>
     <script src="<?php echo url('assets/scripts/tarifs.js'); ?>"></script>
     <script src="<?php echo url('assets/scripts/scenes-tarifs.js'); ?>"></script>
     <script src="<?php echo url('assets/scripts/hello.js'); ?>"></script>

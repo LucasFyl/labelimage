@@ -7977,6 +7977,7 @@ a.arrow-down:hover {
 }
 #home {
   max-width: 100vw;
+  min-height: 200vh;
   overflow-x: hidden;
   padding: 0;
   margin: 0;
@@ -8601,6 +8602,7 @@ a.arrow-down:hover {
   line-height: 30px;
   font-size: 1.7em;
   font-family: 'AvenirNextLTPro-Medium', helvetica, sans-serif;
+  cursor: default;
 }
 #tarifs .main-content .td:last-child,
 #tarifs .main-content .td.last {
@@ -8627,6 +8629,9 @@ a.arrow-down:hover {
 }
 #tarifs .main-content .tr:nth-child(3) {
   padding-bottom: 5px;
+}
+#tarifs .main-content span.orange {
+  font-size: 1em;
 }
 #tarifs .main-content .scan .custom5:first-child {
   padding-left: 15px;
