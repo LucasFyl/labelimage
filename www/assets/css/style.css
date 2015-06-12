@@ -7528,6 +7528,26 @@ a.arrow-down:hover {
 }
 #prestation.tirages .main-content > div:first-child .left {
   padding-top: 230px;
+  position: relative;
+}
+#prestation.tirages .main-content > div:first-child .left:after {
+  content: " ";
+  width: 100%;
+  height: 13px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(top, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0) 100%);
+}
+#prestation.tirages .main-content > div:first-child .left:after {
+  width: 100vw;
+  z-index: 999;
+  top: calc(100% + 50px);
 }
 #prestation.tirages .main-content > div:first-child .right h2:nth-child(2) {
   text-align: center;
@@ -7549,6 +7569,26 @@ a.arrow-down:hover {
   opacity: 0;
   position: fixed;
   z-index: 0;
+}
+#prestation.tirages .main-content > div:nth-child(3) {
+  position: relative;
+}
+#prestation.tirages .main-content > div:nth-child(3):before {
+  content: " ";
+  width: 100%;
+  height: 13px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(bottom, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0) 100%);
+}
+#prestation.tirages .main-content > div:nth-child(3):before {
+  top: -13px;
 }
 #prestation.tirages .main-content > div:nth-child(3) .left {
   padding-top: 0;
@@ -7646,6 +7686,26 @@ a.arrow-down:hover {
   background-color: #989898 !important;
   position: relative;
   z-index: 999;
+}
+#prestation.tirages .digigraphie:after {
+  content: " ";
+  width: 100%;
+  height: 13px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0) 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(top, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0) 100%);
+}
+#prestation.tirages .digigraphie:after {
+  width: 100vw;
+  z-index: 999;
+  top: 100%;
+  opacity: .8;
 }
 #prestation.tirages .digigraphie p:last-child {
   margin-top: 0;
