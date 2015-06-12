@@ -648,7 +648,7 @@
                 
                 <section class="row footer-part">
                     <div class="col-xs-6">
-                        <a href="#" class="orange">télécharger nos tarifs au format pdf</a>
+                        <a href="<?php echo url('assets/pdf/tarifs.pdf'); ?>" target="_blank" class="orange">télécharger nos tarifs au format pdf</a>
                     </div>
                     <div class="col-xs-6">
                         <p class="orange text-right">prix h.t.  juin 2015</p>

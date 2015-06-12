@@ -42,7 +42,9 @@
                 </div>
             </section>
             <section class="map">
-                <img src="<?php echo url('assets/images/asset-map.jpg') ?>" alt="121 rue de Charonne 75011 Paris" />
+                <a href="http://www.google.com/maps?q=labelimage(LabelImage/Ateliers LabelImage)" target="_blank">
+                    <img src="<?php echo url('assets/images/asset-map.jpg') ?>" alt="121 rue de Charonne 75011 Paris" />
+                </a>
             </section>
             <section class="footer container">
 

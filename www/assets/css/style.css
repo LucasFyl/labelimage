@@ -7247,6 +7247,7 @@ a.arrow-down:hover {
   width: 100%;
   height: 100%;
   position: relative;
+  z-index: 999;
 }
 #prestation .main-content .asset-bg img {
   float: right;
@@ -7544,6 +7545,11 @@ a.arrow-down:hover {
   background: url('../images/asset-tirages-bg2.jpg') no-repeat center center fixed;
   background-size: cover;
 }
+#prestation.tirages .main-content > div:nth-child(2) .copyright {
+  opacity: 0;
+  position: fixed;
+  z-index: 0;
+}
 #prestation.tirages .main-content > div:nth-child(3) .left {
   padding-top: 0;
 }
@@ -7638,6 +7644,8 @@ a.arrow-down:hover {
   height: 350px;
   padding: 40px 80px 40px 90px;
   background-color: #989898 !important;
+  position: relative;
+  z-index: 999;
 }
 #prestation.tirages .digigraphie p:last-child {
   margin-top: 0;
@@ -7814,12 +7822,12 @@ a.arrow-down:hover {
   z-index: 1;
 }
 #contact .landing h1 {
-  right: 255px;
-  top: 325px;
+  left: 50%;
+  top: 340px;
 }
 #contact .landing .arrow-down {
   right: 92px;
-  bottom: 315px;
+  bottom: 300px;
 }
 #contact .main-content {
   position: relative;
@@ -7916,6 +7924,9 @@ a.arrow-down:hover {
   font-size: 1.2em;
   color: #eb5c08;
   font-family: 'AvenirNextLTPro-Regular', helvetica, sans-serif;
+}
+#contact .main-content section.footer > div ul li:hover a {
+  color: #eb5c08;
 }
 #contact .main-content section.footer > div > div:last-child {
   min-height: 226px;
@@ -8670,6 +8681,12 @@ a.arrow-down:hover {
   color: #eb5c08;
   margin-bottom: 50px;
   text-transform: uppercase;
+}
+#tarifs .main-content .footer-part .orange {
+  color: #eb5c08;
+}
+#tarifs .main-content .footer-part .orange:hover {
+  color: #eb5c08;
 }
 #tarifs .main-content .footer-part div {
   height: 30px;

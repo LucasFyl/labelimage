@@ -115,11 +115,22 @@
   <script src="<?php echo url('assets/scripts/hello.js'); ?>"></script>
   <script>
     $(document).ready(function() {
+      
+      var copyrightFix = new ScrollMagic.Scene({
+          triggerElement: '.main-content > div:nth-child(2)',
+          triggerHook: 'onEnter',
+          offset: 1
+      }).setTween(TweenMax.to('.main-content div:nth-child(2) .copyright', 0.3, {opacity:1}));
+      // .addIndicators({name: 'Position'})
+
       prestaController.addScene([
         headerPresta,
         landingPresta,
         headlinePresta,
-        footerTirages
+        footerTirages,
+        copyrightFix
       ]);
+
+      
     });
   </script>

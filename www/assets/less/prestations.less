@@ -195,6 +195,7 @@ a.arrow-down {
 			width: 100%;
 			height: 100%;
 			position: relative;
+			z-index: 999;
 
 			img {
 				float: right;
@@ -516,6 +517,12 @@ a.arrow-down {
 			> div {
 				background: url('../images/asset-tirages-bg2.jpg') no-repeat center center fixed;
 				background-size: cover;
+
+			}
+			.copyright {
+				opacity: 0;
+				position: fixed;
+				z-index: 0;
 			}
 		}
 		> div:nth-child(3) {
@@ -623,6 +630,8 @@ a.arrow-down {
 		height: 350px;
 		padding: 40px 80px 40px 90px;
 		background-color: #989898 !important;
+		position: relative;
+		z-index: 999;
 
 		p:last-child {
 			margin-top: 0;

@@ -63,14 +63,14 @@
 
             <div class="row footer-part">
                 <div class="col-sm-3 cta-btn">
-                    <a href="#"></a>
-                    <a href="#"></a>
+                    <a href="mailto:delphine@atelierlabelimage.com"></a>
+                    <a href="https://www.facebook.com/pages/Atelier-Label-Image/253768198027539"></a>
                 </div>
                 <div class="col-sm-6">
                     <p> © COPYRIGHT 2015 ATELIER LABEL IMAGE <span class="o-b"></span> <span> 01 43 38 03 01 </span> <span class="o-b"></span> DESIGN ET DEVELOPPEMENT FAYOLLE  </p>
                 </div>
                 <div class="col-sm-3 pdf">
-                    <a href="#">Tarifs PDF</a>
+                    <a href="<?php echo url('assets/pdf/tarifs.pdf'); ?>" target="_blank">Tarifs PDF</a>
                 </div>
             </div>
 
