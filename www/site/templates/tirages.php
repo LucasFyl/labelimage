@@ -122,11 +122,18 @@
           offset: 1
       }).setTween(TweenMax.to('.main-content div:nth-child(2) .copyright', 0.3, {opacity:1}));
       // .addIndicators({name: 'Position'})
+      var headlineFix = new ScrollMagic.Scene({
+          triggerElement: '.main-content',
+          triggerHook: 'onEnter',
+          offset: 1,
+          duration: '25%'
+      }).setTween(TweenMax.to('.landing h1', 0.5, {opacity:0,ease:Power2.easeOut}));
+      // .addIndicators({name: 'Position'})
 
       prestaController.addScene([
         headerPresta,
         landingPresta,
-        headlinePresta,
+        headlineFix,
         footerTirages,
         copyrightFix
       ]);

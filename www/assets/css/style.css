@@ -7372,6 +7372,7 @@ a.arrow-down:hover {
 #prestation.finitions section:first-child .left img {
   display: block;
   margin: 50px auto;
+  max-width: 100%;
 }
 #prestation.finitions section:first-child .right {
   padding-right: 0 ;
@@ -7387,7 +7388,7 @@ a.arrow-down:hover {
 }
 #prestation.finitions section:nth-child(2) > div {
   padding: 0;
-  max-height: 458px;
+  max-height: 490px;
   overflow: hidden;
 }
 #prestation.finitions section:nth-child(2) > div:first-child {
@@ -7398,14 +7399,19 @@ a.arrow-down:hover {
 }
 #prestation.finitions section:nth-child(2) > div img {
   width: 100%;
+  min-height: 100%;
 }
 #prestation.finitions section:nth-child(2) > div.right {
   position: relative;
+}
+#prestation.finitions section:nth-child(2) > div.right img {
+  float: right;
 }
 #prestation.finitions section:nth-child(2) > div.right .copyright {
   color: black;
   top: 420px;
   right: 563px;
+  display: none;
 }
 #prestation.finitions section:nth-child(3) > div {
   padding-top: 90px;
@@ -7493,6 +7499,7 @@ a.arrow-down:hover {
 }
 #prestation.finitions section p {
   margin-bottom: 40px;
+  text-align: justify !important;
 }
 #prestation.finitions section h3 {
   margin-bottom: 50px;
@@ -7548,9 +7555,11 @@ a.arrow-down:hover {
     text-align: left;
   }
 }
+#prestation.tirages .arrow-down {
+  right: 125px;
+}
 #prestation.tirages .landing h1 {
-  top: 340px;
-  bottom: auto;
+  bottom: 65px;
 }
 #prestation.tirages .landing .background {
   background: url('../images/landing-tirages.jpg') no-repeat center center;
@@ -7664,6 +7673,7 @@ a.arrow-down:hover {
   line-height: 1em;
 }
 #prestation.tirages .left p {
+  text-align: justify !important;
   margin-top: 20px;
 }
 #prestation.tirages .left .bold {
@@ -7844,7 +7854,7 @@ a.arrow-down:hover {
   padding-top: 240px;
 }
 #prestation.scan .main-content .left p {
-  text-align: left;
+  text-align: justify;
   margin-top: 0;
 }
 #prestation.scan .main-content .left p.bold {

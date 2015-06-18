@@ -21,7 +21,7 @@
     <div class="main-content container-fluid fullH" >
       <div class="col-xs-12 col-md-6 left">
         <h3>Scan</h3>
-        <h4>L'atelier vous propose la numerisation de vos originaux <br/>
+        <h4>L'atelier vous propose la numérisation de vos originaux <br/>
         a des fins artistiques ou de reproduction</h4>
         <p class="bold">Nous disposons pour cela de plusieurs types de scanner :</p>
         <p><span>Imacon Flextight</span> pour vos originaux allant du 24 x 36 au 13 x 18 cm<br/>

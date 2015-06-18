@@ -6,10 +6,8 @@ password: >
   $2a$10$qZ.C38Qnq2T8jOdZoadhaOd2uYODbnMWwYoj5ywRYnur/LYtBJlIO
 language: fr
 role: admin
-token: 6afc8fb85a8af4a1c03ffcd7214682bf68da00fe
+token: 79063ff83379a24e7a148c4077938c271dc0bfa5
 history:
-  - news/stephan-quatre
-  - news/stephan-trois
-  - news/stephan-deux
+  - prestations
   - news/stephan-zaubitzer
   - news

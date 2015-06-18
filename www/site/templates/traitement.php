@@ -21,7 +21,7 @@
     <div class="main-content container-fluid fullH">
         <div class="col-xs-12 col-md-6 left">
           <h3>Traitement numerique</h3>
-          <h4>Nous effectuons de multiples operations </h4>
+          <h4>Nous effectuons de multiples opérations </h4>
           <h4>afin d’optimiser vos fichiers et obtenir le meilleur de vos images</h4>
           <p class="bold">Développement de vos fichiers Raw<br/>
           Mise au point de la chromie et de la densité, nettoyage, et recadrage<br/>

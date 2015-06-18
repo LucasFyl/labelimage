@@ -299,7 +299,8 @@ a.arrow-down {
 				padding-top: 200px;
 				img {
 					display: block;
-					margin: 50px auto; 
+					margin: 50px auto;
+					max-width: 100%; 
 				}
 			} 
 			.right {
@@ -316,7 +317,7 @@ a.arrow-down {
 			float: left;
 			> div {
 				padding:0;
-				max-height: 458px;
+				max-height: 490px;
 				overflow: hidden;
 				&:first-child {
 					padding-right: 5px;
@@ -326,13 +327,16 @@ a.arrow-down {
 				}
 				img {
 					width: 100%;
+					min-height: 100%;
 				}
 				&.right {
 					position: relative;
+					img {float: right;}
 					.copyright {
 						color: black;
 						top: 420px;
 						right: 563px;
+						display: none;
 					}
 				}
 			}
@@ -428,6 +432,7 @@ a.arrow-down {
 
 		p {
 			margin-bottom: 40px;
+			text-align: justify !important;
 		}
 		h3 {
 			margin-bottom: 50px;
@@ -494,10 +499,12 @@ a.arrow-down {
 	}
 }
 #prestation.tirages {
+	.arrow-down {
+		right: 125px;
+	}
 	.landing {
-		h1 {
-			top: 340px;
-			bottom: auto;
+		h1 {	
+			bottom: 65px;
 		}
 		.background {
 			background: url('../images/landing-tirages.jpg') no-repeat center center;
@@ -617,6 +624,7 @@ a.arrow-down {
 			}
 		}
 		p {
+			text-align: justify !important;
 			margin-top: 20px;
 		}
 		.bold {
@@ -759,7 +767,7 @@ a.arrow-down {
 		.left {
 			padding-top: 240px;
 			p {
-				text-align: left;
+				text-align: justify;
 				margin-top: 0;
 
 			}
