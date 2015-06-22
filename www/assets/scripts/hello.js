@@ -21,20 +21,21 @@ $(document).ready(function(){
 	});
 
 
-	TweenMax.set('header', {y:'-45px'});
-	TweenMax.to('.fadeIn', 0.25, {opacity:1,ease:Power1.easeOut,delay:0.1});
+	TweenMax.set('header', {css:{y:'-45px'}});
 	
 });
 
 $(window).load(function(){
-
 	var animHeader = new TimelineMax({paused:true});
+
 	animHeader.set('header', {backgroundColor:'#f6f2ef'})
-			.to('header', 0.25, {y:0,ease:Power2.easeOut,delay:0.3})
-			.staggerTo(['nav li.anim-from-bottom'], 0.25, {marginTop:0,opacity:1,ease:Power1.easeOut}, 0.15)
+			.set('header .logo', {opacity:1})
+			.to('header', 0.5, {css:{y:0},ease:Power1.easeOut}, "+=0.2")
+			.staggerTo(['nav li.anim-from-bottom'], 0.5, {marginTop:0,opacity:1,ease:Power1.easeOut}, 0.15, "-=0.3")
 			.to('h1.anim-from-bottom', 0.25, {bottom:245,opacity:1,ease:Power1.easeOut})
 			.staggerTo('nav ul li span', 0.5, {opacity:1,top:16,ease:Power2.easeOut})
-			.to('.loader', 0.5, {opacity:0,ease:Power1.easeInOut}, "-=0.5")
+			.to('.fadein, .fadeIn', 0.25, {opacity:1,ease:Power1.easeOut})
+			.to('.loader', 0.5, {opacity:0,ease:Power1.easeInOut}, "-=0.75")
 			.set('.loader', {display:'none'});
 
 

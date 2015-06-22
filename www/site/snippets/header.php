@@ -16,7 +16,7 @@
 </head>
 <body>
     <header>
-      <a href="<?php echo url() ?>" class="logo fadeIn"></a>
+      <a href="<?php echo url() ?>" class="logo"></a>
       
       <?php snippet('menu') ?>
     </header>

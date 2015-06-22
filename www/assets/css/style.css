@@ -6797,6 +6797,7 @@ header a.logo {
   background: url(../images/logo.png) no-repeat center left;
   background-size: 100%;
   margin-left: 90px;
+  opacity: 0;
 }
 header nav {
   height: 45px;
