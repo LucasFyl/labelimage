@@ -8124,6 +8124,8 @@ a.arrow-down:hover {
 }
 #home .landing .bottom-part {
   position: absolute;
+  height: auto;
+  min-width: 100%;
   bottom: 0;
 }
 #home .bandeau {
@@ -8131,7 +8133,7 @@ a.arrow-down:hover {
   background-color: #f6f2ef;
   height: 50vh;
   margin-top: 10px;
-  position: absolute;
+  position: fixed;
   top: 50vh;
   z-index: 9999;
 }

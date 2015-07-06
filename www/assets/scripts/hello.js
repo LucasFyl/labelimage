@@ -38,8 +38,5 @@ $(window).load(function(){
 			.to('.loader', 0.5, {opacity:0,ease:Power1.easeInOut}, "-=0.75")
 			.set('.loader', {display:'none'});
 
-
-
 	animHeader.play();
-	
 });
