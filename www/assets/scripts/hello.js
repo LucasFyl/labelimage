@@ -26,6 +26,7 @@ $(document).ready(function(){
 	TweenMax.set('header', {css:{y:'-45px'}});
 	if($('#mobile-menu').is(':visible')) {
 		TweenMax.set('#mobile-menu nav', {top:'-100vh',opacity:1});
+		TweenMax.set('#mobile-menu .absolute-wrap', {backgroundColor:'#f6f2ef'});
 
 		$('#mobile-menu').on('click', '.trigger', function(e){
 			e.preventDefault();
