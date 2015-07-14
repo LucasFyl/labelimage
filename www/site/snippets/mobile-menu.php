@@ -1,9 +1,12 @@
 <div id="mobile-menu">
   
-  <a href="<?php echo url() ?>" class="logo"></a>
-  <a href="#" class="trigger">X</a>  
+  <div class="absolute-wrap">
+    <a href="<?php echo url() ?>" class="logo"></a>
+    <a href="#" class="trigger"><i class="fa fa-bars fa-2x"></i></a>  
+  </div>
+    
 
-  <nav style="display:none;">
+  <nav>
     <ul>
       <li class='anim-from-bottom'>
         <a href="<?php echo url();  ?>">Accueil</a>
@@ -26,6 +29,7 @@
         <span></span>
       </li>
       <?php endforeach ?>
+      <li><a href="#" class="close-menu"><i class="fa fa-times fa-2x"></i> Fermer le menu</a></li>
     </ul>
   </nav>
 

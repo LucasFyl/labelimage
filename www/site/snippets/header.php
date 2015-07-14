@@ -21,6 +21,6 @@
       <?php snippet('menu') ?>
     </header>
 
-    <header class="hidden-md hidden-lg">
+    <header class="hidden-md hidden-lg mobile">
       <?php snippet('mobile-menu') ?>
     </header>

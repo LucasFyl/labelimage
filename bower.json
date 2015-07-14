@@ -38,15 +38,17 @@
   "dependencies": {
     "jquery": "~2.1.4",
     "gsap": "~1.16.1",
-    "bootstrap": "~3.3.4",
     "nicescroll": "~3.6.0",
-    "ScrollMagic": "~2.0.5"
+    "ScrollMagic": "~2.0.5",
+    "bootstrap": "~3.3.5",
+    "font-awesome": "~4.3.0"
   },
   "devDependencies": {
     "jquery": "~2.1.4",
     "gsap": "~1.16.1",
-    "bootstrap": "~3.3.4",
     "nicescroll": "~3.6.0",
-    "ScrollMagic": "~2.0.5"
+    "ScrollMagic": "~2.0.5",
+    "bootstrap": "~3.3.5",
+    "font-awesome": "~4.3.0"
   }
 }

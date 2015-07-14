@@ -1,4 +1,5 @@
 /*jshint smarttabs:true */
+/*jshint unused:false */
 $(document).ready(function(){
 
 	'use strict';
@@ -15,6 +16,7 @@ $(document).ready(function(){
         scrollX: false,
         scrollY: true
 	});
+
 	var customScroll = $("body").getNiceScroll();
 	$( window ).resize(function() {
 		customScroll.resize();
@@ -22,7 +24,23 @@ $(document).ready(function(){
 
 
 	TweenMax.set('header', {css:{y:'-45px'}});
-	
+	if($('#mobile-menu').is(':visible')) {
+		TweenMax.set('#mobile-menu nav', {top:'-100vh',opacity:1});
+
+		$('#mobile-menu').on('click', '.trigger', function(e){
+			e.preventDefault();
+			if( $('#mobile-menu nav').position(top) !== 0) {
+				TweenMax.to('#mobile-menu nav', 0.75, {top:0,ease:Power4.easeOut});
+			}
+		});
+		$('#mobile-menu').on('click', '.close-menu', function(e){
+			e.preventDefault();
+			TweenMax.to('#mobile-menu nav', 0.75, {top:'-100vh',ease:Power4.easeIn});
+		});
+	}
+
+
+		
 });
 
 $(window).load(function(){
