@@ -15,8 +15,12 @@
 
 </head>
 <body>
-    <header>
+    <header class="hidden-xs hidden-sm">
       <a href="<?php echo url() ?>" class="logo"></a>
       
       <?php snippet('menu') ?>
+    </header>
+
+    <header class="hidden-md hidden-lg">
+      <?php snippet('mobile-menu') ?>
     </header>
