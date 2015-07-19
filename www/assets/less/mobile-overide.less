@@ -98,7 +98,8 @@
 		}
 		.main-content {
 			
-			div > .left {
+			div > .left,
+			section > .left {
 				padding-right: 45px !important;
 				padding-left: 45px !important;
 				&:first-child {
@@ -148,7 +149,6 @@
 		}
 	}
 	#prestation.tirages {
-		
 		.digigraphie {
 		    padding: 45px !important;
 		    height: 100% !important;
@@ -170,6 +170,41 @@
 			img {
 				max-width: 100%;
 			}
+		}
+	}
+	#prestation.finitions {
+		.landing h1 {
+			width: 100%;
+			display: block;
+			position: absolute;
+			text-align: center;
+			left: 0;
+			right: 0;
+			bottom: 210px;
+		}
+		section:nth-child(2) {
+			> div {
+				max-height: initial !important;
+			}
+		}
+		section:nth-child(4) {
+			> div:first-child {
+				padding-top: 15px !important;
+				.copyright {
+					position: static;
+				}
+			}
+		}
+		section:last-child {
+			> div {
+				background-position: -140px center;
+			}
+		}
+	}
+	#labelNews {
+		h1 {
+			left:40%;
+			right: 0;
 		}
 	}
 }
@@ -215,7 +250,8 @@
 				overflow: auto;
 				padding-left: 0px !important;
 			}
-			div > .left {
+			div > .left,
+			section > .left {
 				padding-right: 30px !important;
 				padding-left: 30px !important;
 				&:first-child {
@@ -238,26 +274,8 @@
 
 	}
 	#prestation.tirages {
-		// .stand-out-wrap {
-		// 	padding-left: 0 !important;
-		// 	p {
-		// 		height: auto !important;
-		// 		line-height: 1.5 !important;
-		// 		text-align: left !important;
-		// 	}
-		// }
 		.digigraphie {
 		    padding: 15px !important;
-		 //    height: 100% !important;
-			// > * {
-			// 	float: none !important;
-			// }
-			// img {
-			// 	display: none;
-			// }
-			// > div:first-child {
-			// 	padding: 30px 0 !important;
-			// }
 		}
 		
 		.main-content > div:nth-child(6) .left {
@@ -268,6 +286,25 @@
 
 	}
 	#prestation.finitions {
-
+		.landing h1 {
+			letter-spacing: 0.9rem;
+			top: 69% important;
+			&:after {
+				text-align: left;
+				width: 100%;
+				left: 0;
+				font-size: 15px;
+			}
+		}
+		section:nth-child(4) {
+		  background: transparent;
+		}
+		section:last-child {
+			div:last-child {
+				p {
+					display: none;
+				}
+			}
+		}
 	}
 }

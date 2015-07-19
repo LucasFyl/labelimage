@@ -10148,14 +10148,6 @@ a.arrow-down:hover {
   right: 350px;
   z-index: 88;
 }
-@media screen and (max-width: 1199px) {
-  #labelnews .landing h1 {
-    left: 0;
-    right: 0;
-    top: -200px;
-    margin: auto;
-  }
-}
 #labelnews .main-content {
   width: 100%;
   height: auto;
@@ -10659,11 +10651,13 @@ a.arrow-down:hover {
     margin: auto;
     text-align: center;
   }
-  #prestation .main-content div > .left {
+  #prestation .main-content div > .left,
+  #prestation .main-content section > .left {
     padding-right: 45px !important;
     padding-left: 45px !important;
   }
-  #prestation .main-content div > .left:first-child {
+  #prestation .main-content div > .left:first-child,
+  #prestation .main-content section > .left:first-child {
     padding-top: 55px !important;
   }
   #prestation .main-content h4 {
@@ -10721,6 +10715,31 @@ a.arrow-down:hover {
   #prestation.tirages .asset-bg.tirages2 img {
     max-width: 100%;
   }
+  #prestation.finitions .landing h1 {
+    width: 100%;
+    display: block;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 210px;
+  }
+  #prestation.finitions section:nth-child(2) > div {
+    max-height: initial !important;
+  }
+  #prestation.finitions section:nth-child(4) > div:first-child {
+    padding-top: 15px !important;
+  }
+  #prestation.finitions section:nth-child(4) > div:first-child .copyright {
+    position: static;
+  }
+  #prestation.finitions section:last-child > div {
+    background-position: -140px center;
+  }
+  #labelNews h1 {
+    left: 40%;
+    right: 0;
+  }
 }
 @media screen and (max-width: 767px) {
   #mobile-menu a.logo {
@@ -10750,11 +10769,13 @@ a.arrow-down:hover {
     overflow: auto;
     padding-left: 0px !important;
   }
-  #prestation .main-content div > .left {
+  #prestation .main-content div > .left,
+  #prestation .main-content section > .left {
     padding-right: 30px !important;
     padding-left: 30px !important;
   }
-  #prestation .main-content div > .left:first-child {
+  #prestation .main-content div > .left:first-child,
+  #prestation .main-content section > .left:first-child {
     padding-top: 30px !important;
   }
   #prestation .main-content .fullH {
@@ -10771,5 +10792,21 @@ a.arrow-down:hover {
   }
   #prestation.tirages .main-content > div:nth-child(6) .left {
     margin-bottom: 50px !important;
+  }
+  #prestation.finitions .landing h1 {
+    letter-spacing: 0.9rem;
+    top: 69% important;
+  }
+  #prestation.finitions .landing h1:after {
+    text-align: left;
+    width: 100%;
+    left: 0;
+    font-size: 15px;
+  }
+  #prestation.finitions section:nth-child(4) {
+    background: transparent;
+  }
+  #prestation.finitions section:last-child div:last-child p {
+    display: none;
   }
 }
