@@ -122,7 +122,9 @@ module.exports = function (grunt) {
                 }
             },
             scripts: {
-                files: ['www/assets/scripts/**/*.js', 'www/assets/scripts/**/**/*.js', 'www/assets/scripts/*.js'],
+                files: ['www/assets/scripts/**/*.js', 
+                        'www/assets/scripts/**/**/*.js', 
+                        'www/assets/scripts/*.js'],
                 tasks: ['jshint']
             },
             gruntfile: {

@@ -1,6 +1,6 @@
 // Tablets
 
-@media screen and (max-width: @screen-sm-max) {
+@media screen and (max-width: @screen-md-max) {
 	header {
 		overflow: visible;
 	}
@@ -85,6 +85,93 @@
 			}
 		}
 	}
+
+	#prestation {
+		.landing {
+			h1 {
+				left: 0;
+				bottom: 120px;
+				right: 0;
+				margin: auto;
+				text-align: center;
+			}
+		}
+		.main-content {
+			
+			div > .left {
+				padding-right: 45px !important;
+				padding-left: 45px !important;
+				&:first-child {
+					padding-top: 55px !important;
+				}
+			}
+			div > .right {
+			}
+			h4 {
+				padding-left: 0 !important; 
+			}
+			.bold {
+				line-height: 1.5 !important;
+				white-space: initial !important;
+				text-align: left !important;
+			}
+			.fullH {
+			    background-position: center center;
+			    background-attachment: initial;
+			    span.copyright {
+					position: static;
+					display: inline-block;
+					padding-top: 35px;
+			    }
+			}
+			.asset-bg {
+				img {
+					max-width: 80%;
+
+				}
+				.caption {
+					float: none !important;
+					text-align: right !important;
+					position: static;
+					overflow: auto;
+					width: 100%;
+				}
+			}
+			.stand-out-wrap {
+				padding-left: 0 !important;
+				p {
+					height: auto !important;
+					line-height: 1.5 !important;
+					text-align: left !important;
+				}
+			}
+		}
+	}
+	#prestation.tirages {
+		
+		.digigraphie {
+		    padding: 45px !important;
+		    height: 100% !important;
+			> p {
+				float: none !important;
+				overflow: auto !important;
+			}
+			> div {
+				img {
+					display: none !important;
+				}
+			}
+			> div:first-child {
+				padding: 30px 0 !important;
+			}
+		}
+		.asset-bg.tirages2 {
+		    padding-top: 80px;
+			img {
+				max-width: 100%;
+			}
+		}
+	}
 }
 
 // Phone
@@ -112,5 +199,75 @@
 				top: 10px !important;
 			}
 		}
+	}
+	#prestation {
+		.landing {
+			h1 {
+				bottom: initial !important;
+				font-size: 5em !important;
+				top: 70px !important;
+				left: 15px !important;
+			}
+		}
+		.main-content {
+			h4 {
+				white-space: initial;
+				overflow: auto;
+				padding-left: 0px !important;
+			}
+			div > .left {
+				padding-right: 30px !important;
+				padding-left: 30px !important;
+				&:first-child {
+					padding-top: 30px !important;
+				}
+			}
+			.fullH {
+			    background-position: center center;
+			    background-attachment: initial;
+			    span.copyright {
+					position: static;
+					display: inline-block;
+					padding-top: 15px;
+			    }
+			}
+
+		}
+	}
+	#prestation.scan {
+
+	}
+	#prestation.tirages {
+		// .stand-out-wrap {
+		// 	padding-left: 0 !important;
+		// 	p {
+		// 		height: auto !important;
+		// 		line-height: 1.5 !important;
+		// 		text-align: left !important;
+		// 	}
+		// }
+		.digigraphie {
+		    padding: 15px !important;
+		 //    height: 100% !important;
+			// > * {
+			// 	float: none !important;
+			// }
+			// img {
+			// 	display: none;
+			// }
+			// > div:first-child {
+			// 	padding: 30px 0 !important;
+			// }
+		}
+		
+		.main-content > div:nth-child(6) .left {
+			margin-bottom: 50px !important;
+		}
+	}
+	#prestation.impression {
+
+	}
+	#prestation.finitions {
+
 	}
 }

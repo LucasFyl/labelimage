@@ -134,13 +134,7 @@ body {
 		font-size: 11.3em;
 		letter-spacing: 17px;
 
-		@media screen and (max-width: @screen-md-max) {
-			left: 0;
-			bottom: 120px;
-			right: 0;
-			margin: auto;
-			text-align: center;
-		}
+		
 	}
 
 }
@@ -164,14 +158,11 @@ a.arrow-down {
 	height: auto;
 	min-height: 100%;
 
-	.container-fluid {
+	.main-content {
 		max-width: 100vw;
 		overflow-x: hidden;
 		> .left {
 			padding-left: 90px;
-			@media screen and (max-width: @screen-md-max) {
-				padding-right: 90px;
-			}
 			&:first-child {
 				@media screen and (max-width: @screen-md-max) {
 					padding-top: 110px !important;
@@ -209,6 +200,7 @@ a.arrow-down {
 			height: 100%;
 			position: relative;
 			z-index: 999;
+			
 
 			img {
 				float: right;
@@ -518,6 +510,12 @@ a.arrow-down {
 	.landing {
 		h1 {	
 			bottom: 65px;
+			@media screen and (max-width: @screen-md-max) {
+				bottom: 125px;
+			}
+			@media screen and (max-width: @screen-xs-max) {
+				bottom: 125px;
+			}
 		}
 		.background {
 			background: url('../images/landing-tirages.jpg') no-repeat center center;
