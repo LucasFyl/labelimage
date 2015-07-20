@@ -245,13 +245,15 @@
 			}
 		}
 		.main-content {
+			&.fullH {
+				height: auto !important;
+			}
 			h4 {
 				white-space: initial;
 				overflow: auto;
 				padding-left: 0px !important;
 			}
-			div > .left,
-			section > .left {
+			.left {
 				padding-right: 30px !important;
 				padding-left: 30px !important;
 				&:first-child {
@@ -271,7 +273,11 @@
 		}
 	}
 	#prestation.scan {
-
+		.landing h1 {
+			top: 75% !important;
+			letter-spacing: .2em;
+			font-size: 6em !important;
+		}
 	}
 	#prestation.tirages {
 		.digigraphie {
@@ -282,8 +288,14 @@
 			margin-bottom: 50px !important;
 		}
 	}
-	#prestation.impression {
-
+	#prestation.traitement {
+		.landing h1 {
+			font-size: 4.5em !important;
+			top: 75% !important;
+			left: 15px !important;
+			letter-spacing: .1em;
+			text-align: left;
+		}
 	}
 	#prestation.finitions {
 		.landing h1 {

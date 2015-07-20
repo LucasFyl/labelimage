@@ -10764,18 +10764,19 @@ a.arrow-down:hover {
     top: 70px !important;
     left: 15px !important;
   }
+  #prestation .main-content.fullH {
+    height: auto !important;
+  }
   #prestation .main-content h4 {
     white-space: initial;
     overflow: auto;
     padding-left: 0px !important;
   }
-  #prestation .main-content div > .left,
-  #prestation .main-content section > .left {
+  #prestation .main-content .left {
     padding-right: 30px !important;
     padding-left: 30px !important;
   }
-  #prestation .main-content div > .left:first-child,
-  #prestation .main-content section > .left:first-child {
+  #prestation .main-content .left:first-child {
     padding-top: 30px !important;
   }
   #prestation .main-content .fullH {
@@ -10787,11 +10788,23 @@ a.arrow-down:hover {
     display: inline-block;
     padding-top: 15px;
   }
+  #prestation.scan .landing h1 {
+    top: 75% !important;
+    letter-spacing: .2em;
+    font-size: 6em !important;
+  }
   #prestation.tirages .digigraphie {
     padding: 15px !important;
   }
   #prestation.tirages .main-content > div:nth-child(6) .left {
     margin-bottom: 50px !important;
+  }
+  #prestation.traitement .landing h1 {
+    font-size: 4.5em !important;
+    top: 75% !important;
+    left: 15px !important;
+    letter-spacing: .1em;
+    text-align: left;
   }
   #prestation.finitions .landing h1 {
     letter-spacing: 0.9rem;
