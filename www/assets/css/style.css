@@ -10740,6 +10740,25 @@ a.arrow-down:hover {
     left: 40%;
     right: 0;
   }
+  #contact .landing {
+    min-height: 490px !important;
+  }
+  #contact .landing h1 {
+    opacity: 1 !important;
+    width: 100% !important;
+    left: 0 !important;
+    text-align: center !important;
+  }
+  #contact .landing .background {
+    min-height: 490px;
+    top: 0!important;
+  }
+  #contact .center-block img {
+    max-width: 100%;
+  }
+  #contact .center-block a {
+    font-size: 1.45em !important;
+  }
 }
 @media screen and (max-width: 767px) {
   #mobile-menu a.logo {
@@ -10821,5 +10840,33 @@ a.arrow-down:hover {
   }
   #prestation.finitions section:last-child div:last-child p {
     display: none;
+  }
+  #labelnews .landing h1 {
+    width: 100% !important;
+    left: 0 !important;
+    background-size: 80% !important;
+  }
+  #contact .lading h1 {
+    font-size: 5em;
+    top: 400px !important;
+    letter-spacing: .15em;
+  }
+  #contact section.footer span.heading:last-child {
+    display: block !important;
+    position: static !important;
+  }
+  #contact section.footer span.heading:last-child p {
+    left: 0 !important;
+    width: 100%;
+    margin: 0 !important;
+    text-align: center !important;
+  }
+  #contact section.footer span.heading:last-child p .o-b {
+    display: block !important;
+    background-color: transparent;
+  }
+  #contact section.footer span.heading:last-child:before,
+  #contact section.footer span.heading:last-child:after {
+    content: none !important;
   }
 }

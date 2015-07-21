@@ -20,7 +20,7 @@
         
         <div class="main-content" id="">
             <section class="container">
-                <div class="center-block col-xs-10 col-sm-8">
+                <div class="center-block col-lg-8">
                     <div class="left col-xs-12 col-sm-6">
                         <h2 class="text-hide">
                             Ateliers Label Image

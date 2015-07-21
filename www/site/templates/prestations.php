@@ -43,7 +43,7 @@
 
       <script>
         $(document).ready(function() {
-          // $('body').css('height', 'auto');
+          $('body').css('height', 'auto');
           
           $(document).on({
             mouseenter: function () {
