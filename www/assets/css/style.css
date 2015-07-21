@@ -10599,7 +10599,7 @@ a.arrow-down:hover {
   }
   #mobile-menu nav {
     position: absolute;
-    height: calc(50vh + 22.5px);
+    height: 100vh;
     width: 100vw;
     background-color: #f6f2ef;
     top: 0;
@@ -10612,26 +10612,28 @@ a.arrow-down:hover {
     display: block;
     width: 100%;
     height: 100%;
+    position: relative;
+    margin: 0;
   }
   #mobile-menu nav ul li {
-    display: block;
-    width: 100%;
     text-align: center;
-    line-height: 5em;
     padding: 0;
+    height: 26vh;
   }
   #mobile-menu nav ul li a {
     display: inline-block;
-    font-size: 1.7em;
-    line-height: 3.5em;
     letter-spacing: 0.1em;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3em;
+    text-decoration: underline;
   }
   #mobile-menu nav ul li.active a {
     text-decoration: underline;
   }
   #mobile-menu nav ul li:last-child {
-    position: absolute;
-    bottom: 0;
+    height: 14em;
     background-color: #eb5c08;
   }
   #mobile-menu nav ul li:last-child a {
@@ -10639,6 +10641,7 @@ a.arrow-down:hover {
     letter-spacing: .18em;
     color: white;
     font-size: 1.7em;
+    text-decoration: none;
   }
   #mobile-menu nav ul li:last-child a i {
     vertical-align: sub;
@@ -10740,6 +10743,14 @@ a.arrow-down:hover {
     left: 40%;
     right: 0;
   }
+  #tarifs .main-content > section {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  #tarifs .main-content > section.pigments h2 {
+    font-size: 6.5em;
+    letter-spacing: 2px;
+  }
   #contact .landing {
     min-height: 490px !important;
   }
@@ -10769,6 +10780,26 @@ a.arrow-down:hover {
   }
   #mobile-menu nav {
     height: 100vh;
+  }
+  #mobile-menu nav ul li {
+    line-height: 5em;
+    display: block;
+    width: 100%;
+    height: auto !important;
+    float: none !important;
+  }
+  #mobile-menu nav ul li a {
+    display: inline-block;
+    font-size: 1.7em;
+    line-height: 3.5em;
+    letter-spacing: 0.1em;
+    top: 0;
+    transform: none !important;
+  }
+  #mobile-menu nav ul li:last-child {
+    position: absolute;
+    bottom: 0;
+    height: auto !important;
   }
   #prestations section.toPresta h1 {
     width: 100% !important;
@@ -10846,10 +10877,14 @@ a.arrow-down:hover {
     left: 0 !important;
     background-size: 80% !important;
   }
-  #contact .lading h1 {
-    font-size: 5em;
-    top: 400px !important;
-    letter-spacing: .15em;
+  #tarifs .main-content > section {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #contact .landing h1 {
+    font-size: 7em ;
+    top: 380px !important;
+    letter-spacing: .1em ;
   }
   #contact section.footer span.heading:last-child {
     display: block !important;
