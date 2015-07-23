@@ -59,10 +59,10 @@
             
             <nav class="nextprev col-xs-12" role="navigation">
               <?php if($prev = $page->prevVisible()): ?>
-              <a class="prev col-xs-6" href="<?php echo $prev->url() ?>">&larr; article précédent</a>
+              <a class="prev col-xs-12 col-sm-6" href="<?php echo $prev->url() ?>">&larr; article précédent</a>
               <?php endif ?>
               <?php if($next = $page->nextVisible()): ?>
-              <a class="next col-xs-6" href="<?php echo $next->url() ?>">article suivant &rarr;</a>
+              <a class="next col-xs-12 col-sm-6" href="<?php echo $next->url() ?>">article suivant &rarr;</a>
               <?php endif ?>
             </nav>
 
