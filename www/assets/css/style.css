@@ -8870,12 +8870,6 @@ body {
   overflow: hidden;
   padding: 0;
 }
-@media screen and (max-width: 991px) {
-  #prestations .container-fluid.outer {
-    height: 100%;
-    overflow: auto;
-  }
-}
 #prestations .container-fluid.outer > div {
   width: 100%;
   height: 100%;
@@ -10616,24 +10610,24 @@ a.arrow-down:hover {
     margin: 0;
   }
   #mobile-menu nav ul li {
+    display: block;
+    width: 100%;
     text-align: center;
-    padding: 0;
-    height: 26vh;
+    line-height: 5em;
   }
   #mobile-menu nav ul li a {
     display: inline-block;
+    line-height: 4.1em;
     letter-spacing: 0.1em;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 3em;
-    text-decoration: underline;
+    width: 100%;
+    font-size: 2.4em;
   }
   #mobile-menu nav ul li.active a {
     text-decoration: underline;
   }
   #mobile-menu nav ul li:last-child {
-    height: 14em;
+    position: absolute;
+    bottom: 0;
     background-color: #eb5c08;
   }
   #mobile-menu nav ul li:last-child a {
@@ -10642,10 +10636,17 @@ a.arrow-down:hover {
     color: white;
     font-size: 1.7em;
     text-decoration: none;
+    padding-top: 0;
   }
   #mobile-menu nav ul li:last-child a i {
     vertical-align: sub;
     margin-right: .3em;
+  }
+  #prestations {
+    overflow: auto;
+  }
+  #prestations .container-fluid.outer {
+    overflow: auto !important;
   }
   #prestation .landing h1 {
     left: 0;
@@ -10789,12 +10790,13 @@ a.arrow-down:hover {
     float: none !important;
   }
   #mobile-menu nav ul li a {
-    display: inline-block;
+    display: block;
     font-size: 1.7em;
     line-height: 3.5em;
     letter-spacing: 0.1em;
     top: 0;
     transform: none !important;
+    padding-top: 0 !important;
   }
   #mobile-menu nav ul li:last-child {
     position: absolute;
@@ -10877,9 +10879,24 @@ a.arrow-down:hover {
     left: 0 !important;
     background-size: 80% !important;
   }
-  #tarifs .main-content > section {
-    margin-left: 0;
-    margin-right: 0;
+  #tarifs .mobile-placeholder {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #f6f2ef;
+    z-index: 9999;
+    padding: 200px 30px 100px;
+    margin: 0 !important;
+    top: 0;
+  }
+  #tarifs .mobile-placeholder p {
+    text-align: center;
+    font-family: 'AvenirNextLTPro-Medium', helvetica, sans-serif;
+    font-size: 1.7em;
+    line-height: 1.5;
+  }
+  #tarifs .mobile-placeholder p:last-child {
+    font-family: 'AvenirNextLTPro-Regular', helvetica, sans-serif;
   }
   #contact .landing h1 {
     font-size: 7em ;

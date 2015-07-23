@@ -18,7 +18,11 @@
         <div id="trigger3"></div>
         
         <div class="main-content">
-            <section class="container-fluid">
+            <section class="mobile-placeholder hidden-sm hidden-md hidden-lg">
+                <p>Nos tarifs ne sont malheureusement pas disponible sur mobile.</p>
+                <p>Veuillez visiter cette page à partir d'une tablette ou d'un ordinateur.</p>
+            </section>
+            <section class="container-fluid hidden-xs">
 
                 <section class="row scan">
                     <div class="table col-xs-12">

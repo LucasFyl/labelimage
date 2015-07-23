@@ -12,23 +12,13 @@
         <a href="<?php echo url();  ?>">Accueil</a>
         <span></span>
       </li>
-      <li class="col-sm-6">
-        <a href="#">Tarifs</a>
-      </li>
-      <li class="col-sm-12">
-        <a href="#">Nos prestations</a>
-      </li>
-      <li  class="col-sm-6">
-        <a href="#">LabelNews</a>
-      </li>
-      <li class="col-sm-6">
-        <a href="#">Contact</a>
-      </li>
-      <!--
+      
+      
       <?php foreach($pages->visible() as $p): ?>
       <li <?php e($p->isOpen(), ' class="active anim-from-bottom"') ?> class='anim-from-bottom'>
         <a href="<?php echo $p->url() ?>"><?php echo $p->title()->html() ?></a>
 
+        <!--
         <?php if($p->hasVisibleChildren()): ?>
         <ul>
           <?php foreach($p->children()->visible() as $p): ?>
@@ -37,11 +27,11 @@
           </li>
           <?php endforeach ?>
         </ul>
-        <?php endif ?>
+        <?php endif ?> -->
         
         <span></span>
       </li>
-      <?php endforeach ?>-->
+      <?php endforeach ?>
 
       <li class="col-sm-12"><a href="#" class="close-menu"><i class="fa fa-times fa-2x"></i> Fermer le menu</a></li>
     </ul>
