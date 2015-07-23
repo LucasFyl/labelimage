@@ -49,25 +49,14 @@
 					width: 100%;
 					text-align: center;
 					line-height: 5em;
-					// padding: 0;
-					// height: 26vh;
-
-						
+					padding: 0;
 
 					a {
 						display: inline-block;
-						// font-size: 1.7em;
 						line-height: 4.1em;
 						letter-spacing: 0.1em;
 						width: 100%;
-
-						// display: inline-block;
-						// letter-spacing: 0.1em;
-						// position: relative;
 						font-size: 2.4em;
-						// height: 100%;
-						// text-decoration: underline;
-						// padding-top: 25%;
 					}
 
 					&.active {
@@ -77,8 +66,6 @@
 					}
 
 					&:last-child {
-						// height: 14em;
-						
 						position: absolute;
 						bottom: 0;
 						background-color: @orange;
@@ -106,10 +93,6 @@
 		.container-fluid.outer {
 			overflow: auto !important; 
 		}
-		section.toPresta {
-			h1 {
-			}
-		}
 	}
 
 	#prestation {
@@ -136,6 +119,8 @@
 			}
 			h4 {
 				padding-left: 0 !important; 
+				font-size: 2.1em;
+				letter-spacing: 0;
 			}
 			.bold {
 				line-height: 1.5 !important;
@@ -197,6 +182,22 @@
 				max-width: 100%;
 			}
 		}
+		.main-content {
+			> div:nth-child(5) {
+				.fullH {
+					background-position: -160px;
+					.copyright.left {
+						position: absolute;
+						bottom: 70px;
+						left: 50px;
+						z-index: 9999;
+					}
+					.copyright.right {
+						display: none;
+					}
+				}
+			}
+		}
 	}
 	#prestation.finitions {
 		.landing h1 {
@@ -224,13 +225,24 @@
 		section:last-child {
 			> div {
 				background-position: -140px center;
+				div:last-child {
+					display: none;
+				}
 			}
 		}
 	}
-	#labelNews {
-		h1 {
-			left:40%;
-			right: 0;
+	#labelnews {
+		.landing {
+			.background {
+				transform: none !important;
+				background-size: 200% !important;
+				background-attachment: initial !important;
+			}
+			h1 {
+				left:40%;
+				right: 0;
+				opacity: 1;
+			}
 		}
 	}
 	#tarifs .main-content > section {

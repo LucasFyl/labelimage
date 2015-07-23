@@ -18,10 +18,10 @@ var headerNews = new ScrollMagic.Scene({
 var headlineNews = new ScrollMagic.Scene({
   triggerElement: '.main-content',
   duration: '25%',
-  triggerHook: 0.47,
+  triggerHook: 0.38,
   offset: 0
 }).setTween(TweenMax.to('.landing h1', 0.5, {opacity:0,ease:Power2.easeOut}));
-// .addIndicators({name: 'headline'})
+// .addIndicators({name: 'headline'});
 
 var backgroundNews = new ScrollMagic.Scene({
   triggerElement: '.main-content',
