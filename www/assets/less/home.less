@@ -39,6 +39,7 @@
 		position: relative;
 		height: auto;
 		width: 100%;
+		z-index: 9;
 		img {
 			width: 100%;
 		}
@@ -187,6 +188,7 @@
 					text-align: center;
 					letter-spacing: 2px;
 					font-family: @Med;
+					z-index: 9;
 
 					span {
 						position: relative;
@@ -202,9 +204,11 @@
 					height: 100%;
 					top:0;
 					left: 0;
-					background-color: rgba(0,0,0,0.2);
+					background-color: rgba(0,0,0,0.1);
+					border
 					opacity:0;
 					.transition(all 0.5s ease);
+					z-index: 8;
 				}
 				.overlay:before, .overlay:after {
 					content: '';

@@ -9928,6 +9928,7 @@ a.arrow-down:hover {
   position: relative;
   height: auto;
   width: 100%;
+  z-index: 9;
 }
 #home .bottom-part img {
   width: 100%;
@@ -10083,6 +10084,7 @@ a.arrow-down:hover {
   text-align: center;
   letter-spacing: 2px;
   font-family: 'AvenirNextLTPro-Medium', helvetica, sans-serif;
+  z-index: 9;
 }
 #home .prestations .content-wrap > div a span {
   display: inline-block;
@@ -10100,13 +10102,14 @@ a.arrow-down:hover {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.2);
-  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  borderopacity: 0;
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
+  z-index: 8;
 }
 #home .prestations .content-wrap > div .overlay:before,
 #home .prestations .content-wrap > div .overlay:after {

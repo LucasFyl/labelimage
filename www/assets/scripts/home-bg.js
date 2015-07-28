@@ -51,7 +51,7 @@
                 }
             });
 
-            $(".main-content").mousemove(function(e){
+            $("body").mousemove(function(e){
 
                 if (!effect){ return; }
 

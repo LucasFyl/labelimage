@@ -4,6 +4,9 @@
 
 var homeController = new ScrollMagic.Controller();
 
+
+
+
 // var vh = $( window ).height(),
 // 	vh50 = ( vh / 2 ),
 // 	topPos = vh50 + 45 + 'px', 
@@ -18,7 +21,7 @@ var bandeauH = $('.bandeau').height();
 
 // var firstTl = new TimelineMax({paused:true});
 // var secondTl = new TimelineMax({paused:true});
-var landingTl = new TimelineMax({paused:true});
+var landingTl = new TimelineMax().to(window, 1, {scrollTo:{y:bandeauH/2}, ease:Power3.easeInOut}, "+=1.5").to('.bandeau', 1, {bottom:0, ease:Power3.easeInOut}, "-=1");
 var prestaTween = new TweenMax.to('.bottom-part h3', 0.8, {opacity:1,right:'90px',ease:Power3.easeOut});
 // // TweenMax.set('.main-content', {marginTop:bottomPH})
 
@@ -40,8 +43,10 @@ var headerHome = new ScrollMagic.Scene({
 }).setTween(TweenMax.to('header', 0.25, {top:'-=45',ease:Linear.easeNone}));
 // .addIndicators({name: 'header'});
 
+
+
 function initPage() {
-	landingTl.play();
+	TweenMax.to(window, 0.1, {scrollTo:0,onComplete:landingTl.play()});
 }
 
 // firstTl.set('.bottom-part', {position:'absolute',top:'100%'+(bandeauH/2)})
