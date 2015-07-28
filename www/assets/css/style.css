@@ -9913,7 +9913,7 @@ a.arrow-down:hover {
   margin: 0;
 }
 #home .landing {
-  width: 100vw;
+  width: 100%;
   height: auto;
   position: relative;
   z-index: 999;
@@ -9924,20 +9924,32 @@ a.arrow-down:hover {
   display: block;
   margin: 0;
 }
-#home .landing .bottom-part {
-  position: absolute;
+#home .bottom-part {
+  position: relative;
   height: auto;
-  min-width: 100%;
-  bottom: 0;
+  width: 100%;
+}
+#home .bottom-part img {
+  width: 100%;
+}
+#home .bottom-part h3 {
+  display: inline-block;
+  color: white;
+  font-size: 9em;
+  font-family: 'AvenirNextLTPro-UltLt', helvetica, sans-serif;
+  position: absolute;
+  bottom: -0.22em;
+  right: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 0;
 }
 #home .bandeau {
-  width: 100vw;
+  width: 100%;
   background-color: #f6f2ef;
-  height: 50vh;
-  margin-top: 10px;
-  position: fixed;
-  top: 50vh;
-  z-index: 9999;
+  height: 390px;
+  position: absolute;
+  bottom: -25%;
 }
 #home .bandeau:before {
   content: " ";
@@ -10024,58 +10036,129 @@ a.arrow-down:hover {
 #home .main-content {
   width: 100%;
   height: auto;
-  background: url('../images/asset-bg-home-presta.jpg') no-repeat center center fixed;
-  background-size: cover;
 }
-#home .prestations h3 {
+#home .prestations {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 484px;
+}
+#home .prestations .bg-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#home .prestations .bg-wrap #bg-img {
   position: absolute;
-  right: 90px;
-  color: white;
-  font-size: 9em;
-  font-family: 'AvenirNextLTPro-UltLt', helvetica, sans-serif;
-  top: -300px;
+  top: 35%;
+  left: 50%;
+  width: 150%;
 }
-#home .prestations div {
+#home .prestations .content-wrap {
+  position: absolute;
+  bottom: 0;
+  height: 484px;
+  width: 100%;
+}
+#home .prestations .content-wrap > div {
+  width: 100%;
   height: 440px;
   padding: 0;
 }
 @media screen and (min-width: 768px) {
-  #home .prestations div {
+  #home .prestations .content-wrap > div {
     width: 20%;
-    height: calc(50vh - 22.5px);
+    height: 440px;
   }
 }
-#home .prestations div a {
-  display: block;
+#home .prestations .content-wrap > div a {
+  display: inline-block;
+  vertical-align: top;
   width: 100%;
   height: 100%;
+  position: relative;
   font-size: 2.2em;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 2px;
   font-family: 'AvenirNextLTPro-Medium', helvetica, sans-serif;
 }
-#home .prestations div a span {
+#home .prestations .content-wrap > div a span {
   display: inline-block;
+  line-height: 1;
+  color: #eb5c08;
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  line-height: 1;
-  color: #eb5c08;
 }
-#home .footer-part {
-  position: relative;
+#home .prestations .content-wrap > div .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+#home .prestations .content-wrap > div .overlay:before,
+#home .prestations .content-wrap > div .overlay:after {
+  content: '';
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  opacity: 1;
+  z-index: 1;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+#home .prestations .content-wrap > div .overlay:before {
+  border-right: 1px solid #eb5c08;
+  border-left: 1px solid #eb5c08;
+  -webkit-transform: scale(1, 0);
+  transform: scale(1, 0);
+  transition-delay: 0.5s;
+}
+#home .prestations .content-wrap > div .overlay:after {
+  border-top: 1px solid #eb5c08;
+  border-bottom: 1px solid #eb5c08;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+  transition-delay: 0.5s;
+}
+#home .prestations .content-wrap > div:hover .overlay {
+  opacity: 1;
+}
+#home .prestations .content-wrap > div:hover .overlay:before,
+#home .prestations .content-wrap > div:hover .overlay:after {
+  transform: scale(1, 1);
+}
+#home .prestations .content-wrap .footer-part {
+  width: 100%;
   height: 44px;
+  display: block;
+  margin: 0;
+  position: absolute;
   bottom: 0;
   background-color: rgba(255, 255, 255, 0.1);
 }
-#home .footer-part p {
+#home .prestations .content-wrap .footer-part p {
   margin-bottom: 0;
 }
-#home .footer-part p,
-#home .footer-part a {
+#home .prestations .content-wrap .footer-part p,
+#home .prestations .content-wrap .footer-part a {
   text-align: center;
   font-size: 1.2em;
   text-transform: uppercase;
@@ -10083,25 +10166,25 @@ a.arrow-down:hover {
   letter-spacing: 1px;
   line-height: 44px;
 }
-#home .footer-part p span,
-#home .footer-part a span {
+#home .prestations .content-wrap .footer-part p span,
+#home .prestations .content-wrap .footer-part a span {
   color: #eb5c08;
 }
-#home .footer-part .cta-btn {
+#home .prestations .content-wrap .footer-part .cta-btn {
   padding-left: 50px;
   padding-top: 9px;
 }
-#home .footer-part .cta-btn a {
+#home .prestations .content-wrap .footer-part .cta-btn a {
   background-position-y: 100%;
 }
-#home .footer-part .cta-btn a:first-child {
+#home .prestations .content-wrap .footer-part .cta-btn a:first-child {
   width: 37px;
   height: 26px;
 }
-#home .footer-part .cta-btn a:nth-child(2) {
+#home .prestations .content-wrap .footer-part .cta-btn a:nth-child(2) {
   width: 27px;
 }
-#home .footer-part .pdf a {
+#home .prestations .content-wrap .footer-part .pdf a {
   display: block;
   padding-right: 34px;
   background: url('../images/icon-dl.png') no-repeat;
@@ -10773,8 +10856,8 @@ a.arrow-down:hover {
     margin-right: 15px;
   }
   #tarifs .main-content > section.pigments h2 {
-    font-size: 6.5em;
-    letter-spacing: 2px;
+    font-size: 5.5em;
+    letter-spacing: 1px;
   }
   #contact .landing {
     min-height: 490px !important;
@@ -10898,6 +10981,10 @@ a.arrow-down:hover {
   }
   #prestation.finitions section:last-child div:last-child p {
     display: none;
+  }
+  #labelnews .landing .background {
+    background-size: cover !important;
+    background-position: -390px !important;
   }
   #labelnews .landing h1 {
     width: 100% !important;
