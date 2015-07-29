@@ -31,7 +31,7 @@
 
 	    <div class="main-content">
             <div class="bottom-part">
-                <h3>nos préstations</h3>
+                <h3>nos prestations</h3>
                 <img src="<?php echo url('assets/images/landing-home-orange.jpg'); ?> " alt="boots">
             </div>
 

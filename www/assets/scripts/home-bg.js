@@ -39,11 +39,11 @@
             $(window).resize(function(){
                 if ($(window).width() < 1024 && $(img).offset().top > 0) {
                     $(img).css('width', 'auto');
-                    $(img).css('height', '120%');
+                    $(img).css('height', '150%');
                     effect = false;
                 } else {
                     if ($(window).width() >= 1024) {
-                        $(img).css('width', '120%');
+                        $(img).css('width', '160%');
                         $(img).css('height', 'auto');
                         effect = true;
                         splashHome.initImg();

@@ -10043,7 +10043,7 @@ a.arrow-down:hover {
   margin: 0;
   overflow: hidden;
   width: 100%;
-  height: 484px;
+  height: 426px;
 }
 #home .prestations .bg-wrap {
   position: relative;
@@ -10059,18 +10059,18 @@ a.arrow-down:hover {
 #home .prestations .content-wrap {
   position: absolute;
   bottom: 0;
-  height: 484px;
+  height: 426px;
   width: 100%;
 }
 #home .prestations .content-wrap > div {
   width: 100%;
-  height: 440px;
+  height: 390px;
   padding: 0;
 }
 @media screen and (min-width: 768px) {
   #home .prestations .content-wrap > div {
     width: 20%;
-    height: 440px;
+    height: 390px;
   }
 }
 #home .prestations .content-wrap > div a {
@@ -10082,8 +10082,8 @@ a.arrow-down:hover {
   font-size: 2.2em;
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: 2px;
-  font-family: 'AvenirNextLTPro-Medium', helvetica, sans-serif;
+  letter-spacing: 0px;
+  font-family: 'AvenirNextLTPro-Regular', helvetica, sans-serif;
   z-index: 9;
 }
 #home .prestations .content-wrap > div a span {
@@ -10095,6 +10095,15 @@ a.arrow-down:hover {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  transition-delay: 1.8s;
+  transition: color 0.5s ease-in;
+  -webkit-transition: color 0.5s ease-in;
+  -moz-transition: color 0.5s ease-in;
+  -ms-transition: color 0.5s ease-in;
+  -o-transition: color 0.5s ease-in;
+}
+#home .prestations .content-wrap > div a:hover span {
+  color: white;
 }
 #home .prestations .content-wrap > div .overlay {
   position: absolute;
@@ -10102,8 +10111,8 @@ a.arrow-down:hover {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.1);
-  borderopacity: 0;
+  border: 0;
+  opacity: 0;
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -10150,7 +10159,7 @@ a.arrow-down:hover {
 }
 #home .prestations .content-wrap .footer-part {
   width: 100%;
-  height: 44px;
+  height: 36px;
   display: block;
   margin: 0;
   position: absolute;
@@ -10163,11 +10172,11 @@ a.arrow-down:hover {
 #home .prestations .content-wrap .footer-part p,
 #home .prestations .content-wrap .footer-part a {
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.1em;
   text-transform: uppercase;
   color: white;
   letter-spacing: 1px;
-  line-height: 44px;
+  line-height: 36px;
 }
 #home .prestations .content-wrap .footer-part p span,
 #home .prestations .content-wrap .footer-part a span {
@@ -10181,18 +10190,19 @@ a.arrow-down:hover {
   background-position-y: 100%;
 }
 #home .prestations .content-wrap .footer-part .cta-btn a:first-child {
-  width: 37px;
-  height: 26px;
+  width: 31px;
+  height: 18px;
 }
 #home .prestations .content-wrap .footer-part .cta-btn a:nth-child(2) {
-  width: 27px;
+  height: 19px;
 }
 #home .prestations .content-wrap .footer-part .pdf a {
   display: block;
   padding-right: 34px;
   background: url('../images/icon-dl.png') no-repeat;
-  background-position-x: 70%;
-  background-position-y: 9px;
+  background-position-x: 85%;
+  background-position-y: 7px;
+  background-size: 8%;
 }
 #labelnews {
   width: 100%;

@@ -21,12 +21,12 @@ var bandeauH = $('.bandeau').height();
 
 // var firstTl = new TimelineMax({paused:true});
 // var secondTl = new TimelineMax({paused:true});
-var landingTl = new TimelineMax().to(window, 1, {scrollTo:{y:bandeauH/2}, ease:Power3.easeInOut}, "+=1.5").to('.bandeau', 1, {bottom:0, ease:Power3.easeInOut}, "-=1");
+var landingTl = new TimelineMax({paused:true}).to(window, 1, {scrollTo:{y:bandeauH/2}, ease:Power3.easeInOut}, "+=1.5").to('.bandeau', 1, {bottom:0, ease:Power3.easeInOut}, "-=1");
 var prestaTween = new TweenMax.to('.bottom-part h3', 0.8, {opacity:1,right:'90px',ease:Power3.easeOut});
 // // TweenMax.set('.main-content', {marginTop:bottomPH})
 
-landingTl.to(window, 1, {scrollTo:{y:bandeauH/2}, ease:Power3.easeInOut, delay:2}) //delay = animHeader duration =
-		 .to('.bandeau', 1, {bottom:0, ease:Power3.easeInOut}, "-=1");
+// landingTl.to(window, 1, {scrollTo:{y:bandeauH/2}, ease:Power3.easeInOut, delay:2}) 
+// 		 .to('.bandeau', 1, {bottom:0, ease:Power3.easeInOut}, "-=1");
 		// .set('.bandeau', {css:{position:'absolute',top:vh50+bandeauH/2}})
 		// .set('.bottom-part', {css:{position:'fixed'},zIndex:99});
 
@@ -46,7 +46,7 @@ var headerHome = new ScrollMagic.Scene({
 
 
 function initPage() {
-	TweenMax.to(window, 0.1, {scrollTo:0,onComplete:landingTl.play()});
+	landingTl.play();
 }
 
 // firstTl.set('.bottom-part', {position:'absolute',top:'100%'+(bandeauH/2)})
@@ -96,6 +96,6 @@ function initPage() {
 // });
 
 $(document).ready(function(){
-
+	TweenMax.set(window, {scrollTo:0});
 	initPage();
 });
