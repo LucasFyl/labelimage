@@ -9367,16 +9367,17 @@ a.arrow-down:hover {
   right: 125px;
 }
 #prestation.tirages .landing h1 {
-  bottom: 85px;
+  bottom: initial;
+  top: 67.5%;
 }
 @media screen and (max-width: 1199px) {
   #prestation.tirages .landing h1 {
-    bottom: 125px;
+    top: 72%;
   }
 }
 @media screen and (max-width: 767px) {
   #prestation.tirages .landing h1 {
-    bottom: 125px;
+    top: 72%;
   }
 }
 #prestation.tirages .landing .background {
