@@ -78,7 +78,7 @@
                             <a href="https://www.facebook.com/pages/Atelier-Label-Image/253768198027539"></a>
                         </div>
                         <div class="col-sm-6">
-                            <p> © COPYRIGHT 2015 ATELIER LABEL IMAGE <span class="o-b"></span> <span> 01 43 38 03 01 </span> <span class="o-b"></span> DESIGN ET DEVELOPPEMENT FAYOLLE  </p>
+                            <p> © COPYRIGHT 2015 ATELIER LABEL IMAGE <span class="o-b"></span> <span> 01 43 38 03 01 </span> <span class="o-b"></span> <a href="http://lucasfayolle.com" target='_blank'>DESIGN ET DEVELOPPEMENT FAYOLLE</a>  </p>
                         </div>
                         <div class="col-sm-3 pdf">
                             <a href="<?php echo url('assets/pdf/tarifs.pdf'); ?>" target="_blank">Tarifs PDF</a>

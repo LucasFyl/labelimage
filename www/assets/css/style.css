@@ -10196,6 +10196,11 @@ a.arrow-down:hover {
 #home .prestations .content-wrap .footer-part p {
   margin-bottom: 0;
 }
+#home .prestations .content-wrap .footer-part p a {
+  width: auto;
+  display: inline;
+  font-size: 1em;
+}
 #home .prestations .content-wrap .footer-part p,
 #home .prestations .content-wrap .footer-part a {
   text-align: center;
