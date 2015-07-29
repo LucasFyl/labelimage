@@ -170,7 +170,7 @@
                                 <span>150 euros l'heure</span>
                             </div>
                             <div class="col-xs-3">
-                                <span>cd 15 euros <span class="o-b"></span> DVD 40 euros</span>
+                                <span>CD 15 euros <span class="o-b"></span> DVD 40 euros</span>
                             </div>
                         </div>
                         <p class="col-xs-12 orange text-left">Retouches créatives sur devis uniquement</p>
@@ -378,7 +378,7 @@
                                 <span>Vinyl <span class="o-b"></span> Affiche <span class="o-b"></span> Papier peint</span>
                             </div>
                             <div class="col-xs-3">
-                                <span>Toile bâche à matte</span>
+                                <span>Toile bâche matte</span>
                             </div>
                         </div>
                         <div class="row td">
