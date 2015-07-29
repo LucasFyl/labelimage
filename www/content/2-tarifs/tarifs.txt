@@ -2,4 +2,7 @@ Title: Tarifs
 
 ----
 
-Text: Voilà nos tarifs
+Text: 
+
+Ici se trouve le fichier tarifs.pdf
+Il est possible de le modifier.

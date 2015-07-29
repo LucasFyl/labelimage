@@ -8972,7 +8972,6 @@ body {
   top: 0;
   min-width: 100vw;
   min-height: 100vh;
-  background: url('../images/landing-traitement.jpg') no-repeat center center;
   background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
@@ -9320,6 +9319,9 @@ a.arrow-down:hover {
   letter-spacing: 0;
   white-space: nowrap;
 }
+#prestation.traitement .landing h1 {
+  bottom: 205px;
+}
 #prestation.traitement .landing .background {
   background: url('../images/landing-traitement.jpg') no-repeat center center;
   background-size: cover;
@@ -9328,7 +9330,12 @@ a.arrow-down:hover {
 }
 #prestation.traitement .main-content > .left:first-child {
   padding-top: 227px;
-  padding-left: 80px;
+  padding-left: 30px;
+}
+@media screen and (min-width: 1440px) {
+  #prestation.traitement .main-content > .left:first-child {
+    padding-left: 70px;
+  }
 }
 #prestation.traitement .main-content > .right h2:nth-child(2) {
   text-align: right;
@@ -9360,7 +9367,7 @@ a.arrow-down:hover {
   right: 125px;
 }
 #prestation.tirages .landing h1 {
-  bottom: 65px;
+  bottom: 85px;
 }
 @media screen and (max-width: 1199px) {
   #prestation.tirages .landing h1 {
@@ -9458,6 +9465,11 @@ a.arrow-down:hover {
   padding-left: 80px;
   margin-bottom: 60px;
 }
+@media screen and (max-width: 1366px) {
+  #prestation.tirages .main-content > div:nth-child(3) .left .stand-out-wrap {
+    padding-left: 20px;
+  }
+}
 #prestation.tirages .main-content > div:nth-child(3) .right {
   padding-top: 320px;
   padding-right: 90px;
@@ -9473,6 +9485,13 @@ a.arrow-down:hover {
 #prestation.tirages .main-content > div:nth-child(6) .right .asset-bg {
   padding-top: 90px;
   padding-right: 90px;
+}
+#prestation.tirages .main-content > div:nth-child(6) .right .copyright {
+  color: black;
+  width: 420px;
+  left: auto;
+  bottom: -1.8em;
+  right: 90px;
 }
 #prestation.tirages .left {
   padding-top: 60px;
@@ -9661,8 +9680,16 @@ a.arrow-down:hover {
 #prestation.scan .main-content .right {
   padding-right: 50px;
 }
+#prestation.scan .main-content .right .asset-bg img {
+  margin-right: -70px;
+}
 #prestation.scan .main-content .left {
   padding-top: 240px;
+}
+@media screen and (max-width: 1366px) {
+  #prestation.scan .main-content .left {
+    padding-top: 180px;
+  }
 }
 #prestation.scan .main-content .left p {
   text-align: justify;

@@ -49,7 +49,7 @@
         <div class="col-xs-12 col-md-6 left">
           <h3>ÉDITION D’ART / SÉRIE LIMITÉE</h3>
           <h4>Une impression numérique prend tout son caractère d'estampe</h4>
-          <h4>lorsqu'elle se différencie d'une reproduction mécanique en grande quantit&</h4>
+          <h4>lorsqu'elle se différencie d'une reproduction mécanique en grande quantité</h4>
           <p>L’estampe numérique est avant tout une impression <br/>
           <span style='text-align:left;' class="bold">Caractéristiques d'une estampe numérique originale selon l'atelier label image</span></p>
           <div class="stand-out-wrap">
@@ -102,8 +102,8 @@
         <div class="col-xs-12 col-md-6 hidden-xs hidden-sm right">
           <div class="asset-bg tirages3">
             <img src="<?php echo url('assets/images/asset-tirages3.png'); ?>" alt="Tirages">
-            <span class="copyright bottom-left">© Sabine Delcour</span>
           </div>
+          <span class="copyright bottom-left">© Sabine Delcour</span>
         </div>
       </div>
     </div>
