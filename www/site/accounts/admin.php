@@ -8,6 +8,7 @@ language: fr
 role: admin
 token: 394a0ef1034e9e51e56fdb07967193f6b7977770
 history:
+  - home
   - tarifs
   - prestations
   - news/stephan-zaubitzer

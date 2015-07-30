@@ -81,7 +81,7 @@
                             <p> © COPYRIGHT 2015 ATELIER LABEL IMAGE <span class="o-b"></span> <span> 01 43 38 03 01 </span> <span class="o-b"></span> <a href="http://lucasfayolle.com" target='_blank'>DESIGN ET DEVELOPPEMENT FAYOLLE</a>  </p>
                         </div>
                         <div class="col-sm-3 pdf">
-                            <a href="<?php echo url('assets/pdf/tarifs.pdf'); ?>" target="_blank">Tarifs PDF</a>
+                            <a href="<?php echo $pages->find('tarifs')->file('tarifs.pdf')->url() ?>" target="_blank">Tarifs PDF</a>
                         </div>
                     </div>
                 </div>

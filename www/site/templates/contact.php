@@ -86,7 +86,7 @@
                         <p class="hide">Certified Studio for Digital fine art printing</p>
                     </div>
                 </div>
-                <span class="heading"><p>&nbsp;© copyright 2015 atelier label image <span class="o-b"></span> design et developpement fayolle <span class="o-b"></span> <a href="#">Mentions Légales</a> <span class="o-b"></span>&nbsp;</p></span>
+                <span class="heading"><p>&nbsp;© copyright 2015 atelier label image <span class="o-b"></span> design et developpement fayolle <span class="o-b"></span> <a href="<?php echo $page->file('Mention_Legales-LabelImage.pdf')->url() ?>" target="_blank">Mentions Légales</a> <span class="o-b"></span>&nbsp;</p></span>
             </section>
         </div>
 	</div>
