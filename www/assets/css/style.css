@@ -9978,7 +9978,7 @@ a.arrow-down:hover {
   background-color: #f6f2ef;
   height: 390px;
   position: absolute;
-  bottom: -25%;
+  bottom: -5%;
 }
 #home .bandeau:before {
   content: " ";
@@ -10120,9 +10120,9 @@ a.arrow-down:hover {
   color: #eb5c08;
   position: relative;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
   transition-delay: 1.8s;
   transition: color 0.5s ease-in;
   -webkit-transition: color 0.5s ease-in;

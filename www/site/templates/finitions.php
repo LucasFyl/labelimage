@@ -57,7 +57,7 @@
       <section class="row">
         <div class="col-xs-12 col-md-6 left">
           <h3>Encadement</h3>
-          <h4>Nos cadres sont fabriqués à la main et sur medure</h4>
+          <h4>Nos cadres sont fabriqués à la main et sur mesure</h4>
           <h5>caisse américaine sans verre</h5>
           <p>L'encadrement dit en Caisse Américaine est un montage de tirage collé sur un support, et monté dans une cornière de section 30x40 ou 35x47 mm, en fonction du tirage. <br/>
           La Caisse Américaine présente sur sa face, un dégagé de 5 à 8 mm (à définir) visible entre le tirage et son cadre. Ce dégagé donne la vision d'une pièce flottant dans son encadrement.</p>

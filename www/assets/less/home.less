@@ -50,7 +50,8 @@
 		background-color: @bg;
 		height: 390px;
 		position: absolute;
-		bottom: -25%;
+		// bottom: -25%;
+		bottom: -5%;
 
 		.before-gradient;
 		.after-gradient;
@@ -172,7 +173,13 @@
 						display: inline-block;
 						line-height: 1;
 						color: @orange;
-						.vertical-align;
+						// .vertical-align;
+						position: relative;
+						top: 50%;
+						-webkit-transform: translateY(-100%);
+						-ms-transform: translateY(-100%);
+						transform: translateY(-100%);
+
 						transition-delay:1.8s;
 						.transition(color 0.5s ease-in);
 					}
