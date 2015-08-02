@@ -14,6 +14,4 @@ $( document ).ready(function(){
 	'use strict';
 
 	$('.td').hover(makeOrange, makeBlack);
-	// $('.td').hoverIntent(makeOrange, makeBlack);
-	
 });

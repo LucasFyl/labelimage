@@ -23,15 +23,9 @@ var headerHome = new ScrollMagic.Scene({
 // .addIndicators({name: 'header'});
 
 
-
 function initPage() {
 	landingTl.play();
 }
-
-// $(window).load(function(){
-// 	$('body').scrollTop(0);
-// });
-
 $(document).ready(function(){
 	TweenMax.set(window, {scrollTo:0});
 	initPage();
