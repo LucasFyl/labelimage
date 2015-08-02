@@ -73,7 +73,7 @@
         }
     };
     if($(window).width()>950){
-      console.log($(window).width());
+      // console.log($(window).width());
       $( document ).ready(function(){
         setTimeout(splashHome.init,400);   
       });

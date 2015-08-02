@@ -95,18 +95,14 @@
 
     <?php snippet('scripts') ?>
     <script src="<?php echo url('assets/scripts/hello.js'); ?>"></script>
-    <script src="<?php echo url('assets/scripts/vendor/gsap/src/plugins/ScrollTo.js'); ?>"></script>
+    <script src="<?php echo url('assets/scripts/vendor/gsap/plugins/ScrollToPlugin.min.js'); ?>"></script>
     <script src="<?php echo url('assets/scripts/home.js'); ?>"></script>
     <script src="<?php echo url('assets/scripts/home-bg.js'); ?>"></script>
-    <script src="<?php echo url('assets/scripts/scenes-home.js'); ?>"></script>
     
     <script>
         homeController.addScene([
             headerHome,
             prestaPart
-            // ,
-            // firstPart,
-            // secondPart
         ]);
     </script>
     
