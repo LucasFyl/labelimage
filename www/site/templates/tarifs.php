@@ -65,7 +65,7 @@
                             <div class="custom5">
                                 <p class="op0">x</p>
                             </div>
-                            <div class="custom5"><span class="med">Documents et plan fins</span></div>
+                            <div class="custom5"><span class="med">Documents et plan films</span></div>
                             <div class="custom5"><p class="op0">x</p></div>
                             <div class="custom5">
                                 <div class="col-xs-6"><span class="med">Ektas</span></div>

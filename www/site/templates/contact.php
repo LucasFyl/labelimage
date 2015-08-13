@@ -80,10 +80,12 @@
                         </div>
                     </div>                    
                     <div class="col-sm-6 col-xs-12">
-                        <p class="hide">Fet Art</p>
-                        <p class="hide">Circulation(s)</p>
-                        <p class="hide">Digigraphie by epson</p>
-                        <p class="hide">Certified Studio for Digital fine art printing</p>
+                        <div class="row">
+                            <div class="col-xs-6"><a href="http://www.fetart.org/" target="_blank">Fet Art</a></div>
+                            <div class="col-xs-6"><a href="http://www.festival-circulations.com/" target='_blank'>Circulation(s)</a></div>
+                            <div class="col-xs-6"><a href="http://www.hahnemuehle.com/fr/digital-fineart/certified-studio.html" target='_blank'>Digigraphie by epson</a></div>
+                            <div class="col-xs-6"><a href="http://www.epson.fr/fr/fr/viewcon/corporatesite/cms/index/11184" target='_blank'>Certified Studio for Digital fine art printing</a></div>
+                        </div>
                     </div>
                 </div>
                 <span class="heading"><p>&nbsp;© copyright 2015 atelier label image <span class="o-b"></span> design et developpement fayolle <span class="o-b"></span> <a href="<?php echo $page->file('Mention_Legales-LabelImage.pdf')->url() ?>" target="_blank">Mentions Légales</a> <span class="o-b"></span>&nbsp;</p></span>
