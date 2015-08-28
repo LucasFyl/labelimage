@@ -121,6 +121,12 @@
         $(document).ready(function(){
             TweenMax.set('#mobile-menu .logo', {visibility:'hidden', opacity:0});
             TweenMax.to('header.mobile', 0.25, {top:0,delay:1,ease:Power2.easeOut});
+            $('body').on({
+                'touchmove': function(e) { 
+                    e.preventDefault();
+                }
+            });
         });
+
     </script>
     
