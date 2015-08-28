@@ -27,7 +27,7 @@
           Mise au point de la chromie et de la densité, nettoyage, et recadrage<br/>
           Nous adaptons le fichier à l'espace couleur de votre choix, RVB ou CMJN<br/>
           Pour l'espace CMJN, nous proposons une épreuve numérique de contrôle certifiée Fogra, réalisée sur un Epson Stylus Pro 3880.</p>
-          <p>La simulation Fogra 39 est la plus utilisée dans l'échange d'épreuve contratuelle<br>Elle est le reflet d'une impression sur un papier couché mat/brillant sur une presse Offset calibrée suivant la norme ISO 12647-2</p>
+          <p>La simulation Fogra 39 est la plus utilisée dans l'échange d'épreuve contractuelle<br>Elle est le reflet d'une impression sur un papier couché mat/brillant sur une presse Offset calibrée suivant la norme ISO 12647-2</p>
         </div>
         <div class="col-md-6 hidden-xs hidden-sm right">
           <div class="h2-bloc">

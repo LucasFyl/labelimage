@@ -6,6 +6,8 @@
 	      <span class="croix spin"></span>
 	    </div>
 
+        <a href="#" class="arrow-down fadeIn"></a>
+
         <div class="landing">
             <h1 class="text-hide">Label News</h1>
             <div class="background"></div>

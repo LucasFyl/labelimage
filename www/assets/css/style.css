@@ -9753,6 +9753,12 @@ a.arrow-down:hover {
 #contact #trigger3 {
   top: 479px;
 }
+#contact a.arrow-down {
+  opacity: 1 !important;
+  bottom: initial !important;
+  top: 455px !important;
+  right: 160px !important;
+}
 #contact .landing {
   height: auto;
   min-height: 524px;
@@ -9771,10 +9777,6 @@ a.arrow-down:hover {
 #contact .landing h1 {
   left: 50%;
   top: 340px;
-}
-#contact .landing .arrow-down {
-  right: 92px;
-  bottom: 300px;
 }
 #contact .main-content {
   position: relative;
@@ -9958,6 +9960,53 @@ a.arrow-down:hover {
   overflow-x: hidden;
   padding: 0;
   margin: 0;
+}
+#home .mobile-placeholder {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 45px 20px 0;
+  background: #f6f2ef;
+  z-index: 99;
+}
+#home .mobile-placeholder img {
+  display: block;
+  max-width: 80%;
+  margin: 50px auto;
+}
+#home .mobile-placeholder h2 {
+  font-family: 'DIN-Bold', helvetica, sans-serif;
+  font-size: 1.792em;
+  margin-bottom: 20px;
+  margin-top: 0;
+  text-align: center;
+}
+#home .mobile-placeholder p {
+  font-size: 1.9em;
+  line-height: 1.474em;
+  margin-bottom: 0;
+  display: block;
+  width: 78.5%;
+  margin: 0 auto;
+  text-align: center !important;
+}
+#home .mobile-placeholder .stamp-digi {
+  position: absolute;
+  background: url('../images/asset-home-digistamp.svg') no-repeat center center;
+  background-size: 100%;
+  width: 190px;
+  height: 130px;
+  bottom: -140px;
+  right: 145px;
+}
+@media screen and (max-width: 1199px) {
+  #home .mobile-placeholder .stamp-digi {
+    display: none;
+  }
 }
 #home .landing {
   width: 100%;
@@ -10244,23 +10293,34 @@ a.arrow-down:hover {
 #home .prestations .content-wrap .footer-part .cta-btn a:first-child {
   width: 31px;
   height: 18px;
+  background-size: 83%;
+  margin-right: 2rem;
 }
 #home .prestations .content-wrap .footer-part .cta-btn a:nth-child(2) {
-  height: 19px;
+  height: 18px;
+  width: 31px;
+  background-size: 70%;
 }
 #home .prestations .content-wrap .footer-part .pdf a {
   display: block;
-  padding-right: 34px;
+  padding-right: 80px;
   background: url('../images/icon-dl.png') no-repeat;
   background-position-x: 85%;
   background-position-y: 7px;
-  background-size: 8%;
+  background-size: 7%;
+  text-align: right;
 }
 #labelnews {
   width: 100%;
   height: auto;
   position: relative;
   top: 0;
+}
+#labelnews a.arrow-down {
+  opacity: 1 !important;
+  bottom: initial !important;
+  top: 305px !important;
+  right: 160px !important;
 }
 #labelnews .landing {
   width: 100%;
@@ -10295,7 +10355,7 @@ a.arrow-down:hover {
   height: auto;
   background-color: #f6f2ef;
   position: absolute;
-  z-index: 99;
+  z-index: 9999;
 }
 #labelnews .main-content .title {
   margin-bottom: 50px;
@@ -10470,6 +10530,12 @@ a.arrow-down:hover {
 #tarifs #trigger3 {
   top: 479px;
 }
+#tarifs a.arrow-down {
+  opacity: 1 !important;
+  bottom: initial !important;
+  top: 305px !important;
+  right: 330px !important;
+}
 #tarifs .landing {
   height: auto;
   min-height: 302px;
@@ -10492,10 +10558,6 @@ a.arrow-down:hover {
   left: 50%;
   text-align: left;
   top: 170px;
-}
-#tarifs .landing .arrow-down {
-  right: 92px;
-  bottom: 315px;
 }
 #tarifs .main-content {
   position: relative;

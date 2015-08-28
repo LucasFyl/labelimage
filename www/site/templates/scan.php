@@ -22,15 +22,14 @@
       <div class="col-xs-12 col-md-6 left">
         <h3>Scan</h3>
         <h4>L'atelier vous propose la numérisation de vos originaux <br/>
-        a des fins artistiques ou de reproduction</h4>
+        à des fins artistiques ou de reproduction</h4>
         <p class="bold">Nous disposons pour cela de plusieurs types de scanner :</p>
         <p><span>Imacon Flextight</span> pour vos originaux allant du 24 x 36 au 13 x 18 cm<br/>
         <span>Scanner rotatif Tango d'Heidelberg</span> pour vos images les plus exigeantes<br/>
         <span>Scan à plat</span> pour vos documents ou plaque de verre</p>
 
-        <p class="bold">Nous vous proposons également la numérisation à plat de vos originaux de grande dimension, ainsi que pour vos documents fragiles.</p>
-        <p>Les tableaux ou toiles tendues peuvent être parcourus par leur vitrage sans déplacement de leurs cadres.<br/>
-        Les fichiers Tiff sont remis en 16 bits couleur ou noir et blanc, sur DVD ou en téléchargement. Ils sont livrés dépoussiérés, optimisés en chromie et netteté.</p>
+        <p class="bold">Nous vous proposons également la numérisation à plat de vos originaux de grande dimension sur scanner Cruze.</p>
+        <p>Les fichiers Tiff sont remis en 8 bits couleur ou noir et blanc, sur DVD ou en téléchargement. Ils sont livrés dépoussiérés, optimisés en chromie et netteté.</p>
       </div>
       <div class="col-xs-12 col-md-6 hidden-xs hidden-sm right">
         <div class="h2-bloc">

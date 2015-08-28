@@ -25,7 +25,7 @@
           <p>Que vous souhaitiez des tirages pour une exposition, une édition limitée, ou un projet personnel, nos impressions pigmentaires garantissent une qualité d'image optimale et une excellente stabilité dans le temps. <br/>
           Nos tirages sont réalisés sur des imprimantes Epson et des papiers jet d'encre de première qualité, sélectionnés de manière à couvrir une large gamme de teintes, d’épaisseurs, de textures et de brillances.</p>
           <p><span class="stand-out">Le tirage Direct</span> pour les fichiers prêts à imprimer.</p>
-          <p><span class="stand-out">LE TIRAGE D’EXPOSITION</span> pour les fichiers qui nécessitent d’être optimisés avant impression. Ils peuvent également être réalisés en collaboration avec notre tireur, sur rendez vous. Nous vous aidons à choisir un support adapté en fonction de votre image parmi une gamme étendue de papiers mats, satiné, brillant, barytés ou encore sur toile canvas à monter sur châssis.</p> 
+          <p><span class="stand-out">LE TIRAGE D’EXPOSITION</span> pour les fichiers qui nécessitent d’être optimisés avant impression. Ils peuvent également être réalisés en collaboration avec notre tireur, sur rendez vous. Nous vous aidons à choisir un support adapté en fonction de votre image parmi une gamme étendue de papiers mats, satiné, brillants, barytés ou encore sur toile canvas à monter sur châssis.</p> 
           <p>Pour vos projets événementiels, expositions, signalétique, nous pouvons imprimer sur différents types de supports communiquants : bâche, toile, vinyle adhésif, papier peint... largeur maximum d'impression 150 cm.</p>
         </div>
         <div class="col-xs-12 col-md-6 hidden-xs hidden-sm right">
@@ -34,8 +34,8 @@
               <h2>Vos images</h2>
           </div>  
           <div class="asset-bg tirages1">
-            <img src="<?php echo url('assets/images/asset-tirages.png'); ?>"  alt="Epson 9890 et 11880 jusqu’à160cm de large avec 11 encres pigmentaires Ultrachrome HD" />
-            <p class="caption">Epson 9890 et 11880 jusqu’à160cm de large <br/> avec 11 encres pigmentaires Ultrachrome HD</p>
+            <img src="<?php echo url('assets/images/asset-tirages.png'); ?>"  alt="Epson 9890 et 11880 jusqu’à160cm de large avec 9 encres pigmentaires Ultrachrome K3" />
+            <p class="caption">Epson 9890 et 11880 jusqu’à160cm de large <br/> avec 9 encres pigmentaires Ultrachrome K3</p>
           </div>
         </div>
       </div>

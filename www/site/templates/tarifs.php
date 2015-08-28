@@ -358,7 +358,7 @@
                                 <p class="op0">x</p>
                             </div>
                             <div class="col-xs-3">
-                                <p>Duratrans</p>
+                                <span>Duratrans</span>
                             </div>
                             <div class="col-xs-3">
                                 <p>Production</p>

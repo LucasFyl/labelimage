@@ -6,8 +6,22 @@
 	      <span class="croix spin"></span>
 	    </div>
 
+        <div class="mobile-placeholder visible-xs">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1 class="hidden">Label Image</h1>
+                    <img src="<?php echo url('assets/images/logo-big-bigger.png'); ?> " alt="Label Image">
+                </div>
+                <div class="col-xs-12">
+                    <h2>atelier photographique artisanal de tirages d'exposition</h2>
+                    <p>Spécialisé dans la numérisation et le tirage d'exposition,
+                    l'atelier est aussi une structure de post production numérique.</p>
+                    <span class="stamp-digi"></span>
+                </div>
+            </div>
+        </div>
             
-        <div class="landing">
+        <div class="landing  hidden-xs">
             <img src="<?php echo url('assets/images/landing-home-full.jpg'); ?>" alt="Pom Pom Mami">
 
             <div class="bandeau">
@@ -19,7 +33,7 @@
                     </div>
                     <div class="col-xs-12 col-sm-6">
                         <h2>atelier photographique artisanal de tirages d'exposition</h2>
-                        <p>Spécialisé dans le tirage noir et blanc et le tirage Fine Art,
+                        <p>Spécialisé dans la numérisation et le tirage d'exposition,
                         l'atelier est aussi une structure de post production numérique.</p>
                         <span class="stamp-digi"></span>
                     </div>
@@ -29,7 +43,7 @@
 
         
 
-	    <div class="main-content">
+	    <div class="main-content hidden-xs">
             <div class="bottom-part">
                 <h3>nos prestations</h3>
                 <img src="<?php echo url('assets/images/landing-home-orange.jpg'); ?> " alt="boots">
@@ -104,5 +118,9 @@
             headerHome,
             prestaPart
         ]);
+        $(document).ready(function(){
+            TweenMax.set('#mobile-menu .logo', {visibility:'hidden', opacity:0});
+            TweenMax.to('header.mobile', 0.25, {top:0,delay:1,ease:Power2.easeOut});
+        });
     </script>
     

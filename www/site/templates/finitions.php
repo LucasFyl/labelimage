@@ -24,7 +24,7 @@
           <h3>contre collage</h3>
           <h4>Différents supports sont proposés pour présenter <br/> vos tirages photographiques</h4>
           <h5>collage sur aluminium ou dibond</h5>
-          <p>Le tirage est contrecollé sur une plaque d’aluminium d'1mm ou sur un  Dibond 2mm. selon les qualités de rigidité et de conservation désirées.
+          <p>Le tirage est contrecollé sur une plaque d’aluminium d'1mm ou sur un  Dibond 2mm selon les qualités de rigidité et de conservation désirées.
           Un châssis aluminium peut être posé au dos du support pour l'accrocher tout en le décollant du mur.</p>
           <img src="<?php echo url('assets/images/asset-finition-1.png'); ?>" alt="Collage sur dibond" /> 
           <h5>Le plexicollage</h5>
@@ -56,7 +56,7 @@
 
       <section class="row">
         <div class="col-xs-12 col-md-6 left">
-          <h3>Encadement</h3>
+          <h3>Encadrement</h3>
           <h4>Nos cadres sont fabriqués à la main et sur mesure</h4>
           <h5>caisse américaine sans verre</h5>
           <p>L'encadrement dit en Caisse Américaine est un montage de tirage collé sur un support, et monté dans une cornière de section 30x40 ou 35x47 mm, en fonction du tirage. <br/>
